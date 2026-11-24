@@ -1,0 +1,25 @@
+{
+  "student_id": "S001",
+  "name": "Sara Mostafa",
+  "academic_year": 1,
+  "semester": "Fall",
+  "gpa": null,
+  "completed": {},
+  "desired_credits": 15,
+  "other_credits": 0,
+  "skills": [
+    "basic Python from online tutorials"
+  ],
+  "interests": [
+    "programming",
+    "artificial intelligence",
+    "problem solving"
+  ],
+  "goals": "become an AI engineer",
+  "workload_pref": "medium",
+  "requested_courses": [
+    "AI301"
+  ],
+  "scenario": "New first-year student, no GPA yet; asks for a course she is not eligible for (level + prerequisites).",
+  "earned_credits": 0
+}

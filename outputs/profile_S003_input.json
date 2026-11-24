@@ -1,0 +1,42 @@
+{
+  "student_id": "S003",
+  "name": "Lina Farouk",
+  "academic_year": 3,
+  "semester": "Fall",
+  "gpa": 3.2,
+  "completed": {
+    "CS101": "B",
+    "CS102": "B+",
+    "MATH101": "B-",
+    "ENG101": "B",
+    "PHYS101": "C+",
+    "CS201": "B+",
+    "CS202": "B",
+    "CS203": "B-",
+    "MATH201": "B",
+    "STAT201": "B+",
+    "CS210": "A-",
+    "CS220": "A",
+    "HUM201": "A",
+    "AI301": "B+"
+  },
+  "desired_credits": 21,
+  "other_credits": 25,
+  "skills": [
+    "Python",
+    "linear algebra",
+    "PyTorch basics"
+  ],
+  "interests": [
+    "deep learning",
+    "GPU computing",
+    "computer vision"
+  ],
+  "goals": "become a deep learning engineer",
+  "workload_pref": "heavy",
+  "requested_courses": [
+    "AI401"
+  ],
+  "scenario": "REGISTRATION CONSTRAINT: requests 21 credits with GPA 3.2 (overload needs GPA 3.5). Also asks for a 400-level course in Year 3 (level approval needed) and a corequisite bundle (CS370 needs CS301).",
+  "earned_credits": 66
+}

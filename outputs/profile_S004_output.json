@@ -1,0 +1,580 @@
+{
+  "credit_policy": {
+    "limit": 21,
+    "target": 21,
+    "overload_needs_approval": true,
+    "notes": [
+      {
+        "rule": "R2",
+        "level": "FLAG",
+        "message": "GPA 3.6 qualifies for an overload up to 21 credits; advisor approval required if more than 18.",
+        "evidence": {
+          "rule": "R2",
+          "source": "registration_rules.md#R2",
+          "rule_title": "Credit overload",
+          "policy_text": "A student with a cumulative GPA of 3.5 or higher may request an overload of up to 21 credit hours in one semester. An overload always requires written advisor approval, so it is flagged and is never approved automatically. No overload above 21 credit hours is allowed for any student.",
+          "retrieved_rank": 1,
+          "retrieval_score": 0.508
+        }
+      }
+    ]
+  },
+  "retrieval": {
+    "backend": "TF-IDF unigram+bigram (scikit-learn fallback)",
+    "query": "cloud computing, distributed systems, DevOps, capstone project become a cloud infrastructure engineer Linux, Docker, Python",
+    "top_courses": [
+      {
+        "rank": 1,
+        "code": "CS401",
+        "score": 0.37,
+        "source": "course_catalog.md#CS401"
+      },
+      {
+        "rank": 2,
+        "code": "CS411",
+        "score": 0.124,
+        "source": "course_catalog.md#CS411"
+      },
+      {
+        "rank": 3,
+        "code": "CS410",
+        "score": 0.123,
+        "source": "course_catalog.md#CS410"
+      },
+      {
+        "rank": 4,
+        "code": "CS302",
+        "score": 0.075,
+        "source": "course_catalog.md#CS302"
+      },
+      {
+        "rank": 5,
+        "code": "AI320",
+        "score": 0.042,
+        "source": "course_catalog.md#AI320"
+      },
+      {
+        "rank": 6,
+        "code": "CS370",
+        "score": 0.042,
+        "source": "course_catalog.md#CS370"
+      }
+    ],
+    "degree_plan_passages": [
+      {
+        "source": "degree_plan.md#Systems, Cloud and Security track",
+        "score": 0.31,
+        "text": "Systems, Cloud and Security track. Students interested in operating systems, networks, cloud, distributed systems, parallel computing and cybersecurity follow the Systems track. Typical sequence: CS203 Computer Organization in Year 2, then CS302 Operating Systems, CS320 Computer Networks, SEC301 Information Security Fundamentals and CS370 Parallel and GPU Computing in Year 3, and CS401 Cloud Computing and Distributed Systems in Year 4.\n\n## Advising notes"
+      },
+      {
+        "source": "degree_plan.md#Capstone",
+        "score": 0.104,
+        "text": "Capstone. Senior Project I (CS410) is offered in Fall only and Senior Project II (CS411) in Spring only. Students should plan the capstone for their final two semesters after finishing Software Engineering (CS310)."
+      }
+    ]
+  },
+  "accepted": [
+    {
+      "code": "CS401",
+      "title": "Cloud Computing and Distributed Systems",
+      "credits": 3,
+      "level": 400,
+      "workload": "Heavy",
+      "schedule": "Sun/Tue 09:00-10:30",
+      "category": "Systems Track Elective",
+      "score": 0.7,
+      "relevance_rank": 1,
+      "matched_interests": [
+        "cloud computing",
+        "distributed systems",
+        "DevOps",
+        "Docker"
+      ],
+      "evidence": {
+        "course_source": "course_catalog.md#CS401",
+        "retrieval_score": 0.37,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "Prerequisites met: CS302 (A-), CS320 (B+)",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 400 allowed for Year 4.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Fall.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Sun/Tue 09:00-10:30; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Matches your interests/skills: cloud computing, distributed systems, DevOps, Docker (topics: virtualisation; containers and Docker; Kubernetes). Systems Track elective that broadens your profile. Prerequisites satisfied (CS302: A-, CS320: B+). Heavy workload, fits your heavy preference."
+    },
+    {
+      "code": "CS410",
+      "title": "Senior Project I",
+      "credits": 3,
+      "level": 400,
+      "workload": "Heavy",
+      "schedule": "Thu 13:00-16:00",
+      "category": "Core (Year 4)",
+      "score": 0.599,
+      "relevance_rank": 3,
+      "matched_interests": [
+        "capstone project"
+      ],
+      "evidence": {
+        "course_source": "course_catalog.md#CS410",
+        "retrieval_score": 0.123,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "Prerequisites met: CS310 (A-)",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 400 allowed for Year 4.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Fall.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Thu 13:00-16:00; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          },
+          {
+            "rule": "R11",
+            "result": "OK",
+            "detail": "98 earned credits >= required 90.",
+            "source": "registration_rules.md#R11"
+          }
+        ]
+      },
+      "reason": "Matches your interests/skills: capstone project (topics: project proposal; system design; team management). Core course planned for Year 4 of the degree plan. Prerequisites satisfied (CS310: A-). Heavy workload, fits your heavy preference."
+    },
+    {
+      "code": "SEC301",
+      "title": "Information Security Fundamentals",
+      "credits": 3,
+      "level": 300,
+      "workload": "Medium",
+      "schedule": "Mon/Wed 12:30-14:00",
+      "category": "Systems Track Elective",
+      "score": 0.0759,
+      "relevance_rank": 14,
+      "matched_interests": [],
+      "evidence": {
+        "course_source": "course_catalog.md#SEC301",
+        "retrieval_score": 0.016,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "Prerequisites met: CS203 (A-)",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 300 allowed for Year 4.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Fall.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Mon/Wed 12:30-14:00; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Systems Track elective that broadens your profile. Prerequisites satisfied (CS203: A-). Medium workload."
+    },
+    {
+      "code": "CS340",
+      "title": "Computer Graphics",
+      "credits": 3,
+      "level": 300,
+      "workload": "Medium",
+      "schedule": "Mon/Wed 10:45-12:15",
+      "category": "Free Elective",
+      "score": 0.0715,
+      "relevance_rank": 18,
+      "matched_interests": [],
+      "evidence": {
+        "course_source": "course_catalog.md#CS340",
+        "retrieval_score": 0.013,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "Prerequisites met: MATH201 (B+), CS201 (A)",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 300 allowed for Year 4.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Fall.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Mon/Wed 10:45-12:15; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Free elective that broadens your profile. Prerequisites satisfied (MATH201: B+, CS201: A). Medium workload."
+    },
+    {
+      "code": "AI320",
+      "title": "Data Visualization",
+      "credits": 3,
+      "level": 300,
+      "workload": "Light",
+      "schedule": "Thu 09:00-11:00",
+      "category": "AI Track Elective",
+      "score": 0.0689,
+      "relevance_rank": 5,
+      "matched_interests": [
+        "Python"
+      ],
+      "evidence": {
+        "course_source": "course_catalog.md#AI320",
+        "retrieval_score": 0.042,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "Prerequisites met: STAT201 (A-), CS101 (A)",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 300 allowed for Year 4.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Fall.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Thu 09:00-11:00; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Matches your interests/skills: Python (topics: visual perception; charts; dashboards). AI Track elective that broadens your profile. Prerequisites satisfied (STAT201: A-, CS101: A). Light workload."
+    }
+  ],
+  "excluded": [
+    {
+      "code": "CS411",
+      "title": "Senior Project II",
+      "status": "BLOCKED",
+      "retrieval_rank": 2,
+      "reasons": [
+        {
+          "rule": "R8",
+          "level": "BLOCK",
+          "message": "Not offered in Fall (offered: Spring).",
+          "evidence": {
+            "rule": "R8",
+            "source": "registration_rules.md#R8",
+            "rule_title": "Course availability by semester",
+            "policy_text": "A course can only be registered in a semester in which it is offered, as stated in the course catalog (Fall, Spring or both). A course whose offering is not published cannot be registered.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.488
+          }
+        },
+        {
+          "rule": "R4",
+          "level": "BLOCK",
+          "message": "Prerequisite CS410 (Senior Project I) has not been completed.",
+          "evidence": {
+            "rule": "R4",
+            "source": "registration_rules.md#R4",
+            "rule_title": "Prerequisites and minimum grade",
+            "policy_text": "Every prerequisite listed for a course must have been completed with a grade of C or higher. A grade of C-, D+, D or F does not satisfy a prerequisite, even though a D grade earns credit hours. Grade scale from best to worst: A, A-, B+, B, B-, C+, C, C-, D+, D, F. A prerequisite that is only in progress or planned does not count.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.401
+          }
+        }
+      ]
+    },
+    {
+      "code": "AI401",
+      "title": "Deep Learning",
+      "status": "ELIGIBLE (not selected)",
+      "retrieval_rank": 27,
+      "reasons": [
+        {
+          "rule": "R13",
+          "level": "BLOCK",
+          "message": "Would exceed the limit of 2 Heavy course(s) for this student.",
+          "evidence": {
+            "rule": "R13",
+            "source": "registration_rules.md#R13",
+            "rule_title": "Heavy workload limit",
+            "policy_text": "Courses marked Heavy in the catalog have a weekly workload of more than 12 hours. A student may register for at most 2 Heavy courses per semester. A student with a cumulative GPA below 2.5 may register for at most 1 Heavy course per semester.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.389
+          }
+        }
+      ]
+    },
+    {
+      "code": "CS370",
+      "title": "Parallel and GPU Computing",
+      "status": "ELIGIBLE (not selected)",
+      "retrieval_rank": 6,
+      "reasons": [
+        {
+          "rule": "R13",
+          "level": "BLOCK",
+          "message": "Would exceed the limit of 2 Heavy course(s) for this student.",
+          "evidence": {
+            "rule": "R13",
+            "source": "registration_rules.md#R13",
+            "rule_title": "Heavy workload limit",
+            "policy_text": "Courses marked Heavy in the catalog have a weekly workload of more than 12 hours. A student may register for at most 2 Heavy courses per semester. A student with a cumulative GPA below 2.5 may register for at most 1 Heavy course per semester.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.389
+          }
+        }
+      ]
+    }
+  ],
+  "total_credits": 15,
+  "uncovered_interests": [],
+  "notes": [
+    "Scheduled 15 of the 21 target credit hours: no remaining eligible course fits the credit limit, timetable or heavy-workload rules.",
+    "Overload (R2) was available but is not needed: the schedule has 15 credit hours, within the standard limit."
+  ],
+  "validation": {
+    "passed": true,
+    "violations": []
+  },
+  "full_audit": {
+    "CS101": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A; cannot be repeated."
+      ]
+    },
+    "CS102": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A-; cannot be repeated."
+      ]
+    },
+    "MATH101": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A; cannot be repeated."
+      ]
+    },
+    "ENG101": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A-; cannot be repeated."
+      ]
+    },
+    "PHYS101": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade B+; cannot be repeated."
+      ]
+    },
+    "CS201": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A; cannot be repeated."
+      ]
+    },
+    "CS202": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A; cannot be repeated."
+      ]
+    },
+    "CS203": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring).",
+        "R5 BLOCK: Already passed with grade A-; cannot be repeated."
+      ]
+    },
+    "MATH201": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade B+; cannot be repeated."
+      ]
+    },
+    "STAT201": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A-; cannot be repeated."
+      ]
+    },
+    "CS210": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A; cannot be repeated."
+      ]
+    },
+    "CS220": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A-; cannot be repeated."
+      ]
+    },
+    "HUM201": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A; cannot be repeated."
+      ]
+    },
+    "CS301": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade B+; cannot be repeated."
+      ]
+    },
+    "CS302": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring).",
+        "R5 BLOCK: Already passed with grade A-; cannot be repeated."
+      ]
+    },
+    "CS310": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A-; cannot be repeated."
+      ]
+    },
+    "CS320": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade B+; cannot be repeated."
+      ]
+    },
+    "CS330": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring)."
+      ]
+    },
+    "CS340": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "CS350": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A; cannot be repeated."
+      ]
+    },
+    "CS370": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "AI301": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A-; cannot be repeated."
+      ]
+    },
+    "AI310": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring)."
+      ]
+    },
+    "AI320": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "SEC301": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "AI401": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "AI402": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring)."
+      ]
+    },
+    "AI403": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring)."
+      ]
+    },
+    "CS401": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "CS410": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "CS411": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring).",
+        "R4 BLOCK: Prerequisite CS410 (Senior Project I) has not been completed."
+      ]
+    },
+    "CS499": {
+      "status": "FLAGGED",
+      "findings": [
+        "R12 FLAG: Catalog does not publish: offered, prerequisites, schedule. Eligibility cannot be verified; refer to advisor."
+      ]
+    }
+  },
+  "explanation_mode": "template (offline)"
+}

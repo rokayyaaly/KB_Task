@@ -1,0 +1,75 @@
+======================================================================================================================
+STUDENT S002 – Omar Hassan   |   Year 2, Spring semester   |   GPA 3.1   |   earned credits 32
+======================================================================================================================
+  Scenario: UNMET PREREQUISITE: wants Machine Learning (AI301) but has not taken STAT201 or MATH201.
+
+1) INPUT
+    Completed: CS101(A), CS102(A-), MATH101(B+), ENG101(B), PHYS101(B), CS201(B+)
+    Skills: Python, data structures
+    Interests: machine learning, data science, Python  |  Goal: work as a data scientist
+    Desired credits: 15  |  Workload preference: medium  |  Explicitly requested: AI301
+
+2) RETRIEVED EVIDENCE   (backend: TF-IDF unigram+bigram (scikit-learn fallback))
+    Query: "machine learning, data science, Python work as a data scientist Python, data structures"
+    Top retrieved course passages: #1 MATH201 (0.275); #2 AI301 (0.266); #3 AI320 (0.219); #4 STAT201 (0.219); #5
+      CS201 (0.174); #6 AI310 (0.114)
+    Degree-plan passage [degree_plan.md#Artificial Intelligence track] (0.271): Artificial Intelligence track.
+      Students interested in machine learning, data science, deep learning, natural language processing and computer
+      vision follow the AI track. Typical sequence: MATH201 and STAT201 in Year 2, AI301 [...]
+    Degree-plan passage [degree_plan.md#Recommended core sequence] (0.141): Recommended core sequence. Year 1 core:
+      CS101 Introduction to Programming, CS102 Discrete Mathematics, MATH101 Calculus I, ENG101 Technical Writing,
+      PHYS101 Physics for Computing. Year 2 core: CS201 Data Structures, CS202 [...]
+
+3) CREDIT-LOAD RULES   (limit 18, target 15)
+    No credit-load restriction triggered (R1 standard load 12–18 applies).
+
+4) ACCEPTED COURSES  → total 14 credit hours
+  ✔ MATH201  Linear Algebra  (3 cr, Medium, Sun/Tue 09:00-10:30)  score 0.95
+      Matches your interests/skills: machine learning, data science (topics: vectors; matrices; linear systems). Core
+        course planned for Year 2 of the degree plan. Prerequisites satisfied (MATH101: B+). Medium workload, fits
+        your medium preference.
+      Sources: course_catalog.md#MATH201 (sim 0.275); rules R4, R6, R8, R9
+  ✔ STAT201  Probability and Statistics  (3 cr, Medium, Mon/Wed 09:00-10:30)  score 0.826
+      Matches your interests/skills: machine learning, data science (topics: probability; random variables;
+        distributions). Core course planned for Year 2 of the degree plan. Prerequisites satisfied (MATH101: B+).
+        Medium workload, fits your medium preference.
+      Sources: course_catalog.md#STAT201 (sim 0.219); rules R4, R6, R8, R9
+  ✔ CS210  Database Systems  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.5769
+      Matches your interests/skills: data science (topics: relational model; SQL; database design). Core course
+        planned for Year 2 of the degree plan. Prerequisites satisfied (CS201: B+). Medium workload, fits your medium
+        preference.
+      Sources: course_catalog.md#CS210 (sim 0.104); rules R4, R6, R8, R9
+  ✔ CS203  Computer Organization  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.4248
+      Core course planned for Year 2 of the degree plan. Prerequisites satisfied (CS101: A). Medium workload, fits
+        your medium preference.
+      Sources: course_catalog.md#CS203 (sim 0.034); rules R4, R6, R8, R9
+  ✔ HUM201  Ethics and Society in Computing  (2 cr, Light, Thu 09:00-11:00)  score 0.2
+      Required general-education course. No prerequisites. Light workload.
+      Sources: course_catalog.md#HUM201 (sim 0); rules R4, R6, R8, R9
+
+6) EXCLUDED COURSES (among requested / top-retrieved)
+  ✘ AI301  Machine Learning Fundamentals  – BLOCKED
+      [R4] Prerequisite STAT201 (Probability and Statistics) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R4] Prerequisite MATH201 (Linear Algebra) has not been completed.  (evidence registration_rules.md#R4,
+        retrieved rank 1)
+      [R6] Level 300 is one level above Year 2; requires advisor approval (R14).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+  ✘ AI320  Data Visualization  – BLOCKED
+      [R4] Prerequisite STAT201 (Probability and Statistics) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R6] Level 300 is one level above Year 2; requires advisor approval (R14).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+  ✘ AI310  Data Mining and Analytics  – BLOCKED
+      [R4] Prerequisite CS210 (Database Systems) has not been completed.  (evidence registration_rules.md#R4,
+        retrieved rank 1)
+      [R4] Prerequisite STAT201 (Probability and Statistics) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R6] Level 300 is one level above Year 2; requires advisor approval (R14).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+  Note: Scheduled 14 of the 15 target credit hours: no remaining eligible course fits the credit limit, timetable or
+    heavy-workload rules.
+
+  Interests not covered by any eligible course this semester: Python
+
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)

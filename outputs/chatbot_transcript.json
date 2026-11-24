@@ -1,0 +1,34 @@
+[
+  {
+    "student": "Hi, I need help registering for next semester.",
+    "advisor": "Hi! I'm the NVU course advisor. I'll collect a few details, then suggest courses backed by the catalog and registration rules. Which academic year are you in (1–4)?"
+  },
+  {
+    "student": "I'm in my second year, spring semester.",
+    "advisor": "Thanks — noted (academic year: 2, semester: Spring). What is your current cumulative GPA? (type 'skip' if you don't have one yet)"
+  },
+  {
+    "student": "My GPA is 3.1",
+    "advisor": "Thanks — noted (academic year: 2, semester: Spring, gpa: 3.1). Which courses have you completed, with grades? e.g. “CS101 (A), CS102 (B+)” — or say “none” if you are a new student."
+  },
+  {
+    "student": "I completed CS101 (A), CS102 (A-), MATH101 (B+), ENG101 (B), PHYS101 (B), CS201 (B+). I also have 14 transfer credits.",
+    "advisor": "Thanks — noted (academic year: 2, semester: Spring, gpa: 3.1, 6 completed courses). What are you interested in or aiming for? e.g. “machine learning, web development”."
+  },
+  {
+    "student": "I'm interested in machine learning, data science and Python. I'd like 15 credits and a medium workload.",
+    "advisor": "Here is a feasible Spring plan for Year 2 — 14 credit hours (limit 18):\n  • MATH201 Linear Algebra (3 cr, Sun/Tue 09:00-10:30) — Matches your interests/skills: machine learning, data science (topics: vectors; matrices; linear systems). Core course planned for Year 2 of the degree plan. Prerequisites satisfied (MATH101: B+). Medium workload, fits your medium preference.\n  • STAT201 Probability and Statistics (3 cr, Mon/Wed 09:00-10:30) — Matches your interests/skills: machine learning, data science (topics: probability; random variables; distributions). Core course planned for Year 2 of the degree plan. Prerequisites satisfied (MATH101: B+). Medium workload, fits your medium preference.\n  • CS210 Database Systems (3 cr, Mon/Wed 10:45-12:15) — Matches your interests/skills: data science (topics: relational model; SQL; database design). Core course planned for Year 2 of the degree plan. Prerequisites satisfied (CS201: B+). Medium workload, fits your medium preference.\n  • CS203 Computer Organization (3 cr, Mon/Wed 12:30-14:00) — Core course planned for Year 2 of the degree plan. Prerequisites satisfied (CS101: A). Medium workload, fits your medium preference.\n  • HUM201 Ethics and Society in Computing (2 cr, Thu 09:00-11:00) — Required general-education course. No prerequisites. Light workload.\nNot recommended:\n  ✘ AI301 — [R4] Prerequisite STAT201 (Probability and Statistics) has not been completed. [R4] Prerequisite MATH201 (Linear Algebra) has not been completed.\n  ✘ AI320 — [R4] Prerequisite STAT201 (Probability and Statistics) has not been completed. [R6] Level 300 is one level above Year 2; requires advisor approval (R14).\nℹ Scheduled 14 of the 15 target credit hours: no remaining eligible course fits the credit limit, timetable or heavy-workload rules.\nSources: course_catalog.md#CS203, course_catalog.md#CS210, course_catalog.md#HUM201, course_catalog.md#MATH201, course_catalog.md#STAT201, registration_rules.md\nRule audit: passed. Ask “why can't I take <course>?”, change a preference, or say “reset”."
+  },
+  {
+    "student": "Why can't I take AI301?",
+    "advisor": "AI301 (Machine Learning Fundamentals) cannot be registered automatically:\n  • [R4] Prerequisite STAT201 (Probability and Statistics) has not been completed.\n      Policy (registration_rules.md#R4): Every prerequisite listed for a course must have been completed with a grade of C or higher. A grade of C-, D+, D or F does not satisfy a [...]\n  • [R4] Prerequisite MATH201 (Linear Algebra) has not been completed.\n      Policy (registration_rules.md#R4): Every prerequisite listed for a course must have been completed with a grade of C or higher. A grade of C-, D+, D or F does not satisfy a [...]\n  • [R6] Level 300 is one level above Year 2; requires advisor approval (R14).\n      Policy (registration_rules.md#R6): A student in academic year Y may register for courses numbered up to Y x 100 (for example, a Year 2 student may take 100-level and 200-level [...]"
+  },
+  {
+    "student": "What is the maximum number of credits I can take?",
+    "advisor": "For your profile (GPA 3.1) the standard maximum is 18 credit hours; applying the rules gives a limit of 18.\n  Governing policy [registration_rules.md#R1]: A full-time student registers for between 12 and 18 credit hours per semester. Registering for fewer than 12 credit hours makes the student part-time, which must be flagged to the advisor. No student may exceed 18 credit hours unless rule R2 applies."
+  },
+  {
+    "student": "Actually I'd rather take only 12 credits.",
+    "advisor": "Here is a feasible Spring plan for Year 2 — 12 credit hours (limit 18):\n  • MATH201 Linear Algebra (3 cr, Sun/Tue 09:00-10:30) — Matches your interests/skills: machine learning, data science (topics: vectors; matrices; linear systems). Core course planned for Year 2 of the degree plan. Prerequisites satisfied (MATH101: B+). Medium workload, fits your medium preference.\n  • STAT201 Probability and Statistics (3 cr, Mon/Wed 09:00-10:30) — Matches your interests/skills: machine learning, data science (topics: probability; random variables; distributions). Core course planned for Year 2 of the degree plan. Prerequisites satisfied (MATH101: B+). Medium workload, fits your medium preference.\n  • CS210 Database Systems (3 cr, Mon/Wed 10:45-12:15) — Matches your interests/skills: data science (topics: relational model; SQL; database design). Core course planned for Year 2 of the degree plan. Prerequisites satisfied (CS201: B+). Medium workload, fits your medium preference.\n  • CS203 Computer Organization (3 cr, Mon/Wed 12:30-14:00) — Core course planned for Year 2 of the degree plan. Prerequisites satisfied (CS101: A). Medium workload, fits your medium preference.\nNot recommended:\n  ✘ AI301 — [R4] Prerequisite STAT201 (Probability and Statistics) has not been completed. [R4] Prerequisite MATH201 (Linear Algebra) has not been completed.\n  ✘ AI320 — [R4] Prerequisite STAT201 (Probability and Statistics) has not been completed. [R6] Level 300 is one level above Year 2; requires advisor approval (R14).\nSources: course_catalog.md#CS203, course_catalog.md#CS210, course_catalog.md#MATH201, course_catalog.md#STAT201, registration_rules.md\nRule audit: passed. Ask “why can't I take <course>?”, change a preference, or say “reset”."
+  }
+]

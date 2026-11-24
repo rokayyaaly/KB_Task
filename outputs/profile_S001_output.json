@@ -1,0 +1,772 @@
+{
+  "credit_policy": {
+    "limit": 18,
+    "target": 15,
+    "overload_needs_approval": false,
+    "notes": [
+      {
+        "rule": "R3",
+        "level": "FLAG",
+        "message": "GPA not provided: probation (R3) and overload (R2) eligibility cannot be checked; standard limit R1 applied.",
+        "evidence": {
+          "rule": "R3",
+          "source": "registration_rules.md#R3",
+          "rule_title": "Academic probation load limit",
+          "policy_text": "A student whose cumulative GPA is below 2.0 is on academic probation and may register for at most 12 credit hours in a semester, regardless of the requested load.",
+          "retrieved_rank": 1,
+          "retrieval_score": 0.541
+        }
+      }
+    ]
+  },
+  "retrieval": {
+    "backend": "TF-IDF unigram+bigram (scikit-learn fallback)",
+    "query": "programming, artificial intelligence, problem solving become an AI engineer basic Python from online tutorials",
+    "top_courses": [
+      {
+        "rank": 1,
+        "code": "AI301",
+        "score": 0.165,
+        "source": "course_catalog.md#AI301"
+      },
+      {
+        "rank": 2,
+        "code": "CS201",
+        "score": 0.149,
+        "source": "course_catalog.md#CS201"
+      },
+      {
+        "rank": 3,
+        "code": "CS102",
+        "score": 0.143,
+        "source": "course_catalog.md#CS102"
+      },
+      {
+        "rank": 4,
+        "code": "CS301",
+        "score": 0.14,
+        "source": "course_catalog.md#CS301"
+      },
+      {
+        "rank": 5,
+        "code": "AI401",
+        "score": 0.129,
+        "source": "course_catalog.md#AI401"
+      },
+      {
+        "rank": 6,
+        "code": "CS101",
+        "score": 0.094,
+        "source": "course_catalog.md#CS101"
+      }
+    ],
+    "degree_plan_passages": [
+      {
+        "source": "degree_plan.md#Artificial Intelligence track",
+        "score": 0.157,
+        "text": "Artificial Intelligence track. Students interested in machine learning, data science, deep learning, natural language processing and computer vision follow the AI track. Typical sequence: MATH201 and STAT201 in Year 2, AI301 Machine Learning Fundamentals in Year 3 together with AI310 Data Mining and AI320 Data Visualization, then AI401 Deep Learning, AI402 Natural Language Processing and AI403 Computer Vision in Year 4. Strong mathematics (linear algebra, probability) and Python programming are the foundation of this track."
+      },
+      {
+        "source": "degree_plan.md#Recommended core sequence",
+        "score": 0.029,
+        "text": "Recommended core sequence. Year 1 core: CS101 Introduction to Programming, CS102 Discrete Mathematics, MATH101 Calculus I, ENG101 Technical Writing, PHYS101 Physics for Computing. Year 2 core: CS201 Data Structures, CS202 Object-Oriented Programming, CS203 Computer Organization, MATH201 Linear Algebra, STAT201 Probability and Statistics, CS210 Database Systems. Year 3 core: CS301 Algorithm Analysis, CS302 Operating Systems, CS310 Software Engineering, CS320 Computer Networks, AI301 Machine Learning Fundamentals. Year 4 core: CS410 Senior Project I and CS411 Senior Project II."
+      }
+    ]
+  },
+  "accepted": [
+    {
+      "code": "CS102",
+      "title": "Discrete Mathematics",
+      "credits": 3,
+      "level": 100,
+      "workload": "Medium",
+      "schedule": "Sun/Tue 12:30-14:00",
+      "category": "Core (Year 1)",
+      "score": 0.95,
+      "relevance_rank": 3,
+      "matched_interests": [
+        "problem solving"
+      ],
+      "evidence": {
+        "course_source": "course_catalog.md#CS102",
+        "retrieval_score": 0.143,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "No prerequisites.",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 100 allowed for Year 1.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Fall.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Sun/Tue 12:30-14:00; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Matches your interests/skills: problem solving (topics: logic and proofs; sets; relations). Core course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium preference."
+    },
+    {
+      "code": "CS101",
+      "title": "Introduction to Programming",
+      "credits": 3,
+      "level": 100,
+      "workload": "Medium",
+      "schedule": "Sun/Tue 09:00-10:30",
+      "category": "Core (Year 1)",
+      "score": 0.7434,
+      "relevance_rank": 6,
+      "matched_interests": [
+        "programming"
+      ],
+      "evidence": {
+        "course_source": "course_catalog.md#CS101",
+        "retrieval_score": 0.094,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "No prerequisites.",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 100 allowed for Year 1.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Fall.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Sun/Tue 09:00-10:30; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Matches your interests/skills: programming (topics: variables and data types; control flow; functions). Core course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium preference."
+    },
+    {
+      "code": "MATH101",
+      "title": "Calculus I",
+      "credits": 3,
+      "level": 100,
+      "workload": "Medium",
+      "schedule": "Mon/Wed 09:00-10:30",
+      "category": "Core (Year 1)",
+      "score": 0.35,
+      "relevance_rank": 26,
+      "matched_interests": [],
+      "evidence": {
+        "course_source": "course_catalog.md#MATH101",
+        "retrieval_score": 0,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "No prerequisites.",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 100 allowed for Year 1.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Fall.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Mon/Wed 09:00-10:30; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Core course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium preference."
+    },
+    {
+      "code": "PHYS101",
+      "title": "Physics for Computing",
+      "credits": 3,
+      "level": 100,
+      "workload": "Medium",
+      "schedule": "Mon/Wed 10:45-12:15",
+      "category": "Core (Year 1)",
+      "score": 0.35,
+      "relevance_rank": 27,
+      "matched_interests": [],
+      "evidence": {
+        "course_source": "course_catalog.md#PHYS101",
+        "retrieval_score": 0,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "No prerequisites.",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 100 allowed for Year 1.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Fall.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Mon/Wed 10:45-12:15; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Core course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium preference."
+    },
+    {
+      "code": "ENG101",
+      "title": "Technical Writing",
+      "credits": 3,
+      "level": 100,
+      "workload": "Light",
+      "schedule": "Thu 13:00-16:00",
+      "category": "Core (Year 1)",
+      "score": 0.3,
+      "relevance_rank": 21,
+      "matched_interests": [],
+      "evidence": {
+        "course_source": "course_catalog.md#ENG101",
+        "retrieval_score": 0,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "No prerequisites.",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 100 allowed for Year 1.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Fall.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Thu 13:00-16:00; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Core course planned for Year 1 of the degree plan. No prerequisites. Light workload."
+    }
+  ],
+  "excluded": [
+    {
+      "code": "AI301",
+      "title": "Machine Learning Fundamentals",
+      "status": "BLOCKED",
+      "retrieval_rank": 1,
+      "reasons": [
+        {
+          "rule": "R4",
+          "level": "BLOCK",
+          "message": "Prerequisite CS201 (Data Structures and Algorithms) has not been completed.",
+          "evidence": {
+            "rule": "R4",
+            "source": "registration_rules.md#R4",
+            "rule_title": "Prerequisites and minimum grade",
+            "policy_text": "Every prerequisite listed for a course must have been completed with a grade of C or higher. A grade of C-, D+, D or F does not satisfy a prerequisite, even though a D grade earns credit hours. Grade scale from best to worst: A, A-, B+, B, B-, C+, C, C-, D+, D, F. A prerequisite that is only in progress or planned does not count.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.367
+          }
+        },
+        {
+          "rule": "R4",
+          "level": "BLOCK",
+          "message": "Prerequisite STAT201 (Probability and Statistics) has not been completed.",
+          "evidence": {
+            "rule": "R4",
+            "source": "registration_rules.md#R4",
+            "rule_title": "Prerequisites and minimum grade",
+            "policy_text": "Every prerequisite listed for a course must have been completed with a grade of C or higher. A grade of C-, D+, D or F does not satisfy a prerequisite, even though a D grade earns credit hours. Grade scale from best to worst: A, A-, B+, B, B-, C+, C, C-, D+, D, F. A prerequisite that is only in progress or planned does not count.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.386
+          }
+        },
+        {
+          "rule": "R4",
+          "level": "BLOCK",
+          "message": "Prerequisite MATH201 (Linear Algebra) has not been completed.",
+          "evidence": {
+            "rule": "R4",
+            "source": "registration_rules.md#R4",
+            "rule_title": "Prerequisites and minimum grade",
+            "policy_text": "Every prerequisite listed for a course must have been completed with a grade of C or higher. A grade of C-, D+, D or F does not satisfy a prerequisite, even though a D grade earns credit hours. Grade scale from best to worst: A, A-, B+, B, B-, C+, C, C-, D+, D, F. A prerequisite that is only in progress or planned does not count.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.398
+          }
+        },
+        {
+          "rule": "R6",
+          "level": "BLOCK",
+          "message": "Level 300 is two or more levels above Year 1 (max allowed 100).",
+          "evidence": {
+            "rule": "R6",
+            "source": "registration_rules.md#R6",
+            "rule_title": "Course level restriction",
+            "policy_text": "A student in academic year Y may register for courses numbered up to Y x 100 (for example, a Year 2 student may take 100-level and 200-level courses). A course exactly one level above the student's year requires written advisor approval, so it is flagged and not recommended automatically. Courses two or more levels above the student's year are not allowed.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.363
+          }
+        }
+      ]
+    },
+    {
+      "code": "CS201",
+      "title": "Data Structures and Algorithms",
+      "status": "BLOCKED",
+      "retrieval_rank": 2,
+      "reasons": [
+        {
+          "rule": "R4",
+          "level": "BLOCK",
+          "message": "Prerequisite CS101 (Introduction to Programming) has not been completed.",
+          "evidence": {
+            "rule": "R4",
+            "source": "registration_rules.md#R4",
+            "rule_title": "Prerequisites and minimum grade",
+            "policy_text": "Every prerequisite listed for a course must have been completed with a grade of C or higher. A grade of C-, D+, D or F does not satisfy a prerequisite, even though a D grade earns credit hours. Grade scale from best to worst: A, A-, B+, B, B-, C+, C, C-, D+, D, F. A prerequisite that is only in progress or planned does not count.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.396
+          }
+        },
+        {
+          "rule": "R6",
+          "level": "FLAG",
+          "message": "Level 200 is one level above Year 1; requires advisor approval (R14).",
+          "evidence": {
+            "rule": "R6",
+            "source": "registration_rules.md#R6",
+            "rule_title": "Course level restriction",
+            "policy_text": "A student in academic year Y may register for courses numbered up to Y x 100 (for example, a Year 2 student may take 100-level and 200-level courses). A course exactly one level above the student's year requires written advisor approval, so it is flagged and not recommended automatically. Courses two or more levels above the student's year are not allowed.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.414
+          }
+        }
+      ]
+    },
+    {
+      "code": "CS301",
+      "title": "Algorithm Analysis",
+      "status": "BLOCKED",
+      "retrieval_rank": 4,
+      "reasons": [
+        {
+          "rule": "R4",
+          "level": "BLOCK",
+          "message": "Prerequisite CS201 (Data Structures and Algorithms) has not been completed.",
+          "evidence": {
+            "rule": "R4",
+            "source": "registration_rules.md#R4",
+            "rule_title": "Prerequisites and minimum grade",
+            "policy_text": "Every prerequisite listed for a course must have been completed with a grade of C or higher. A grade of C-, D+, D or F does not satisfy a prerequisite, even though a D grade earns credit hours. Grade scale from best to worst: A, A-, B+, B, B-, C+, C, C-, D+, D, F. A prerequisite that is only in progress or planned does not count.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.367
+          }
+        },
+        {
+          "rule": "R4",
+          "level": "BLOCK",
+          "message": "Prerequisite CS102 (Discrete Mathematics) has not been completed.",
+          "evidence": {
+            "rule": "R4",
+            "source": "registration_rules.md#R4",
+            "rule_title": "Prerequisites and minimum grade",
+            "policy_text": "Every prerequisite listed for a course must have been completed with a grade of C or higher. A grade of C-, D+, D or F does not satisfy a prerequisite, even though a D grade earns credit hours. Grade scale from best to worst: A, A-, B+, B, B-, C+, C, C-, D+, D, F. A prerequisite that is only in progress or planned does not count.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.386
+          }
+        },
+        {
+          "rule": "R6",
+          "level": "BLOCK",
+          "message": "Level 300 is two or more levels above Year 1 (max allowed 100).",
+          "evidence": {
+            "rule": "R6",
+            "source": "registration_rules.md#R6",
+            "rule_title": "Course level restriction",
+            "policy_text": "A student in academic year Y may register for courses numbered up to Y x 100 (for example, a Year 2 student may take 100-level and 200-level courses). A course exactly one level above the student's year requires written advisor approval, so it is flagged and not recommended automatically. Courses two or more levels above the student's year are not allowed.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.363
+          }
+        }
+      ]
+    },
+    {
+      "code": "AI401",
+      "title": "Deep Learning",
+      "status": "BLOCKED",
+      "retrieval_rank": 5,
+      "reasons": [
+        {
+          "rule": "R4",
+          "level": "BLOCK",
+          "message": "Prerequisite AI301 (Machine Learning Fundamentals) has not been completed.",
+          "evidence": {
+            "rule": "R4",
+            "source": "registration_rules.md#R4",
+            "rule_title": "Prerequisites and minimum grade",
+            "policy_text": "Every prerequisite listed for a course must have been completed with a grade of C or higher. A grade of C-, D+, D or F does not satisfy a prerequisite, even though a D grade earns credit hours. Grade scale from best to worst: A, A-, B+, B, B-, C+, C, C-, D+, D, F. A prerequisite that is only in progress or planned does not count.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.379
+          }
+        },
+        {
+          "rule": "R4",
+          "level": "BLOCK",
+          "message": "Prerequisite MATH201 (Linear Algebra) has not been completed.",
+          "evidence": {
+            "rule": "R4",
+            "source": "registration_rules.md#R4",
+            "rule_title": "Prerequisites and minimum grade",
+            "policy_text": "Every prerequisite listed for a course must have been completed with a grade of C or higher. A grade of C-, D+, D or F does not satisfy a prerequisite, even though a D grade earns credit hours. Grade scale from best to worst: A, A-, B+, B, B-, C+, C, C-, D+, D, F. A prerequisite that is only in progress or planned does not count.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.398
+          }
+        },
+        {
+          "rule": "R6",
+          "level": "BLOCK",
+          "message": "Level 400 is two or more levels above Year 1 (max allowed 100).",
+          "evidence": {
+            "rule": "R6",
+            "source": "registration_rules.md#R6",
+            "rule_title": "Course level restriction",
+            "policy_text": "A student in academic year Y may register for courses numbered up to Y x 100 (for example, a Year 2 student may take 100-level and 200-level courses). A course exactly one level above the student's year requires written advisor approval, so it is flagged and not recommended automatically. Courses two or more levels above the student's year are not allowed.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.356
+          }
+        }
+      ]
+    },
+    {
+      "code": "AI320",
+      "title": "Data Visualization",
+      "status": "BLOCKED",
+      "retrieval_rank": 7,
+      "reasons": [
+        {
+          "rule": "R4",
+          "level": "BLOCK",
+          "message": "Prerequisite STAT201 (Probability and Statistics) has not been completed.",
+          "evidence": {
+            "rule": "R4",
+            "source": "registration_rules.md#R4",
+            "rule_title": "Prerequisites and minimum grade",
+            "policy_text": "Every prerequisite listed for a course must have been completed with a grade of C or higher. A grade of C-, D+, D or F does not satisfy a prerequisite, even though a D grade earns credit hours. Grade scale from best to worst: A, A-, B+, B, B-, C+, C, C-, D+, D, F. A prerequisite that is only in progress or planned does not count.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.386
+          }
+        },
+        {
+          "rule": "R4",
+          "level": "BLOCK",
+          "message": "Prerequisite CS101 (Introduction to Programming) has not been completed.",
+          "evidence": {
+            "rule": "R4",
+            "source": "registration_rules.md#R4",
+            "rule_title": "Prerequisites and minimum grade",
+            "policy_text": "Every prerequisite listed for a course must have been completed with a grade of C or higher. A grade of C-, D+, D or F does not satisfy a prerequisite, even though a D grade earns credit hours. Grade scale from best to worst: A, A-, B+, B, B-, C+, C, C-, D+, D, F. A prerequisite that is only in progress or planned does not count.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.396
+          }
+        },
+        {
+          "rule": "R6",
+          "level": "BLOCK",
+          "message": "Level 300 is two or more levels above Year 1 (max allowed 100).",
+          "evidence": {
+            "rule": "R6",
+            "source": "registration_rules.md#R6",
+            "rule_title": "Course level restriction",
+            "policy_text": "A student in academic year Y may register for courses numbered up to Y x 100 (for example, a Year 2 student may take 100-level and 200-level courses). A course exactly one level above the student's year requires written advisor approval, so it is flagged and not recommended automatically. Courses two or more levels above the student's year are not allowed.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.363
+          }
+        }
+      ]
+    }
+  ],
+  "total_credits": 15,
+  "uncovered_interests": [
+    "artificial intelligence"
+  ],
+  "notes": [],
+  "validation": {
+    "passed": true,
+    "violations": []
+  },
+  "full_audit": {
+    "CS101": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "CS102": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "MATH101": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "ENG101": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "PHYS101": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "CS201": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite CS101 (Introduction to Programming) has not been completed.",
+        "R6 FLAG: Level 200 is one level above Year 1; requires advisor approval (R14)."
+      ]
+    },
+    "CS202": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite CS101 (Introduction to Programming) has not been completed.",
+        "R6 FLAG: Level 200 is one level above Year 1; requires advisor approval (R14)."
+      ]
+    },
+    "CS203": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring).",
+        "R4 BLOCK: Prerequisite CS101 (Introduction to Programming) has not been completed.",
+        "R6 FLAG: Level 200 is one level above Year 1; requires advisor approval (R14)."
+      ]
+    },
+    "MATH201": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite MATH101 (Calculus I) has not been completed.",
+        "R6 FLAG: Level 200 is one level above Year 1; requires advisor approval (R14)."
+      ]
+    },
+    "STAT201": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite MATH101 (Calculus I) has not been completed.",
+        "R6 FLAG: Level 200 is one level above Year 1; requires advisor approval (R14)."
+      ]
+    },
+    "CS210": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite CS201 (Data Structures and Algorithms) has not been completed.",
+        "R6 FLAG: Level 200 is one level above Year 1; requires advisor approval (R14)."
+      ]
+    },
+    "CS220": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite CS101 (Introduction to Programming) has not been completed.",
+        "R6 FLAG: Level 200 is one level above Year 1; requires advisor approval (R14)."
+      ]
+    },
+    "HUM201": {
+      "status": "FLAGGED",
+      "findings": [
+        "R6 FLAG: Level 200 is one level above Year 1; requires advisor approval (R14)."
+      ]
+    },
+    "CS301": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite CS201 (Data Structures and Algorithms) has not been completed.",
+        "R4 BLOCK: Prerequisite CS102 (Discrete Mathematics) has not been completed.",
+        "R6 BLOCK: Level 300 is two or more levels above Year 1 (max allowed 100)."
+      ]
+    },
+    "CS302": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring).",
+        "R4 BLOCK: Prerequisite CS203 (Computer Organization) has not been completed.",
+        "R4 BLOCK: Prerequisite CS201 (Data Structures and Algorithms) has not been completed.",
+        "R6 BLOCK: Level 300 is two or more levels above Year 1 (max allowed 100)."
+      ]
+    },
+    "CS310": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite CS202 (Object-Oriented Programming) has not been completed.",
+        "R6 BLOCK: Level 300 is two or more levels above Year 1 (max allowed 100)."
+      ]
+    },
+    "CS320": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite CS203 (Computer Organization) has not been completed.",
+        "R6 BLOCK: Level 300 is two or more levels above Year 1 (max allowed 100)."
+      ]
+    },
+    "CS330": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring).",
+        "R4 BLOCK: Prerequisite CS202 (Object-Oriented Programming) has not been completed.",
+        "R6 BLOCK: Level 300 is two or more levels above Year 1 (max allowed 100)."
+      ]
+    },
+    "CS340": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite MATH201 (Linear Algebra) has not been completed.",
+        "R4 BLOCK: Prerequisite CS201 (Data Structures and Algorithms) has not been completed.",
+        "R6 BLOCK: Level 300 is two or more levels above Year 1 (max allowed 100)."
+      ]
+    },
+    "CS350": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite CS101 (Introduction to Programming) has not been completed.",
+        "R6 BLOCK: Level 300 is two or more levels above Year 1 (max allowed 100)."
+      ]
+    },
+    "CS370": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite CS203 (Computer Organization) has not been completed.",
+        "R4 BLOCK: Prerequisite CS201 (Data Structures and Algorithms) has not been completed.",
+        "R6 BLOCK: Level 300 is two or more levels above Year 1 (max allowed 100)."
+      ]
+    },
+    "AI301": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite CS201 (Data Structures and Algorithms) has not been completed.",
+        "R4 BLOCK: Prerequisite STAT201 (Probability and Statistics) has not been completed.",
+        "R4 BLOCK: Prerequisite MATH201 (Linear Algebra) has not been completed.",
+        "R6 BLOCK: Level 300 is two or more levels above Year 1 (max allowed 100)."
+      ]
+    },
+    "AI310": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring).",
+        "R4 BLOCK: Prerequisite CS210 (Database Systems) has not been completed.",
+        "R4 BLOCK: Prerequisite STAT201 (Probability and Statistics) has not been completed.",
+        "R6 BLOCK: Level 300 is two or more levels above Year 1 (max allowed 100)."
+      ]
+    },
+    "AI320": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite STAT201 (Probability and Statistics) has not been completed.",
+        "R4 BLOCK: Prerequisite CS101 (Introduction to Programming) has not been completed.",
+        "R6 BLOCK: Level 300 is two or more levels above Year 1 (max allowed 100)."
+      ]
+    },
+    "SEC301": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite CS203 (Computer Organization) has not been completed.",
+        "R6 BLOCK: Level 300 is two or more levels above Year 1 (max allowed 100)."
+      ]
+    },
+    "AI401": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite AI301 (Machine Learning Fundamentals) has not been completed.",
+        "R4 BLOCK: Prerequisite MATH201 (Linear Algebra) has not been completed.",
+        "R6 BLOCK: Level 400 is two or more levels above Year 1 (max allowed 100)."
+      ]
+    },
+    "AI402": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring).",
+        "R4 BLOCK: Prerequisite AI301 (Machine Learning Fundamentals) has not been completed.",
+        "R6 BLOCK: Level 400 is two or more levels above Year 1 (max allowed 100)."
+      ]
+    },
+    "AI403": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring).",
+        "R4 BLOCK: Prerequisite AI301 (Machine Learning Fundamentals) has not been completed.",
+        "R4 BLOCK: Prerequisite MATH201 (Linear Algebra) has not been completed.",
+        "R6 BLOCK: Level 400 is two or more levels above Year 1 (max allowed 100)."
+      ]
+    },
+    "CS401": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite CS302 (Operating Systems) has not been completed.",
+        "R4 BLOCK: Prerequisite CS320 (Computer Networks) has not been completed.",
+        "R6 BLOCK: Level 400 is two or more levels above Year 1 (max allowed 100)."
+      ]
+    },
+    "CS410": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite CS310 (Software Engineering) has not been completed.",
+        "R6 BLOCK: Level 400 is two or more levels above Year 1 (max allowed 100).",
+        "R11 BLOCK: Requires 90 earned credit hours; student has 0."
+      ]
+    },
+    "CS411": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring).",
+        "R4 BLOCK: Prerequisite CS410 (Senior Project I) has not been completed.",
+        "R6 BLOCK: Level 400 is two or more levels above Year 1 (max allowed 100)."
+      ]
+    },
+    "CS499": {
+      "status": "FLAGGED",
+      "findings": [
+        "R12 FLAG: Catalog does not publish: offered, prerequisites, schedule. Eligibility cannot be verified; refer to advisor."
+      ]
+    }
+  },
+  "explanation_mode": "template (offline)"
+}

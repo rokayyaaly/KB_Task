@@ -1,0 +1,628 @@
+{
+  "credit_policy": {
+    "limit": 18,
+    "target": 15,
+    "overload_needs_approval": false,
+    "notes": []
+  },
+  "retrieval": {
+    "backend": "TF-IDF unigram+bigram (scikit-learn fallback)",
+    "query": "natural language processing, computer vision, mobile apps, data mining work on applied AI products Python, PyTorch basics, SQL",
+    "top_courses": [
+      {
+        "rank": 1,
+        "code": "AI402",
+        "score": 0.225,
+        "source": "course_catalog.md#AI402"
+      },
+      {
+        "rank": 2,
+        "code": "AI403",
+        "score": 0.141,
+        "source": "course_catalog.md#AI403"
+      },
+      {
+        "rank": 3,
+        "code": "AI310",
+        "score": 0.122,
+        "source": "course_catalog.md#AI310"
+      },
+      {
+        "rank": 4,
+        "code": "CS330",
+        "score": 0.119,
+        "source": "course_catalog.md#CS330"
+      },
+      {
+        "rank": 5,
+        "code": "AI320",
+        "score": 0.081,
+        "source": "course_catalog.md#AI320"
+      },
+      {
+        "rank": 6,
+        "code": "CS210",
+        "score": 0.078,
+        "source": "course_catalog.md#CS210"
+      }
+    ],
+    "degree_plan_passages": [
+      {
+        "source": "degree_plan.md#Artificial Intelligence track",
+        "score": 0.387,
+        "text": "Artificial Intelligence track. Students interested in machine learning, data science, deep learning, natural language processing and computer vision follow the AI track. Typical sequence: MATH201 and STAT201 in Year 2, AI301 Machine Learning Fundamentals in Year 3 together with AI310 Data Mining and AI320 Data Visualization, then AI401 Deep Learning, AI402 Natural Language Processing and AI403 Computer Vision in Year 4. Strong mathematics (linear algebra, probability) and Python programming are the foundation of this track."
+      },
+      {
+        "source": "degree_plan.md#Software Engineering track",
+        "score": 0.058,
+        "text": "Software Engineering track. Students interested in web, mobile and user-facing software follow the Software Engineering track. Typical sequence: CS202 Object-Oriented Programming and CS220 Web Development in Year 2, then CS310 Software Engineering, CS330 Mobile App Development and CS350 Human-Computer Interaction in Year 3, finishing with the Senior Project."
+      }
+    ]
+  },
+  "accepted": [
+    {
+      "code": "AI310",
+      "title": "Data Mining and Analytics",
+      "credits": 3,
+      "level": 300,
+      "workload": "Medium",
+      "schedule": "Mon/Wed 10:45-12:15",
+      "category": "AI Track Elective",
+      "score": 0.7,
+      "relevance_rank": 3,
+      "matched_interests": [
+        "data mining"
+      ],
+      "evidence": {
+        "course_source": "course_catalog.md#AI310",
+        "retrieval_score": 0.122,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "Prerequisites met: CS210 (A-), STAT201 (A)",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 300 allowed for Year 3.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Spring.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Mon/Wed 10:45-12:15; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Matches your interests/skills: data mining (topics: association rules; clustering; classification). AI Track elective that broadens your profile. Prerequisites satisfied (CS210: A-, STAT201: A). Medium workload, fits your medium preference."
+    },
+    {
+      "code": "CS330",
+      "title": "Mobile App Development",
+      "credits": 3,
+      "level": 300,
+      "workload": "Medium",
+      "schedule": "Sun/Tue 10:45-12:15",
+      "category": "Software Engineering Track Elective",
+      "score": 0.6843,
+      "relevance_rank": 4,
+      "matched_interests": [
+        "mobile apps"
+      ],
+      "evidence": {
+        "course_source": "course_catalog.md#CS330",
+        "retrieval_score": 0.119,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "Prerequisites met: CS202 (A-)",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 300 allowed for Year 3.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Spring.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Sun/Tue 10:45-12:15; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Matches your interests/skills: mobile apps (topics: Android; iOS; mobile user interface). Software Engineering Track elective that broadens your profile. Prerequisites satisfied (CS202: A-). Medium workload, fits your medium preference."
+    },
+    {
+      "code": "CS310",
+      "title": "Software Engineering",
+      "credits": 3,
+      "level": 300,
+      "workload": "Medium",
+      "schedule": "Mon/Wed 12:30-14:00",
+      "category": "Core (Year 3)",
+      "score": 0.4619,
+      "relevance_rank": 16,
+      "matched_interests": [],
+      "evidence": {
+        "course_source": "course_catalog.md#CS310",
+        "retrieval_score": 0.023,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "Prerequisites met: CS202 (A-)",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 300 allowed for Year 3.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Spring.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Mon/Wed 12:30-14:00; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS202: A-). Medium workload, fits your medium preference."
+    },
+    {
+      "code": "AI320",
+      "title": "Data Visualization",
+      "credits": 3,
+      "level": 300,
+      "workload": "Light",
+      "schedule": "Thu 09:00-11:00",
+      "category": "AI Track Elective",
+      "score": 0.4455,
+      "relevance_rank": 5,
+      "matched_interests": [
+        "Python"
+      ],
+      "evidence": {
+        "course_source": "course_catalog.md#AI320",
+        "retrieval_score": 0.081,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "Prerequisites met: STAT201 (A), CS101 (A-)",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 300 allowed for Year 3.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Spring.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Thu 09:00-11:00; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Matches your interests/skills: Python (topics: visual perception; charts; dashboards). AI Track elective that broadens your profile. Prerequisites satisfied (STAT201: A, CS101: A-). Light workload."
+    },
+    {
+      "code": "CS350",
+      "title": "Human-Computer Interaction",
+      "credits": 3,
+      "level": 300,
+      "workload": "Light",
+      "schedule": "Thu 13:00-16:00",
+      "category": "Software Engineering Track Elective",
+      "score": 0.104,
+      "relevance_rank": 20,
+      "matched_interests": [],
+      "evidence": {
+        "course_source": "course_catalog.md#CS350",
+        "retrieval_score": 0.011,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "Prerequisites met: CS101 (A-)",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 300 allowed for Year 3.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Spring.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Thu 13:00-16:00; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Software Engineering Track elective that broadens your profile. Prerequisites satisfied (CS101: A-). Light workload."
+    }
+  ],
+  "excluded": [
+    {
+      "code": "AI402",
+      "title": "Natural Language Processing",
+      "status": "FLAGGED",
+      "retrieval_rank": 1,
+      "reasons": [
+        {
+          "rule": "R6",
+          "level": "FLAG",
+          "message": "Level 400 is one level above Year 3; requires advisor approval (R14).",
+          "evidence": {
+            "rule": "R6",
+            "source": "registration_rules.md#R6",
+            "rule_title": "Course level restriction",
+            "policy_text": "A student in academic year Y may register for courses numbered up to Y x 100 (for example, a Year 2 student may take 100-level and 200-level courses). A course exactly one level above the student's year requires written advisor approval, so it is flagged and not recommended automatically. Courses two or more levels above the student's year are not allowed.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.353
+          }
+        }
+      ]
+    },
+    {
+      "code": "CS499",
+      "title": "Special Topics in Emerging Computing",
+      "status": "FLAGGED",
+      "retrieval_rank": 12,
+      "reasons": [
+        {
+          "rule": "R12",
+          "level": "FLAG",
+          "message": "Catalog does not publish: offered, prerequisites, schedule. Eligibility cannot be verified; refer to advisor.",
+          "evidence": {
+            "rule": "R12",
+            "source": "registration_rules.md#R12",
+            "rule_title": "Incomplete course information",
+            "policy_text": "If the catalog does not publish a required detail of a course (prerequisites, schedule, or semester offering), eligibility cannot be verified. The course must not be recommended automatically and the student is referred to the academic advisor.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.644
+          }
+        }
+      ]
+    },
+    {
+      "code": "AI403",
+      "title": "Computer Vision",
+      "status": "FLAGGED",
+      "retrieval_rank": 2,
+      "reasons": [
+        {
+          "rule": "R6",
+          "level": "FLAG",
+          "message": "Level 400 is one level above Year 3; requires advisor approval (R14).",
+          "evidence": {
+            "rule": "R6",
+            "source": "registration_rules.md#R6",
+            "rule_title": "Course level restriction",
+            "policy_text": "A student in academic year Y may register for courses numbered up to Y x 100 (for example, a Year 2 student may take 100-level and 200-level courses). A course exactly one level above the student's year requires written advisor approval, so it is flagged and not recommended automatically. Courses two or more levels above the student's year are not allowed.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.353
+          }
+        }
+      ]
+    },
+    {
+      "code": "AI401",
+      "title": "Deep Learning",
+      "status": "BLOCKED",
+      "retrieval_rank": 8,
+      "reasons": [
+        {
+          "rule": "R8",
+          "level": "BLOCK",
+          "message": "Not offered in Spring (offered: Fall).",
+          "evidence": {
+            "rule": "R8",
+            "source": "registration_rules.md#R8",
+            "rule_title": "Course availability by semester",
+            "policy_text": "A course can only be registered in a semester in which it is offered, as stated in the course catalog (Fall, Spring or both). A course whose offering is not published cannot be registered.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.488
+          }
+        },
+        {
+          "rule": "R6",
+          "level": "FLAG",
+          "message": "Level 400 is one level above Year 3; requires advisor approval (R14).",
+          "evidence": {
+            "rule": "R6",
+            "source": "registration_rules.md#R6",
+            "rule_title": "Course level restriction",
+            "policy_text": "A student in academic year Y may register for courses numbered up to Y x 100 (for example, a Year 2 student may take 100-level and 200-level courses). A course exactly one level above the student's year requires written advisor approval, so it is flagged and not recommended automatically. Courses two or more levels above the student's year are not allowed.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.353
+          }
+        }
+      ]
+    },
+    {
+      "code": "CS302",
+      "title": "Operating Systems",
+      "status": "ELIGIBLE (not selected)",
+      "retrieval_rank": 24,
+      "reasons": [
+        {
+          "rule": "R9",
+          "level": "BLOCK",
+          "message": "Timetable conflict: CS302 (Sun/Tue 10:45-12:15) overlaps CS330 (Sun/Tue 10:45-12:15).",
+          "evidence": {
+            "rule": "R9",
+            "source": "registration_rules.md#R9",
+            "rule_title": "Timetable conflicts",
+            "policy_text": "Two courses whose weekly meeting times overlap on the same day cannot be registered together. Each course in the catalog has a single published section.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.216
+          }
+        }
+      ]
+    },
+    {
+      "code": "CS340",
+      "title": "Computer Graphics",
+      "status": "ELIGIBLE (not selected)",
+      "retrieval_rank": 21,
+      "reasons": [
+        {
+          "rule": "R9",
+          "level": "BLOCK",
+          "message": "Timetable conflict: CS340 (Mon/Wed 10:45-12:15) overlaps AI310 (Mon/Wed 10:45-12:15).",
+          "evidence": {
+            "rule": "R9",
+            "source": "registration_rules.md#R9",
+            "rule_title": "Timetable conflicts",
+            "policy_text": "Two courses whose weekly meeting times overlap on the same day cannot be registered together. Each course in the catalog has a single published section.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.213
+          }
+        }
+      ]
+    }
+  ],
+  "total_credits": 15,
+  "uncovered_interests": [
+    "natural language processing",
+    "computer vision"
+  ],
+  "notes": [],
+  "validation": {
+    "passed": true,
+    "violations": []
+  },
+  "full_audit": {
+    "CS101": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A-; cannot be repeated."
+      ]
+    },
+    "CS102": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A; cannot be repeated."
+      ]
+    },
+    "MATH101": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade B+; cannot be repeated."
+      ]
+    },
+    "ENG101": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A; cannot be repeated."
+      ]
+    },
+    "PHYS101": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Spring (offered: Fall).",
+        "R5 BLOCK: Already passed with grade B+; cannot be repeated."
+      ]
+    },
+    "CS201": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A; cannot be repeated."
+      ]
+    },
+    "CS202": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Spring (offered: Fall).",
+        "R5 BLOCK: Already passed with grade A-; cannot be repeated."
+      ]
+    },
+    "CS203": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade B+; cannot be repeated."
+      ]
+    },
+    "MATH201": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A-; cannot be repeated."
+      ]
+    },
+    "STAT201": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A; cannot be repeated."
+      ]
+    },
+    "CS210": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A-; cannot be repeated."
+      ]
+    },
+    "CS220": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A; cannot be repeated."
+      ]
+    },
+    "HUM201": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A; cannot be repeated."
+      ]
+    },
+    "CS301": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Spring (offered: Fall).",
+        "R5 BLOCK: Already passed with grade B+; cannot be repeated."
+      ]
+    },
+    "CS302": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "CS310": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "CS320": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Spring (offered: Fall)."
+      ]
+    },
+    "CS330": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "CS340": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "CS350": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "CS370": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Spring (offered: Fall)."
+      ]
+    },
+    "AI301": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A; cannot be repeated."
+      ]
+    },
+    "AI310": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "AI320": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "SEC301": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Spring (offered: Fall)."
+      ]
+    },
+    "AI401": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Spring (offered: Fall).",
+        "R6 FLAG: Level 400 is one level above Year 3; requires advisor approval (R14)."
+      ]
+    },
+    "AI402": {
+      "status": "FLAGGED",
+      "findings": [
+        "R6 FLAG: Level 400 is one level above Year 3; requires advisor approval (R14)."
+      ]
+    },
+    "AI403": {
+      "status": "FLAGGED",
+      "findings": [
+        "R6 FLAG: Level 400 is one level above Year 3; requires advisor approval (R14)."
+      ]
+    },
+    "CS401": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Spring (offered: Fall).",
+        "R4 BLOCK: Prerequisite CS302 (Operating Systems) has not been completed.",
+        "R4 BLOCK: Prerequisite CS320 (Computer Networks) has not been completed.",
+        "R6 FLAG: Level 400 is one level above Year 3; requires advisor approval (R14)."
+      ]
+    },
+    "CS410": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Spring (offered: Fall).",
+        "R4 BLOCK: Prerequisite CS310 (Software Engineering) has not been completed.",
+        "R6 FLAG: Level 400 is one level above Year 3; requires advisor approval (R14).",
+        "R11 BLOCK: Requires 90 earned credit hours; student has 66."
+      ]
+    },
+    "CS411": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite CS410 (Senior Project I) has not been completed.",
+        "R6 FLAG: Level 400 is one level above Year 3; requires advisor approval (R14)."
+      ]
+    },
+    "CS499": {
+      "status": "FLAGGED",
+      "findings": [
+        "R12 FLAG: Catalog does not publish: offered, prerequisites, schedule. Eligibility cannot be verified; refer to advisor."
+      ]
+    }
+  },
+  "explanation_mode": "template (offline)"
+}

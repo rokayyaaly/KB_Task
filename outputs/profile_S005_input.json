@@ -1,0 +1,32 @@
+{
+  "student_id": "S005",
+  "name": "Nour El-Din",
+  "academic_year": 2,
+  "semester": "Fall",
+  "gpa": 1.8,
+  "completed": {
+    "CS101": "B-",
+    "CS102": "C",
+    "MATH101": "D",
+    "ENG101": "C",
+    "PHYS101": "D+"
+  },
+  "desired_credits": 18,
+  "other_credits": 16,
+  "skills": [
+    "HTML",
+    "CSS"
+  ],
+  "interests": [
+    "web development",
+    "user interface design"
+  ],
+  "goals": "become a front-end web developer",
+  "workload_pref": "light",
+  "requested_courses": [
+    "MATH201",
+    "CS220"
+  ],
+  "scenario": "REGISTRATION CONSTRAINT + UNMET PREREQUISITE (grade too low): GPA 1.8 (probation, 12-credit cap) while requesting 18; MATH101 passed with D does not satisfy MATH201.",
+  "earned_credits": 31
+}

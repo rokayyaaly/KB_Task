@@ -1,0 +1,460 @@
+======================================================================================================================
+STUDENT S001 – Sara Mostafa   |   Year 1, Fall semester   |   GPA n/a   |   earned credits 0
+======================================================================================================================
+  Scenario: New first-year student, no GPA yet; asks for a course she is not eligible for (level + prerequisites).
+
+1) INPUT
+    Completed: none
+    Skills: basic Python from online tutorials
+    Interests: programming, artificial intelligence, problem solving  |  Goal: become an AI engineer
+    Desired credits: 15  |  Workload preference: medium  |  Explicitly requested: AI301
+
+2) RETRIEVED EVIDENCE   (backend: TF-IDF unigram+bigram (scikit-learn fallback))
+    Query: "programming, artificial intelligence, problem solving become an AI engineer basic Python from online
+      tutorials"
+    Top retrieved course passages: #1 AI301 (0.165); #2 CS201 (0.149); #3 CS102 (0.143); #4 CS301 (0.14); #5 AI401
+      (0.129); #6 CS101 (0.094)
+    Degree-plan passage [degree_plan.md#Artificial Intelligence track] (0.157): Artificial Intelligence track.
+      Students interested in machine learning, data science, deep learning, natural language processing and computer
+      vision follow the AI track. Typical sequence: MATH201 and STAT201 in Year 2, AI301 [...]
+    Degree-plan passage [degree_plan.md#Recommended core sequence] (0.029): Recommended core sequence. Year 1 core:
+      CS101 Introduction to Programming, CS102 Discrete Mathematics, MATH101 Calculus I, ENG101 Technical Writing,
+      PHYS101 Physics for Computing. Year 2 core: CS201 Data Structures, CS202 [...]
+
+3) CREDIT-LOAD RULES   (limit 18, target 15)
+    [R3/FLAG] GPA not provided: probation (R3) and overload (R2) eligibility cannot be checked; standard limit R1
+      applied.
+        Evidence registration_rules.md#R3 (retrieved rank 1): A student whose cumulative GPA is below 2.0 is on
+          academic probation and may register for at most 12 credit hours in a semester, regardless of the requested
+          load.
+
+4) ACCEPTED COURSES  → total 15 credit hours
+  ✔ CS102  Discrete Mathematics  (3 cr, Medium, Sun/Tue 12:30-14:00)  score 0.95
+      Matches your interests/skills: problem solving (topics: logic and proofs; sets; relations). Core course planned
+        for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium preference.
+      Sources: course_catalog.md#CS102 (sim 0.143); rules R4, R6, R8, R9
+  ✔ CS101  Introduction to Programming  (3 cr, Medium, Sun/Tue 09:00-10:30)  score 0.7434
+      Matches your interests/skills: programming (topics: variables and data types; control flow; functions). Core
+        course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium preference.
+      Sources: course_catalog.md#CS101 (sim 0.094); rules R4, R6, R8, R9
+  ✔ MATH101  Calculus I  (3 cr, Medium, Mon/Wed 09:00-10:30)  score 0.35
+      Core course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium
+        preference.
+      Sources: course_catalog.md#MATH101 (sim 0); rules R4, R6, R8, R9
+  ✔ PHYS101  Physics for Computing  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.35
+      Core course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium
+        preference.
+      Sources: course_catalog.md#PHYS101 (sim 0); rules R4, R6, R8, R9
+  ✔ ENG101  Technical Writing  (3 cr, Light, Thu 13:00-16:00)  score 0.3
+      Core course planned for Year 1 of the degree plan. No prerequisites. Light workload.
+      Sources: course_catalog.md#ENG101 (sim 0); rules R4, R6, R8, R9
+
+6) EXCLUDED COURSES (among requested / top-retrieved)
+  ✘ AI301  Machine Learning Fundamentals  – BLOCKED
+      [R4] Prerequisite CS201 (Data Structures and Algorithms) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R4] Prerequisite STAT201 (Probability and Statistics) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R4] Prerequisite MATH201 (Linear Algebra) has not been completed.  (evidence registration_rules.md#R4,
+        retrieved rank 1)
+      [R6] Level 300 is two or more levels above Year 1 (max allowed 100).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+  ✘ CS201  Data Structures and Algorithms  – BLOCKED
+      [R4] Prerequisite CS101 (Introduction to Programming) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R6] Level 200 is one level above Year 1; requires advisor approval (R14).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+  ✘ CS301  Algorithm Analysis  – BLOCKED
+      [R4] Prerequisite CS201 (Data Structures and Algorithms) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R4] Prerequisite CS102 (Discrete Mathematics) has not been completed.  (evidence registration_rules.md#R4,
+        retrieved rank 1)
+      [R6] Level 300 is two or more levels above Year 1 (max allowed 100).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+  ✘ AI401  Deep Learning  – BLOCKED
+      [R4] Prerequisite AI301 (Machine Learning Fundamentals) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R4] Prerequisite MATH201 (Linear Algebra) has not been completed.  (evidence registration_rules.md#R4,
+        retrieved rank 1)
+      [R6] Level 400 is two or more levels above Year 1 (max allowed 100).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+  ✘ AI320  Data Visualization  – BLOCKED
+      [R4] Prerequisite STAT201 (Probability and Statistics) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R4] Prerequisite CS101 (Introduction to Programming) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R6] Level 300 is two or more levels above Year 1 (max allowed 100).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+
+  Interests not covered by any eligible course this semester: artificial intelligence
+
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)
+
+======================================================================================================================
+STUDENT S002 – Omar Hassan   |   Year 2, Spring semester   |   GPA 3.1   |   earned credits 32
+======================================================================================================================
+  Scenario: UNMET PREREQUISITE: wants Machine Learning (AI301) but has not taken STAT201 or MATH201.
+
+1) INPUT
+    Completed: CS101(A), CS102(A-), MATH101(B+), ENG101(B), PHYS101(B), CS201(B+)
+    Skills: Python, data structures
+    Interests: machine learning, data science, Python  |  Goal: work as a data scientist
+    Desired credits: 15  |  Workload preference: medium  |  Explicitly requested: AI301
+
+2) RETRIEVED EVIDENCE   (backend: TF-IDF unigram+bigram (scikit-learn fallback))
+    Query: "machine learning, data science, Python work as a data scientist Python, data structures"
+    Top retrieved course passages: #1 MATH201 (0.275); #2 AI301 (0.266); #3 AI320 (0.219); #4 STAT201 (0.219); #5
+      CS201 (0.174); #6 AI310 (0.114)
+    Degree-plan passage [degree_plan.md#Artificial Intelligence track] (0.271): Artificial Intelligence track.
+      Students interested in machine learning, data science, deep learning, natural language processing and computer
+      vision follow the AI track. Typical sequence: MATH201 and STAT201 in Year 2, AI301 [...]
+    Degree-plan passage [degree_plan.md#Recommended core sequence] (0.141): Recommended core sequence. Year 1 core:
+      CS101 Introduction to Programming, CS102 Discrete Mathematics, MATH101 Calculus I, ENG101 Technical Writing,
+      PHYS101 Physics for Computing. Year 2 core: CS201 Data Structures, CS202 [...]
+
+3) CREDIT-LOAD RULES   (limit 18, target 15)
+    No credit-load restriction triggered (R1 standard load 12–18 applies).
+
+4) ACCEPTED COURSES  → total 14 credit hours
+  ✔ MATH201  Linear Algebra  (3 cr, Medium, Sun/Tue 09:00-10:30)  score 0.95
+      Matches your interests/skills: machine learning, data science (topics: vectors; matrices; linear systems). Core
+        course planned for Year 2 of the degree plan. Prerequisites satisfied (MATH101: B+). Medium workload, fits
+        your medium preference.
+      Sources: course_catalog.md#MATH201 (sim 0.275); rules R4, R6, R8, R9
+  ✔ STAT201  Probability and Statistics  (3 cr, Medium, Mon/Wed 09:00-10:30)  score 0.826
+      Matches your interests/skills: machine learning, data science (topics: probability; random variables;
+        distributions). Core course planned for Year 2 of the degree plan. Prerequisites satisfied (MATH101: B+).
+        Medium workload, fits your medium preference.
+      Sources: course_catalog.md#STAT201 (sim 0.219); rules R4, R6, R8, R9
+  ✔ CS210  Database Systems  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.5769
+      Matches your interests/skills: data science (topics: relational model; SQL; database design). Core course
+        planned for Year 2 of the degree plan. Prerequisites satisfied (CS201: B+). Medium workload, fits your medium
+        preference.
+      Sources: course_catalog.md#CS210 (sim 0.104); rules R4, R6, R8, R9
+  ✔ CS203  Computer Organization  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.4248
+      Core course planned for Year 2 of the degree plan. Prerequisites satisfied (CS101: A). Medium workload, fits
+        your medium preference.
+      Sources: course_catalog.md#CS203 (sim 0.034); rules R4, R6, R8, R9
+  ✔ HUM201  Ethics and Society in Computing  (2 cr, Light, Thu 09:00-11:00)  score 0.2
+      Required general-education course. No prerequisites. Light workload.
+      Sources: course_catalog.md#HUM201 (sim 0); rules R4, R6, R8, R9
+
+6) EXCLUDED COURSES (among requested / top-retrieved)
+  ✘ AI301  Machine Learning Fundamentals  – BLOCKED
+      [R4] Prerequisite STAT201 (Probability and Statistics) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R4] Prerequisite MATH201 (Linear Algebra) has not been completed.  (evidence registration_rules.md#R4,
+        retrieved rank 1)
+      [R6] Level 300 is one level above Year 2; requires advisor approval (R14).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+  ✘ AI320  Data Visualization  – BLOCKED
+      [R4] Prerequisite STAT201 (Probability and Statistics) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R6] Level 300 is one level above Year 2; requires advisor approval (R14).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+  ✘ AI310  Data Mining and Analytics  – BLOCKED
+      [R4] Prerequisite CS210 (Database Systems) has not been completed.  (evidence registration_rules.md#R4,
+        retrieved rank 1)
+      [R4] Prerequisite STAT201 (Probability and Statistics) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R6] Level 300 is one level above Year 2; requires advisor approval (R14).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+  Note: Scheduled 14 of the 15 target credit hours: no remaining eligible course fits the credit limit, timetable or
+    heavy-workload rules.
+
+  Interests not covered by any eligible course this semester: Python
+
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)
+
+======================================================================================================================
+STUDENT S003 – Lina Farouk   |   Year 3, Fall semester   |   GPA 3.2   |   earned credits 66
+======================================================================================================================
+  Scenario: REGISTRATION CONSTRAINT: requests 21 credits with GPA 3.2 (overload needs GPA 3.5). Also asks for a
+    400-level course in Year 3 (level approval needed) and a corequisite bundle (CS370 needs CS301).
+
+1) INPUT
+    Completed: CS101(B), CS102(B+), MATH101(B-), ENG101(B), PHYS101(C+), CS201(B+), CS202(B), CS203(B-), MATH201(B),
+      STAT201(B+), CS210(A-), CS220(A), HUM201(A), AI301(B+)
+    Skills: Python, linear algebra, PyTorch basics
+    Interests: deep learning, GPU computing, computer vision  |  Goal: become a deep learning engineer
+    Desired credits: 21  |  Workload preference: heavy  |  Explicitly requested: AI401
+
+2) RETRIEVED EVIDENCE   (backend: TF-IDF unigram+bigram (scikit-learn fallback))
+    Query: "deep learning, GPU computing, computer vision become a deep learning engineer Python, linear algebra,
+      PyTorch basics"
+    Top retrieved course passages: #1 AI401 (0.284); #2 CS370 (0.28); #3 AI403 (0.148); #4 AI301 (0.129); #5 MATH201
+      (0.127); #6 CS340 (0.083)
+    Degree-plan passage [degree_plan.md#Artificial Intelligence track] (0.327): Artificial Intelligence track.
+      Students interested in machine learning, data science, deep learning, natural language processing and computer
+      vision follow the AI track. Typical sequence: MATH201 and STAT201 in Year 2, AI301 [...]
+    Degree-plan passage [degree_plan.md#Recommended core sequence] (0.096): Recommended core sequence. Year 1 core:
+      CS101 Introduction to Programming, CS102 Discrete Mathematics, MATH101 Calculus I, ENG101 Technical Writing,
+      PHYS101 Physics for Computing. Year 2 core: CS201 Data Structures, CS202 [...]
+
+3) CREDIT-LOAD RULES   (limit 18, target 18)
+    [R2/BLOCK] Overload requires GPA >= 3.5; GPA is 3.2.
+        Evidence registration_rules.md#R2 (retrieved rank 1): A student with a cumulative GPA of 3.5 or higher may
+          request an overload of up to 21 credit hours in one semester. An overload always requires written advisor
+          [...]
+    [R1/BLOCK] Requested 21 credits exceeds the allowed maximum of 18; load capped at 18.
+        Evidence registration_rules.md#R1 (retrieved rank 1): A full-time student registers for between 12 and 18
+          credit hours per semester. Registering for fewer than 12 credit hours makes the student part-time, which
+          must be [...]
+
+4) ACCEPTED COURSES  → total 18 credit hours
+  ✔ CS370  Parallel and GPU Computing  (3 cr, Heavy, Sun/Tue 12:30-14:00)  score 0.7
+      Matches your interests/skills: deep learning, GPU computing (topics: parallel algorithms; multithreading; CUDA).
+        Systems Track elective that broadens your profile. Prerequisites satisfied (CS203: B-, CS201: B+). Heavy
+        workload, fits your heavy preference.
+      Sources: course_catalog.md#CS370 (sim 0.28); rules R4, R6, R8, R9, R10
+  ✔ CS301  Algorithm Analysis  (3 cr, Heavy, Mon/Wed 09:00-10:30)  score 0.35
+      Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS201: B+, CS102: B+). Heavy
+        workload, fits your heavy preference.
+      Sources: course_catalog.md#CS301 (sim 0); rules R4, R6, R8, R9
+  ✔ CS320  Computer Networks  (3 cr, Medium, Sun/Tue 09:00-10:30)  score 0.3999
+      Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS203: B-). Medium workload.
+      Sources: course_catalog.md#CS320 (sim 0.047); rules R4, R6, R8, R9
+  ✔ CS310  Software Engineering  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.3507
+      Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS202: B). Medium workload.
+      Sources: course_catalog.md#CS310 (sim 0.024); rules R4, R6, R8, R9
+  ✔ CS340  Computer Graphics  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.2276
+      Matches your interests/skills: linear algebra (topics: transformations; rasterisation; shading). Free elective
+        that broadens your profile. Prerequisites satisfied (MATH201: B, CS201: B+). Medium workload.
+      Sources: course_catalog.md#CS340 (sim 0.083); rules R4, R6, R8, R9
+  ✔ AI320  Data Visualization  (3 cr, Light, Thu 09:00-11:00)  score 0.0832
+      Matches your interests/skills: Python (topics: visual perception; charts; dashboards). AI Track elective that
+        broadens your profile. Prerequisites satisfied (STAT201: B+, CS101: B). Light workload.
+      Sources: course_catalog.md#AI320 (sim 0.039); rules R4, R6, R8, R9
+
+5) FLAGGED – NEEDS ADVISOR (not auto-recommended)
+  ⚑ AI401  Deep Learning
+      [R6] Level 400 is one level above Year 3; requires advisor approval (R14).
+
+6) EXCLUDED COURSES (among requested / top-retrieved)
+  ✘ AI403  Computer Vision  – BLOCKED
+      [R8] Not offered in Fall (offered: Spring).  (evidence registration_rules.md#R8, retrieved rank 1)
+      [R6] Level 400 is one level above Year 3; requires advisor approval (R14).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+
+  Interests not covered by any eligible course this semester: computer vision
+
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)
+
+======================================================================================================================
+STUDENT S004 – Karim Adel   |   Year 4, Fall semester   |   GPA 3.6   |   earned credits 98
+======================================================================================================================
+  Scenario: Final-year student, GPA 3.6 (overload-eligible), wants the capstone; heavy-workload limit (R13) and
+    prerequisite chain (CS411 needs CS410).
+
+1) INPUT
+    Completed: CS101(A), CS102(A-), MATH101(A), ENG101(A-), PHYS101(B+), CS201(A), CS202(A), CS203(A-), MATH201(B+),
+      STAT201(A-), CS210(A), CS220(A-), HUM201(A), CS301(B+), CS302(A-), CS310(A-), CS320(B+), CS350(A), AI301(A-)
+    Skills: Linux, Docker, Python
+    Interests: cloud computing, distributed systems, DevOps, capstone project  |  Goal: become a cloud infrastructure
+      engineer
+    Desired credits: 21  |  Workload preference: heavy  |  Explicitly requested: CS410, CS411, AI401
+
+2) RETRIEVED EVIDENCE   (backend: TF-IDF unigram+bigram (scikit-learn fallback))
+    Query: "cloud computing, distributed systems, DevOps, capstone project become a cloud infrastructure engineer
+      Linux, Docker, Python"
+    Top retrieved course passages: #1 CS401 (0.37); #2 CS411 (0.124); #3 CS410 (0.123); #4 CS302 (0.075); #5 AI320
+      (0.042); #6 CS370 (0.042)
+    Degree-plan passage [degree_plan.md#Systems, Cloud and Security track] (0.31): Systems, Cloud and Security track.
+      Students interested in operating systems, networks, cloud, distributed systems, parallel computing and
+      cybersecurity follow the Systems track. Typical sequence: CS203 Computer Organization [...]
+    Degree-plan passage [degree_plan.md#Capstone] (0.104): Capstone. Senior Project I (CS410) is offered in Fall only
+      and Senior Project II (CS411) in Spring only. Students should plan the capstone for their final two semesters
+      after finishing Software Engineering (CS310).
+
+3) CREDIT-LOAD RULES   (limit 21, target 21)
+    [R2/FLAG] GPA 3.6 qualifies for an overload up to 21 credits; advisor approval required if more than 18.
+        Evidence registration_rules.md#R2 (retrieved rank 1): A student with a cumulative GPA of 3.5 or higher may
+          request an overload of up to 21 credit hours in one semester. An overload always requires written advisor
+          [...]
+
+4) ACCEPTED COURSES  → total 15 credit hours
+  ✔ CS401  Cloud Computing and Distributed Systems  (3 cr, Heavy, Sun/Tue 09:00-10:30)  score 0.7
+      Matches your interests/skills: cloud computing, distributed systems, DevOps, Docker (topics: virtualisation;
+        containers and Docker; Kubernetes). Systems Track elective that broadens your profile. Prerequisites satisfied
+        (CS302: A-, CS320: B+). Heavy workload, fits your heavy preference.
+      Sources: course_catalog.md#CS401 (sim 0.37); rules R4, R6, R8, R9
+  ✔ CS410  Senior Project I  (3 cr, Heavy, Thu 13:00-16:00)  score 0.599
+      Matches your interests/skills: capstone project (topics: project proposal; system design; team management). Core
+        course planned for Year 4 of the degree plan. Prerequisites satisfied (CS310: A-). Heavy workload, fits your
+        heavy preference.
+      Sources: course_catalog.md#CS410 (sim 0.123); rules R4, R6, R8, R9, R11
+  ✔ SEC301  Information Security Fundamentals  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.0759
+      Systems Track elective that broadens your profile. Prerequisites satisfied (CS203: A-). Medium workload.
+      Sources: course_catalog.md#SEC301 (sim 0.016); rules R4, R6, R8, R9
+  ✔ CS340  Computer Graphics  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.0715
+      Free elective that broadens your profile. Prerequisites satisfied (MATH201: B+, CS201: A). Medium workload.
+      Sources: course_catalog.md#CS340 (sim 0.013); rules R4, R6, R8, R9
+  ✔ AI320  Data Visualization  (3 cr, Light, Thu 09:00-11:00)  score 0.0689
+      Matches your interests/skills: Python (topics: visual perception; charts; dashboards). AI Track elective that
+        broadens your profile. Prerequisites satisfied (STAT201: A-, CS101: A). Light workload.
+      Sources: course_catalog.md#AI320 (sim 0.042); rules R4, R6, R8, R9
+
+6) EXCLUDED COURSES (among requested / top-retrieved)
+  ✘ CS411  Senior Project II  – BLOCKED
+      [R8] Not offered in Fall (offered: Spring).  (evidence registration_rules.md#R8, retrieved rank 1)
+      [R4] Prerequisite CS410 (Senior Project I) has not been completed.  (evidence registration_rules.md#R4,
+        retrieved rank 1)
+  ✘ AI401  Deep Learning  – ELIGIBLE (not selected)
+      [R13] Would exceed the limit of 2 Heavy course(s) for this student.  (evidence registration_rules.md#R13,
+        retrieved rank 1)
+  ✘ CS370  Parallel and GPU Computing  – ELIGIBLE (not selected)
+      [R13] Would exceed the limit of 2 Heavy course(s) for this student.  (evidence registration_rules.md#R13,
+        retrieved rank 1)
+  Note: Scheduled 15 of the 21 target credit hours: no remaining eligible course fits the credit limit, timetable or
+    heavy-workload rules.
+  Note: Overload (R2) was available but is not needed: the schedule has 15 credit hours, within the standard limit.
+
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)
+
+======================================================================================================================
+STUDENT S005 – Nour El-Din   |   Year 2, Fall semester   |   GPA 1.8   |   earned credits 31
+======================================================================================================================
+  Scenario: REGISTRATION CONSTRAINT + UNMET PREREQUISITE (grade too low): GPA 1.8 (probation, 12-credit cap) while
+    requesting 18; MATH101 passed with D does not satisfy MATH201.
+
+1) INPUT
+    Completed: CS101(B-), CS102(C), MATH101(D), ENG101(C), PHYS101(D+)
+    Skills: HTML, CSS
+    Interests: web development, user interface design  |  Goal: become a front-end web developer
+    Desired credits: 18  |  Workload preference: light  |  Explicitly requested: MATH201, CS220
+
+2) RETRIEVED EVIDENCE   (backend: TF-IDF unigram+bigram (scikit-learn fallback))
+    Query: "web development, user interface design become a front-end web developer HTML, CSS"
+    Top retrieved course passages: #1 CS220 (0.579); #2 CS350 (0.192); #3 CS330 (0.148); #4 CS310 (0.043); #5 CS202
+      (0.03); #6 CS210 (0.02)
+    Degree-plan passage [degree_plan.md#Software Engineering track] (0.185): Software Engineering track. Students
+      interested in web, mobile and user-facing software follow the Software Engineering track. Typical sequence:
+      CS202 Object-Oriented Programming and CS220 Web Development in Year 2, then [...]
+    Degree-plan passage [degree_plan.md#Structure] (0.0): Structure. The BSc in Computer Science & AI requires 126
+      credit hours: core courses, one specialisation track, general education and free electives. Students normally
+      take 15 to 16 credit hours per semester over four years. [...]
+
+3) CREDIT-LOAD RULES   (limit 12, target 12)
+    [R3/BLOCK] GPA 1.8 is below 2.0 (probation): maximum load is 12 credit hours.
+        Evidence registration_rules.md#R3 (retrieved rank 1): A student whose cumulative GPA is below 2.0 is on
+          academic probation and may register for at most 12 credit hours in a semester, regardless of the requested
+          load.
+    [R3/BLOCK] Requested 18 credits exceeds the allowed maximum of 12; load capped at 12.
+        Evidence registration_rules.md#R3 (retrieved rank 1): A student whose cumulative GPA is below 2.0 is on
+          academic probation and may register for at most 12 credit hours in a semester, regardless of the requested
+          load.
+
+4) ACCEPTED COURSES  → total 12 credit hours
+  ✔ CS220  Web Development  (3 cr, Medium, Sun/Tue 12:30-14:00)  score 0.7
+      Matches your interests/skills: web development, user interface design, HTML, CSS (topics: HTML and CSS;
+        JavaScript; responsive design). Software Engineering Track elective that broadens your profile. Prerequisites
+        satisfied (CS101: B-). Medium workload.
+      Sources: course_catalog.md#CS220 (sim 0.579); rules R4, R6, R8, R9
+  ✔ CS202  Object-Oriented Programming  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.3313
+      Core course planned for Year 2 of the degree plan. Prerequisites satisfied (CS101: B-). Medium workload.
+      Sources: course_catalog.md#CS202 (sim 0.03); rules R4, R6, R8, R9
+  ✔ MATH101  Calculus I  (3 cr, Medium, Mon/Wed 09:00-10:30)  score 0.3
+      Core course planned for Year 1 of the degree plan. Retake to improve your earlier grade (D). No prerequisites.
+        Medium workload.
+      Sources: course_catalog.md#MATH101 (sim 0); rules R4, R5, R6, R8, R9
+  ✔ CS201  Data Structures and Algorithms  (3 cr, Heavy, Sun/Tue 10:45-12:15)  score 0.262
+      Core course planned for Year 2 of the degree plan. Prerequisites satisfied (CS101: B-). Heavy workload.
+      Sources: course_catalog.md#CS201 (sim 0.012); rules R4, R6, R8, R9
+
+5) FLAGGED – NEEDS ADVISOR (not auto-recommended)
+  ⚑ CS350  Human-Computer Interaction
+      [R6] Level 300 is one level above Year 2; requires advisor approval (R14).
+
+6) EXCLUDED COURSES (among requested / top-retrieved)
+  ✘ MATH201  Linear Algebra  – BLOCKED
+      [R4] Prerequisite MATH101 completed with grade D, below the required minimum C.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+  ✘ CS330  Mobile App Development  – BLOCKED
+      [R8] Not offered in Fall (offered: Spring).  (evidence registration_rules.md#R8, retrieved rank 1)
+      [R4] Prerequisite CS202 (Object-Oriented Programming) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R6] Level 300 is one level above Year 2; requires advisor approval (R14).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+  ✘ PHYS101  Physics for Computing  – ELIGIBLE (not selected)
+      [R9] Timetable conflict: PHYS101 (Mon/Wed 10:45-12:15) overlaps CS202 (Mon/Wed 10:45-12:15).  (evidence
+        registration_rules.md#R9, retrieved rank 1)
+
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)
+
+======================================================================================================================
+STUDENT S006 – Maya Samir   |   Year 3, Spring semester   |   GPA 3.4   |   earned credits 66
+======================================================================================================================
+  Scenario: Timetable conflict (CS302 vs CS330), level-approval flags (400-level courses in Year 3) and a course with
+    missing catalog information (CS499).
+
+1) INPUT
+    Completed: CS101(A-), CS102(A), MATH101(B+), ENG101(A), PHYS101(B+), CS201(A), CS202(A-), CS203(B+), MATH201(A-),
+      STAT201(A), CS210(A-), CS220(A), HUM201(A), CS301(B+), AI301(A)
+    Skills: Python, PyTorch basics, SQL
+    Interests: natural language processing, computer vision, mobile apps, data mining  |  Goal: work on applied AI
+      products
+    Desired credits: 15  |  Workload preference: medium  |  Explicitly requested: AI402, CS499
+
+2) RETRIEVED EVIDENCE   (backend: TF-IDF unigram+bigram (scikit-learn fallback))
+    Query: "natural language processing, computer vision, mobile apps, data mining work on applied AI products Python,
+      PyTorch basics, SQL"
+    Top retrieved course passages: #1 AI402 (0.225); #2 AI403 (0.141); #3 AI310 (0.122); #4 CS330 (0.119); #5 AI320
+      (0.081); #6 CS210 (0.078)
+    Degree-plan passage [degree_plan.md#Artificial Intelligence track] (0.387): Artificial Intelligence track.
+      Students interested in machine learning, data science, deep learning, natural language processing and computer
+      vision follow the AI track. Typical sequence: MATH201 and STAT201 in Year 2, AI301 [...]
+    Degree-plan passage [degree_plan.md#Software Engineering track] (0.058): Software Engineering track. Students
+      interested in web, mobile and user-facing software follow the Software Engineering track. Typical sequence:
+      CS202 Object-Oriented Programming and CS220 Web Development in Year 2, then [...]
+
+3) CREDIT-LOAD RULES   (limit 18, target 15)
+    No credit-load restriction triggered (R1 standard load 12–18 applies).
+
+4) ACCEPTED COURSES  → total 15 credit hours
+  ✔ AI310  Data Mining and Analytics  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.7
+      Matches your interests/skills: data mining (topics: association rules; clustering; classification). AI Track
+        elective that broadens your profile. Prerequisites satisfied (CS210: A-, STAT201: A). Medium workload, fits
+        your medium preference.
+      Sources: course_catalog.md#AI310 (sim 0.122); rules R4, R6, R8, R9
+  ✔ CS330  Mobile App Development  (3 cr, Medium, Sun/Tue 10:45-12:15)  score 0.6843
+      Matches your interests/skills: mobile apps (topics: Android; iOS; mobile user interface). Software Engineering
+        Track elective that broadens your profile. Prerequisites satisfied (CS202: A-). Medium workload, fits your
+        medium preference.
+      Sources: course_catalog.md#CS330 (sim 0.119); rules R4, R6, R8, R9
+  ✔ CS310  Software Engineering  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.4619
+      Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS202: A-). Medium workload, fits
+        your medium preference.
+      Sources: course_catalog.md#CS310 (sim 0.023); rules R4, R6, R8, R9
+  ✔ AI320  Data Visualization  (3 cr, Light, Thu 09:00-11:00)  score 0.4455
+      Matches your interests/skills: Python (topics: visual perception; charts; dashboards). AI Track elective that
+        broadens your profile. Prerequisites satisfied (STAT201: A, CS101: A-). Light workload.
+      Sources: course_catalog.md#AI320 (sim 0.081); rules R4, R6, R8, R9
+  ✔ CS350  Human-Computer Interaction  (3 cr, Light, Thu 13:00-16:00)  score 0.104
+      Software Engineering Track elective that broadens your profile. Prerequisites satisfied (CS101: A-). Light
+        workload.
+      Sources: course_catalog.md#CS350 (sim 0.011); rules R4, R6, R8, R9
+
+5) FLAGGED – NEEDS ADVISOR (not auto-recommended)
+  ⚑ AI402  Natural Language Processing
+      [R6] Level 400 is one level above Year 3; requires advisor approval (R14).
+  ⚑ CS499  Special Topics in Emerging Computing
+      [R12] Catalog does not publish: offered, prerequisites, schedule. Eligibility cannot be verified; refer to
+        advisor.
+  ⚑ AI403  Computer Vision
+      [R6] Level 400 is one level above Year 3; requires advisor approval (R14).
+
+6) EXCLUDED COURSES (among requested / top-retrieved)
+  ✘ AI401  Deep Learning  – BLOCKED
+      [R8] Not offered in Spring (offered: Fall).  (evidence registration_rules.md#R8, retrieved rank 1)
+      [R6] Level 400 is one level above Year 3; requires advisor approval (R14).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+  ✘ CS302  Operating Systems  – ELIGIBLE (not selected)
+      [R9] Timetable conflict: CS302 (Sun/Tue 10:45-12:15) overlaps CS330 (Sun/Tue 10:45-12:15).  (evidence
+        registration_rules.md#R9, retrieved rank 1)
+  ✘ CS340  Computer Graphics  – ELIGIBLE (not selected)
+      [R9] Timetable conflict: CS340 (Mon/Wed 10:45-12:15) overlaps AI310 (Mon/Wed 10:45-12:15).  (evidence
+        registration_rules.md#R9, retrieved rank 1)
+
+  Interests not covered by any eligible course this semester: natural language processing, computer vision
+
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)

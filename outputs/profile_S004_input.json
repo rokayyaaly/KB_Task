@@ -1,0 +1,50 @@
+{
+  "student_id": "S004",
+  "name": "Karim Adel",
+  "academic_year": 4,
+  "semester": "Fall",
+  "gpa": 3.6,
+  "completed": {
+    "CS101": "A",
+    "CS102": "A-",
+    "MATH101": "A",
+    "ENG101": "A-",
+    "PHYS101": "B+",
+    "CS201": "A",
+    "CS202": "A",
+    "CS203": "A-",
+    "MATH201": "B+",
+    "STAT201": "A-",
+    "CS210": "A",
+    "CS220": "A-",
+    "HUM201": "A",
+    "CS301": "B+",
+    "CS302": "A-",
+    "CS310": "A-",
+    "CS320": "B+",
+    "CS350": "A",
+    "AI301": "A-"
+  },
+  "desired_credits": 21,
+  "other_credits": 42,
+  "skills": [
+    "Linux",
+    "Docker",
+    "Python"
+  ],
+  "interests": [
+    "cloud computing",
+    "distributed systems",
+    "DevOps",
+    "capstone project"
+  ],
+  "goals": "become a cloud infrastructure engineer",
+  "workload_pref": "heavy",
+  "requested_courses": [
+    "CS410",
+    "CS411",
+    "AI401"
+  ],
+  "scenario": "Final-year student, GPA 3.6 (overload-eligible), wants the capstone; heavy-workload limit (R13) and prerequisite chain (CS411 needs CS410).",
+  "earned_credits": 98
+}

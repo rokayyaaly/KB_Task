@@ -1,0 +1,616 @@
+{
+  "credit_policy": {
+    "limit": 18,
+    "target": 18,
+    "overload_needs_approval": false,
+    "notes": [
+      {
+        "rule": "R2",
+        "level": "BLOCK",
+        "message": "Overload requires GPA >= 3.5; GPA is 3.2.",
+        "evidence": {
+          "rule": "R2",
+          "source": "registration_rules.md#R2",
+          "rule_title": "Credit overload",
+          "policy_text": "A student with a cumulative GPA of 3.5 or higher may request an overload of up to 21 credit hours in one semester. An overload always requires written advisor approval, so it is flagged and is never approved automatically. No overload above 21 credit hours is allowed for any student.",
+          "retrieved_rank": 1,
+          "retrieval_score": 0.433
+        }
+      },
+      {
+        "rule": "R1",
+        "level": "BLOCK",
+        "message": "Requested 21 credits exceeds the allowed maximum of 18; load capped at 18.",
+        "evidence": {
+          "rule": "R1",
+          "source": "registration_rules.md#R1",
+          "rule_title": "Standard credit load",
+          "policy_text": "A full-time student registers for between 12 and 18 credit hours per semester. Registering for fewer than 12 credit hours makes the student part-time, which must be flagged to the advisor. No student may exceed 18 credit hours unless rule R2 applies.",
+          "retrieved_rank": 1,
+          "retrieval_score": 0.326
+        }
+      }
+    ]
+  },
+  "retrieval": {
+    "backend": "TF-IDF unigram+bigram (scikit-learn fallback)",
+    "query": "deep learning, GPU computing, computer vision become a deep learning engineer Python, linear algebra, PyTorch basics",
+    "top_courses": [
+      {
+        "rank": 1,
+        "code": "AI401",
+        "score": 0.284,
+        "source": "course_catalog.md#AI401"
+      },
+      {
+        "rank": 2,
+        "code": "CS370",
+        "score": 0.28,
+        "source": "course_catalog.md#CS370"
+      },
+      {
+        "rank": 3,
+        "code": "AI403",
+        "score": 0.148,
+        "source": "course_catalog.md#AI403"
+      },
+      {
+        "rank": 4,
+        "code": "AI301",
+        "score": 0.129,
+        "source": "course_catalog.md#AI301"
+      },
+      {
+        "rank": 5,
+        "code": "MATH201",
+        "score": 0.127,
+        "source": "course_catalog.md#MATH201"
+      },
+      {
+        "rank": 6,
+        "code": "CS340",
+        "score": 0.083,
+        "source": "course_catalog.md#CS340"
+      }
+    ],
+    "degree_plan_passages": [
+      {
+        "source": "degree_plan.md#Artificial Intelligence track",
+        "score": 0.327,
+        "text": "Artificial Intelligence track. Students interested in machine learning, data science, deep learning, natural language processing and computer vision follow the AI track. Typical sequence: MATH201 and STAT201 in Year 2, AI301 Machine Learning Fundamentals in Year 3 together with AI310 Data Mining and AI320 Data Visualization, then AI401 Deep Learning, AI402 Natural Language Processing and AI403 Computer Vision in Year 4. Strong mathematics (linear algebra, probability) and Python programming are the foundation of this track."
+      },
+      {
+        "source": "degree_plan.md#Recommended core sequence",
+        "score": 0.096,
+        "text": "Recommended core sequence. Year 1 core: CS101 Introduction to Programming, CS102 Discrete Mathematics, MATH101 Calculus I, ENG101 Technical Writing, PHYS101 Physics for Computing. Year 2 core: CS201 Data Structures, CS202 Object-Oriented Programming, CS203 Computer Organization, MATH201 Linear Algebra, STAT201 Probability and Statistics, CS210 Database Systems. Year 3 core: CS301 Algorithm Analysis, CS302 Operating Systems, CS310 Software Engineering, CS320 Computer Networks, AI301 Machine Learning Fundamentals. Year 4 core: CS410 Senior Project I and CS411 Senior Project II."
+      }
+    ]
+  },
+  "accepted": [
+    {
+      "code": "CS370",
+      "title": "Parallel and GPU Computing",
+      "credits": 3,
+      "level": 300,
+      "workload": "Heavy",
+      "schedule": "Sun/Tue 12:30-14:00",
+      "category": "Systems Track Elective",
+      "score": 0.7,
+      "relevance_rank": 2,
+      "matched_interests": [
+        "deep learning",
+        "GPU computing"
+      ],
+      "evidence": {
+        "course_source": "course_catalog.md#CS370",
+        "retrieval_score": 0.28,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "Prerequisites met: CS203 (B-), CS201 (B+)",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 300 allowed for Year 3.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Fall.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Sun/Tue 12:30-14:00; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          },
+          {
+            "rule": "R10",
+            "result": "OK",
+            "detail": "Corequisite satisfied: CS301.",
+            "source": "registration_rules.md#R10"
+          }
+        ]
+      },
+      "reason": "Matches your interests/skills: deep learning, GPU computing (topics: parallel algorithms; multithreading; CUDA). Systems Track elective that broadens your profile. Prerequisites satisfied (CS203: B-, CS201: B+). Heavy workload, fits your heavy preference."
+    },
+    {
+      "code": "CS301",
+      "title": "Algorithm Analysis",
+      "credits": 3,
+      "level": 300,
+      "workload": "Heavy",
+      "schedule": "Mon/Wed 09:00-10:30",
+      "category": "Core (Year 3)",
+      "score": 0.35,
+      "relevance_rank": 20,
+      "matched_interests": [],
+      "evidence": {
+        "course_source": "course_catalog.md#CS301",
+        "retrieval_score": 0,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "Prerequisites met: CS201 (B+), CS102 (B+)",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 300 allowed for Year 3.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Fall.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Mon/Wed 09:00-10:30; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS201: B+, CS102: B+). Heavy workload, fits your heavy preference."
+    },
+    {
+      "code": "CS320",
+      "title": "Computer Networks",
+      "credits": 3,
+      "level": 300,
+      "workload": "Medium",
+      "schedule": "Sun/Tue 09:00-10:30",
+      "category": "Core (Year 3)",
+      "score": 0.3999,
+      "relevance_rank": 7,
+      "matched_interests": [],
+      "evidence": {
+        "course_source": "course_catalog.md#CS320",
+        "retrieval_score": 0.047,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "Prerequisites met: CS203 (B-)",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 300 allowed for Year 3.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Fall.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Sun/Tue 09:00-10:30; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS203: B-). Medium workload."
+    },
+    {
+      "code": "CS310",
+      "title": "Software Engineering",
+      "credits": 3,
+      "level": 300,
+      "workload": "Medium",
+      "schedule": "Mon/Wed 12:30-14:00",
+      "category": "Core (Year 3)",
+      "score": 0.3507,
+      "relevance_rank": 12,
+      "matched_interests": [],
+      "evidence": {
+        "course_source": "course_catalog.md#CS310",
+        "retrieval_score": 0.024,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "Prerequisites met: CS202 (B)",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 300 allowed for Year 3.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Fall.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Mon/Wed 12:30-14:00; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS202: B). Medium workload."
+    },
+    {
+      "code": "CS340",
+      "title": "Computer Graphics",
+      "credits": 3,
+      "level": 300,
+      "workload": "Medium",
+      "schedule": "Mon/Wed 10:45-12:15",
+      "category": "Free Elective",
+      "score": 0.2276,
+      "relevance_rank": 6,
+      "matched_interests": [
+        "linear algebra"
+      ],
+      "evidence": {
+        "course_source": "course_catalog.md#CS340",
+        "retrieval_score": 0.083,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "Prerequisites met: MATH201 (B), CS201 (B+)",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 300 allowed for Year 3.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Fall.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Mon/Wed 10:45-12:15; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Matches your interests/skills: linear algebra (topics: transformations; rasterisation; shading). Free elective that broadens your profile. Prerequisites satisfied (MATH201: B, CS201: B+). Medium workload."
+    },
+    {
+      "code": "AI320",
+      "title": "Data Visualization",
+      "credits": 3,
+      "level": 300,
+      "workload": "Light",
+      "schedule": "Thu 09:00-11:00",
+      "category": "AI Track Elective",
+      "score": 0.0832,
+      "relevance_rank": 9,
+      "matched_interests": [
+        "Python"
+      ],
+      "evidence": {
+        "course_source": "course_catalog.md#AI320",
+        "retrieval_score": 0.039,
+        "rules_checked": [
+          {
+            "rule": "R4",
+            "result": "OK",
+            "detail": "Prerequisites met: STAT201 (B+), CS101 (B)",
+            "source": "registration_rules.md#R4"
+          },
+          {
+            "rule": "R6",
+            "result": "OK",
+            "detail": "Level 300 allowed for Year 3.",
+            "source": "registration_rules.md#R6"
+          },
+          {
+            "rule": "R8",
+            "result": "OK",
+            "detail": "Offered in Fall.",
+            "source": "registration_rules.md#R8"
+          },
+          {
+            "rule": "R9",
+            "result": "OK",
+            "detail": "Meets Thu 09:00-11:00; no overlap with the other selected courses.",
+            "source": "registration_rules.md#R9"
+          }
+        ]
+      },
+      "reason": "Matches your interests/skills: Python (topics: visual perception; charts; dashboards). AI Track elective that broadens your profile. Prerequisites satisfied (STAT201: B+, CS101: B). Light workload."
+    }
+  ],
+  "excluded": [
+    {
+      "code": "AI401",
+      "title": "Deep Learning",
+      "status": "FLAGGED",
+      "retrieval_rank": 1,
+      "reasons": [
+        {
+          "rule": "R6",
+          "level": "FLAG",
+          "message": "Level 400 is one level above Year 3; requires advisor approval (R14).",
+          "evidence": {
+            "rule": "R6",
+            "source": "registration_rules.md#R6",
+            "rule_title": "Course level restriction",
+            "policy_text": "A student in academic year Y may register for courses numbered up to Y x 100 (for example, a Year 2 student may take 100-level and 200-level courses). A course exactly one level above the student's year requires written advisor approval, so it is flagged and not recommended automatically. Courses two or more levels above the student's year are not allowed.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.353
+          }
+        }
+      ]
+    },
+    {
+      "code": "AI403",
+      "title": "Computer Vision",
+      "status": "BLOCKED",
+      "retrieval_rank": 3,
+      "reasons": [
+        {
+          "rule": "R8",
+          "level": "BLOCK",
+          "message": "Not offered in Fall (offered: Spring).",
+          "evidence": {
+            "rule": "R8",
+            "source": "registration_rules.md#R8",
+            "rule_title": "Course availability by semester",
+            "policy_text": "A course can only be registered in a semester in which it is offered, as stated in the course catalog (Fall, Spring or both). A course whose offering is not published cannot be registered.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.488
+          }
+        },
+        {
+          "rule": "R6",
+          "level": "FLAG",
+          "message": "Level 400 is one level above Year 3; requires advisor approval (R14).",
+          "evidence": {
+            "rule": "R6",
+            "source": "registration_rules.md#R6",
+            "rule_title": "Course level restriction",
+            "policy_text": "A student in academic year Y may register for courses numbered up to Y x 100 (for example, a Year 2 student may take 100-level and 200-level courses). A course exactly one level above the student's year requires written advisor approval, so it is flagged and not recommended automatically. Courses two or more levels above the student's year are not allowed.",
+            "retrieved_rank": 1,
+            "retrieval_score": 0.353
+          }
+        }
+      ]
+    }
+  ],
+  "total_credits": 18,
+  "uncovered_interests": [
+    "computer vision"
+  ],
+  "notes": [],
+  "validation": {
+    "passed": true,
+    "violations": []
+  },
+  "full_audit": {
+    "CS101": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade B; cannot be repeated."
+      ]
+    },
+    "CS102": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade B+; cannot be repeated."
+      ]
+    },
+    "MATH101": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade B-; cannot be repeated."
+      ]
+    },
+    "ENG101": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade B; cannot be repeated."
+      ]
+    },
+    "PHYS101": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade C+; cannot be repeated."
+      ]
+    },
+    "CS201": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade B+; cannot be repeated."
+      ]
+    },
+    "CS202": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade B; cannot be repeated."
+      ]
+    },
+    "CS203": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring).",
+        "R5 BLOCK: Already passed with grade B-; cannot be repeated."
+      ]
+    },
+    "MATH201": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade B; cannot be repeated."
+      ]
+    },
+    "STAT201": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade B+; cannot be repeated."
+      ]
+    },
+    "CS210": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A-; cannot be repeated."
+      ]
+    },
+    "CS220": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A; cannot be repeated."
+      ]
+    },
+    "HUM201": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade A; cannot be repeated."
+      ]
+    },
+    "CS301": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "CS302": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring)."
+      ]
+    },
+    "CS310": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "CS320": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "CS330": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring)."
+      ]
+    },
+    "CS340": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "CS350": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "CS370": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "AI301": {
+      "status": "BLOCKED",
+      "findings": [
+        "R5 BLOCK: Already passed with grade B+; cannot be repeated."
+      ]
+    },
+    "AI310": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring)."
+      ]
+    },
+    "AI320": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "SEC301": {
+      "status": "ELIGIBLE",
+      "findings": []
+    },
+    "AI401": {
+      "status": "FLAGGED",
+      "findings": [
+        "R6 FLAG: Level 400 is one level above Year 3; requires advisor approval (R14)."
+      ]
+    },
+    "AI402": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring).",
+        "R6 FLAG: Level 400 is one level above Year 3; requires advisor approval (R14)."
+      ]
+    },
+    "AI403": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring).",
+        "R6 FLAG: Level 400 is one level above Year 3; requires advisor approval (R14)."
+      ]
+    },
+    "CS401": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite CS302 (Operating Systems) has not been completed.",
+        "R4 BLOCK: Prerequisite CS320 (Computer Networks) has not been completed.",
+        "R6 FLAG: Level 400 is one level above Year 3; requires advisor approval (R14)."
+      ]
+    },
+    "CS410": {
+      "status": "BLOCKED",
+      "findings": [
+        "R4 BLOCK: Prerequisite CS310 (Software Engineering) has not been completed.",
+        "R6 FLAG: Level 400 is one level above Year 3; requires advisor approval (R14).",
+        "R11 BLOCK: Requires 90 earned credit hours; student has 66."
+      ]
+    },
+    "CS411": {
+      "status": "BLOCKED",
+      "findings": [
+        "R8 BLOCK: Not offered in Fall (offered: Spring).",
+        "R4 BLOCK: Prerequisite CS410 (Senior Project I) has not been completed.",
+        "R6 FLAG: Level 400 is one level above Year 3; requires advisor approval (R14)."
+      ]
+    },
+    "CS499": {
+      "status": "FLAGGED",
+      "findings": [
+        "R12 FLAG: Catalog does not publish: offered, prerequisites, schedule. Eligibility cannot be verified; refer to advisor."
+      ]
+    }
+  },
+  "explanation_mode": "template (offline)"
+}

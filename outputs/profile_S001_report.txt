@@ -1,0 +1,91 @@
+======================================================================================================================
+STUDENT S001 – Sara Mostafa   |   Year 1, Fall semester   |   GPA n/a   |   earned credits 0
+======================================================================================================================
+  Scenario: New first-year student, no GPA yet; asks for a course she is not eligible for (level + prerequisites).
+
+1) INPUT
+    Completed: none
+    Skills: basic Python from online tutorials
+    Interests: programming, artificial intelligence, problem solving  |  Goal: become an AI engineer
+    Desired credits: 15  |  Workload preference: medium  |  Explicitly requested: AI301
+
+2) RETRIEVED EVIDENCE   (backend: TF-IDF unigram+bigram (scikit-learn fallback))
+    Query: "programming, artificial intelligence, problem solving become an AI engineer basic Python from online
+      tutorials"
+    Top retrieved course passages: #1 AI301 (0.165); #2 CS201 (0.149); #3 CS102 (0.143); #4 CS301 (0.14); #5 AI401
+      (0.129); #6 CS101 (0.094)
+    Degree-plan passage [degree_plan.md#Artificial Intelligence track] (0.157): Artificial Intelligence track.
+      Students interested in machine learning, data science, deep learning, natural language processing and computer
+      vision follow the AI track. Typical sequence: MATH201 and STAT201 in Year 2, AI301 [...]
+    Degree-plan passage [degree_plan.md#Recommended core sequence] (0.029): Recommended core sequence. Year 1 core:
+      CS101 Introduction to Programming, CS102 Discrete Mathematics, MATH101 Calculus I, ENG101 Technical Writing,
+      PHYS101 Physics for Computing. Year 2 core: CS201 Data Structures, CS202 [...]
+
+3) CREDIT-LOAD RULES   (limit 18, target 15)
+    [R3/FLAG] GPA not provided: probation (R3) and overload (R2) eligibility cannot be checked; standard limit R1
+      applied.
+        Evidence registration_rules.md#R3 (retrieved rank 1): A student whose cumulative GPA is below 2.0 is on
+          academic probation and may register for at most 12 credit hours in a semester, regardless of the requested
+          load.
+
+4) ACCEPTED COURSES  → total 15 credit hours
+  ✔ CS102  Discrete Mathematics  (3 cr, Medium, Sun/Tue 12:30-14:00)  score 0.95
+      Matches your interests/skills: problem solving (topics: logic and proofs; sets; relations). Core course planned
+        for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium preference.
+      Sources: course_catalog.md#CS102 (sim 0.143); rules R4, R6, R8, R9
+  ✔ CS101  Introduction to Programming  (3 cr, Medium, Sun/Tue 09:00-10:30)  score 0.7434
+      Matches your interests/skills: programming (topics: variables and data types; control flow; functions). Core
+        course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium preference.
+      Sources: course_catalog.md#CS101 (sim 0.094); rules R4, R6, R8, R9
+  ✔ MATH101  Calculus I  (3 cr, Medium, Mon/Wed 09:00-10:30)  score 0.35
+      Core course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium
+        preference.
+      Sources: course_catalog.md#MATH101 (sim 0); rules R4, R6, R8, R9
+  ✔ PHYS101  Physics for Computing  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.35
+      Core course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium
+        preference.
+      Sources: course_catalog.md#PHYS101 (sim 0); rules R4, R6, R8, R9
+  ✔ ENG101  Technical Writing  (3 cr, Light, Thu 13:00-16:00)  score 0.3
+      Core course planned for Year 1 of the degree plan. No prerequisites. Light workload.
+      Sources: course_catalog.md#ENG101 (sim 0); rules R4, R6, R8, R9
+
+6) EXCLUDED COURSES (among requested / top-retrieved)
+  ✘ AI301  Machine Learning Fundamentals  – BLOCKED
+      [R4] Prerequisite CS201 (Data Structures and Algorithms) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R4] Prerequisite STAT201 (Probability and Statistics) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R4] Prerequisite MATH201 (Linear Algebra) has not been completed.  (evidence registration_rules.md#R4,
+        retrieved rank 1)
+      [R6] Level 300 is two or more levels above Year 1 (max allowed 100).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+  ✘ CS201  Data Structures and Algorithms  – BLOCKED
+      [R4] Prerequisite CS101 (Introduction to Programming) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R6] Level 200 is one level above Year 1; requires advisor approval (R14).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+  ✘ CS301  Algorithm Analysis  – BLOCKED
+      [R4] Prerequisite CS201 (Data Structures and Algorithms) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R4] Prerequisite CS102 (Discrete Mathematics) has not been completed.  (evidence registration_rules.md#R4,
+        retrieved rank 1)
+      [R6] Level 300 is two or more levels above Year 1 (max allowed 100).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+  ✘ AI401  Deep Learning  – BLOCKED
+      [R4] Prerequisite AI301 (Machine Learning Fundamentals) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R4] Prerequisite MATH201 (Linear Algebra) has not been completed.  (evidence registration_rules.md#R4,
+        retrieved rank 1)
+      [R6] Level 400 is two or more levels above Year 1 (max allowed 100).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+  ✘ AI320  Data Visualization  – BLOCKED
+      [R4] Prerequisite STAT201 (Probability and Statistics) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R4] Prerequisite CS101 (Introduction to Programming) has not been completed.  (evidence
+        registration_rules.md#R4, retrieved rank 1)
+      [R6] Level 300 is two or more levels above Year 1 (max allowed 100).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+
+  Interests not covered by any eligible course this semester: artificial intelligence
+
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)

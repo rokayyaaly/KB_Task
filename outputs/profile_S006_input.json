@@ -1,0 +1,45 @@
+{
+  "student_id": "S006",
+  "name": "Maya Samir",
+  "academic_year": 3,
+  "semester": "Spring",
+  "gpa": 3.4,
+  "completed": {
+    "CS101": "A-",
+    "CS102": "A",
+    "MATH101": "B+",
+    "ENG101": "A",
+    "PHYS101": "B+",
+    "CS201": "A",
+    "CS202": "A-",
+    "CS203": "B+",
+    "MATH201": "A-",
+    "STAT201": "A",
+    "CS210": "A-",
+    "CS220": "A",
+    "HUM201": "A",
+    "CS301": "B+",
+    "AI301": "A"
+  },
+  "desired_credits": 15,
+  "other_credits": 22,
+  "skills": [
+    "Python",
+    "PyTorch basics",
+    "SQL"
+  ],
+  "interests": [
+    "natural language processing",
+    "computer vision",
+    "mobile apps",
+    "data mining"
+  ],
+  "goals": "work on applied AI products",
+  "workload_pref": "medium",
+  "requested_courses": [
+    "AI402",
+    "CS499"
+  ],
+  "scenario": "Timetable conflict (CS302 vs CS330), level-approval flags (400-level courses in Year 3) and a course with missing catalog information (CS499).",
+  "earned_credits": 66
+}

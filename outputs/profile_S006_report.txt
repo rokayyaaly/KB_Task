@@ -1,0 +1,77 @@
+======================================================================================================================
+STUDENT S006 – Maya Samir   |   Year 3, Spring semester   |   GPA 3.4   |   earned credits 66
+======================================================================================================================
+  Scenario: Timetable conflict (CS302 vs CS330), level-approval flags (400-level courses in Year 3) and a course with
+    missing catalog information (CS499).
+
+1) INPUT
+    Completed: CS101(A-), CS102(A), MATH101(B+), ENG101(A), PHYS101(B+), CS201(A), CS202(A-), CS203(B+), MATH201(A-),
+      STAT201(A), CS210(A-), CS220(A), HUM201(A), CS301(B+), AI301(A)
+    Skills: Python, PyTorch basics, SQL
+    Interests: natural language processing, computer vision, mobile apps, data mining  |  Goal: work on applied AI
+      products
+    Desired credits: 15  |  Workload preference: medium  |  Explicitly requested: AI402, CS499
+
+2) RETRIEVED EVIDENCE   (backend: TF-IDF unigram+bigram (scikit-learn fallback))
+    Query: "natural language processing, computer vision, mobile apps, data mining work on applied AI products Python,
+      PyTorch basics, SQL"
+    Top retrieved course passages: #1 AI402 (0.225); #2 AI403 (0.141); #3 AI310 (0.122); #4 CS330 (0.119); #5 AI320
+      (0.081); #6 CS210 (0.078)
+    Degree-plan passage [degree_plan.md#Artificial Intelligence track] (0.387): Artificial Intelligence track.
+      Students interested in machine learning, data science, deep learning, natural language processing and computer
+      vision follow the AI track. Typical sequence: MATH201 and STAT201 in Year 2, AI301 [...]
+    Degree-plan passage [degree_plan.md#Software Engineering track] (0.058): Software Engineering track. Students
+      interested in web, mobile and user-facing software follow the Software Engineering track. Typical sequence:
+      CS202 Object-Oriented Programming and CS220 Web Development in Year 2, then [...]
+
+3) CREDIT-LOAD RULES   (limit 18, target 15)
+    No credit-load restriction triggered (R1 standard load 12–18 applies).
+
+4) ACCEPTED COURSES  → total 15 credit hours
+  ✔ AI310  Data Mining and Analytics  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.7
+      Matches your interests/skills: data mining (topics: association rules; clustering; classification). AI Track
+        elective that broadens your profile. Prerequisites satisfied (CS210: A-, STAT201: A). Medium workload, fits
+        your medium preference.
+      Sources: course_catalog.md#AI310 (sim 0.122); rules R4, R6, R8, R9
+  ✔ CS330  Mobile App Development  (3 cr, Medium, Sun/Tue 10:45-12:15)  score 0.6843
+      Matches your interests/skills: mobile apps (topics: Android; iOS; mobile user interface). Software Engineering
+        Track elective that broadens your profile. Prerequisites satisfied (CS202: A-). Medium workload, fits your
+        medium preference.
+      Sources: course_catalog.md#CS330 (sim 0.119); rules R4, R6, R8, R9
+  ✔ CS310  Software Engineering  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.4619
+      Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS202: A-). Medium workload, fits
+        your medium preference.
+      Sources: course_catalog.md#CS310 (sim 0.023); rules R4, R6, R8, R9
+  ✔ AI320  Data Visualization  (3 cr, Light, Thu 09:00-11:00)  score 0.4455
+      Matches your interests/skills: Python (topics: visual perception; charts; dashboards). AI Track elective that
+        broadens your profile. Prerequisites satisfied (STAT201: A, CS101: A-). Light workload.
+      Sources: course_catalog.md#AI320 (sim 0.081); rules R4, R6, R8, R9
+  ✔ CS350  Human-Computer Interaction  (3 cr, Light, Thu 13:00-16:00)  score 0.104
+      Software Engineering Track elective that broadens your profile. Prerequisites satisfied (CS101: A-). Light
+        workload.
+      Sources: course_catalog.md#CS350 (sim 0.011); rules R4, R6, R8, R9
+
+5) FLAGGED – NEEDS ADVISOR (not auto-recommended)
+  ⚑ AI402  Natural Language Processing
+      [R6] Level 400 is one level above Year 3; requires advisor approval (R14).
+  ⚑ CS499  Special Topics in Emerging Computing
+      [R12] Catalog does not publish: offered, prerequisites, schedule. Eligibility cannot be verified; refer to
+        advisor.
+  ⚑ AI403  Computer Vision
+      [R6] Level 400 is one level above Year 3; requires advisor approval (R14).
+
+6) EXCLUDED COURSES (among requested / top-retrieved)
+  ✘ AI401  Deep Learning  – BLOCKED
+      [R8] Not offered in Spring (offered: Fall).  (evidence registration_rules.md#R8, retrieved rank 1)
+      [R6] Level 400 is one level above Year 3; requires advisor approval (R14).  (evidence registration_rules.md#R6,
+        retrieved rank 1)
+  ✘ CS302  Operating Systems  – ELIGIBLE (not selected)
+      [R9] Timetable conflict: CS302 (Sun/Tue 10:45-12:15) overlaps CS330 (Sun/Tue 10:45-12:15).  (evidence
+        registration_rules.md#R9, retrieved rank 1)
+  ✘ CS340  Computer Graphics  – ELIGIBLE (not selected)
+      [R9] Timetable conflict: CS340 (Mon/Wed 10:45-12:15) overlaps AI310 (Mon/Wed 10:45-12:15).  (evidence
+        registration_rules.md#R9, retrieved rank 1)
+
+  Interests not covered by any eligible course this semester: natural language processing, computer vision
+
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)

@@ -1,0 +1,9 @@
+# Mandatory
+numpy>=1.24
+scikit-learn>=1.3        # TF-IDF embeddings (offline fallback)
+# Optional (better semantic embeddings; downloads all-MiniLM-L6-v2 on first run)
+sentence-transformers>=2.6
+# Notebook runtime
+jupyter
+# No LLM SDK needed: the notebook calls the Anthropic / OpenAI REST APIs with urllib.
+# Optional environment variables: ANTHROPIC_API_KEY (+ ANTHROPIC_MODEL) or OPENAI_API_KEY (+ OPENAI_MODEL)

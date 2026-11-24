@@ -1,0 +1,33 @@
+{
+  "student_id": "S002",
+  "name": "Omar Hassan",
+  "academic_year": 2,
+  "semester": "Spring",
+  "gpa": 3.1,
+  "completed": {
+    "CS101": "A",
+    "CS102": "A-",
+    "MATH101": "B+",
+    "ENG101": "B",
+    "PHYS101": "B",
+    "CS201": "B+"
+  },
+  "desired_credits": 15,
+  "other_credits": 14,
+  "skills": [
+    "Python",
+    "data structures"
+  ],
+  "interests": [
+    "machine learning",
+    "data science",
+    "Python"
+  ],
+  "goals": "work as a data scientist",
+  "workload_pref": "medium",
+  "requested_courses": [
+    "AI301"
+  ],
+  "scenario": "UNMET PREREQUISITE: wants Machine Learning (AI301) but has not taken STAT201 or MATH201.",
+  "earned_credits": 32
+}
