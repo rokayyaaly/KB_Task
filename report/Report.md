@@ -3,7 +3,7 @@ title: "RAG-Based Semester Course Advisor — Project Report"
 subtitle: "KBA Assignment · Team of 2 · Deadline 28/11/2026"
 ---
 
-**Team members:** _(name 1, ID)_ · _(name 2, ID)_
+**Team members:** Rokayya Aly (23010050) · Mohamed Elbassat (23010047)
 
 # 1. Aim and overview
 
@@ -35,7 +35,7 @@ The test students are **synthetic** (`data/student_profiles.json`).
 The catalog and rules are parsed into structured Python records (dataclasses `Course`, `Rule`) with regular expressions. Fields such as "Not published" or "TBA" become `None` and the field name is added to the course's `missing` list. The same documents are turned into 54 text chunks: one per course, one per rule and one per degree-plan subsection. A sentence-aware splitter with overlap handles passages longer than 900 characters. Every chunk keeps its source reference, for example `course_catalog.md#AI301` or `registration_rules.md#R4`.
 
 ## 3.2 Embeddings and retrieval
-Chunks are embedded with `sentence-transformers/all-MiniLM-L6-v2` when it is installed. Otherwise the system falls back to scikit-learn TF-IDF with unigrams and bigrams, so it runs without downloads. Vectors are L2-normalised and retrieval is cosine similarity over a NumPy matrix, restricted by chunk type when needed. The stored sample outputs were produced with the TF-IDF fallback.
+Chunks are embedded with `sentence-transformers/all-MiniLM-L6-v2` when it is installed. Otherwise the system falls back to scikit-learn TF-IDF with unigrams and bigrams, so it runs without downloads. In both cases vectors are L2-normalised and retrieval is cosine similarity over a NumPy matrix, restricted by chunk type when needed.
 
 Retrieval is used twice:
 
@@ -53,10 +53,10 @@ Eligible courses are scored as
 where relevance is the retrieval similarity normalised by the best eligible course, program priority rewards core courses due at or before the student's year (and required general education), and workload fit compares the course label with the student's preference. A greedy builder adds courses in score order under the credit limit (R1–R3), timetable (R9), corequisite (R10) and heavy-course (R13) rules; a course with an unmet corequisite is added together with its corequisite when both fit. The final list is then re-checked by `validate_plan()`, a separate function that re-applies every rule to the finished schedule. All six schedules passed this audit.
 
 ## 3.5 LLM and guardrail
-`call_llm()` supports the Anthropic and OpenAI HTTP APIs (via environment variables, no SDK required). The LLM receives only the retrieved catalog passages, the matched interests and the rule results, and writes one short reason per accepted course. A guardrail rejects the output if any recommended course is missing or any course code outside the catalog is mentioned, and then the deterministic template is used. The recommended course list itself is never decided by the LLM, only the wording of the reasons. Without an API key the template produces the reasons, so the system runs fully offline; the sample outputs in this submission were produced in that offline mode.
+`call_llm()` prefers the **free NVIDIA NIM** API (`NVIDIA_API_KEY` → `https://integrate.api.nvidia.com/v1/chat/completions`, default model `nvidia/nemotron-3.5-bolt-e4b`). It also accepts OpenAI or Anthropic keys. Calls use plain HTTPS (no SDK). The LLM receives only the retrieved catalog passages, the matched interests and the rule results, and writes one short reason per accepted course. A guardrail rejects the output if any recommended course is missing or any course code outside the catalog is mentioned, and then the deterministic template is used. The recommended course list itself is never decided by the LLM, only the wording of the reasons. Without an API key the template produces the reasons, so the system runs fully offline.
 
 ## 3.6 Chatbot
-`AdvisorChatbot` fills the profile "slots" (year, semester, GPA, completed courses with grades, interests, credits, workload) from free text, using an LLM JSON extractor when a key is set and regular expressions otherwise. It asks for missing details instead of inventing them (for example a course without a grade is assumed to be "C" and flagged). It handles four intents: recommend a schedule, explain why a course is not allowed (rule engine plus retrieved policy text), describe a course, and answer policy questions with retrieval. If the student changes a preference the plan is recomputed. A scripted conversation is in the notebook and saved in `outputs/chatbot_transcript.json`.
+`AdvisorChatbot` fills the profile "slots" (year, semester, GPA, completed courses with grades, interests, goals, credits, workload) from free text, using an LLM JSON extractor when a key is set and regular expressions otherwise. It asks for missing details instead of inventing them (for example a course without a grade is assumed to be "C" and flagged; GPA or goals can be skipped). It handles four intents: recommend a schedule, explain why a course is not allowed (rule engine plus retrieved policy text), describe a course, and answer policy questions with retrieval. If the student changes a preference the plan is recomputed. A scripted conversation is in the notebook and saved in `outputs/chatbot_transcript.json`.
 
 # 4. Rules enforced
 
@@ -74,7 +74,7 @@ where relevance is the retrieval similarity normalised by the best eligible cour
 | R10 | Corequisites completed or taken together | Bundles or blocks |
 | R11 | Minimum earned credits (capstone: 90) | Blocks otherwise |
 | R12 | Missing catalog information | Flags; never recommends automatically |
-| R13 | At most 2 Heavy courses (1 if GPA < 2.5) | Schedule builder + final audit |
+| R13 | At most 2 Heavy courses (1 if GPA < 2.5; 1 if GPA missing) | Schedule builder + final audit; FLAG when GPA missing |
 | R14 | Advisor-approval process | Referred to in flag messages |
 
 # 5. Test profiles and results
@@ -83,7 +83,7 @@ Six synthetic students were run. Full inputs, retrieved evidence, accepted and r
 
 | ID | Student | Year / term | GPA | Requested → limit | Result | Accepted courses | What it demonstrates |
 |---|---|---|---|---|---|---|---|
-| S001 | Sara | 1 / Fall | none | 15 → 18 | 15 cr | CS102, CS101, MATH101, PHYS101, ENG101 | New student, missing GPA flagged; AI301 blocked (prerequisites, level) |
+| S001 | Sara | 1 / Fall | none | 15 → 18 | 15 cr | CS102, CS101, MATH101, PHYS101, ENG101 | New student, missing GPA flagged (R2/R3/R13 not fully checkable); AI301 blocked (prerequisites, level) |
 | S002 | Omar | 2 / Spring | 3.1 | 15 → 18 | 14 cr | MATH201, STAT201, CS210, CS203, HUM201 | **Unmet prerequisite** (AI301 needs STAT201, MATH201) |
 | S003 | Lina | 3 / Fall | 3.2 | 21 → 18 | 18 cr | CS370, CS301, CS320, CS310, CS340, AI320 | **Credit limit exceeded**: 21 requested, overload needs GPA 3.5; AI401 flagged (level); corequisite bundle CS370 + CS301 |
 | S004 | Karim | 4 / Fall | 3.6 | 21 → 21 | 15 cr | CS401, CS410, SEC301, CS340, AI320 | Capstone with 98 earned credits; heavy-course limit excludes AI401 and CS370; CS411 blocked (needs CS410, offered in Spring only) |
@@ -112,9 +112,9 @@ Six synthetic students were run. Full inputs, retrieved evidence, accepted and r
 
 * **Fictional, simplified data.** The catalog is small (32 courses) with one section per course. Real catalogs have multiple sections, seat limits, instructors, "or" prerequisites and exceptions.
 * **Rules are encoded by hand.** The numeric parameters come from the policy file, but the logic of each rule is written in Python. A new kind of rule needs new code, and the system cannot read an arbitrary official policy PDF and turn it into checks automatically.
-* **Retrieval quality depends on the embedder.** The stored results use TF-IDF, which matches words rather than meaning (for example it ignores synonyms). Sentence-transformer embeddings improve this but were not available in our offline build environment. Some low-similarity "filler" courses (core or general education) are chosen by program priority rather than relevance, and their reasons say so.
+* **Retrieval quality depends on the embedder.** TF-IDF matches words rather than meaning (for example it ignores synonyms); vectors are L2-normalised so scores are cosine similarity. Sentence-transformer embeddings improve semantics when installed. Some low-similarity "filler" courses (core or general education) are chosen by program priority rather than relevance, and their reasons say so.
 * **Greedy scheduling.** The builder is not guaranteed to find the best possible combination; for example a lower-ranked course can be dropped because a higher-ranked one overlaps with it.
-* **LLM not verified in the stored outputs.** The LLM path (explanations, slot extraction, policy answers) was implemented with a guardrail, but the stored outputs were produced in offline template mode. The guardrail checks course codes only, not every factual statement.
+* **LLM depends on a free NVIDIA key (or OpenAI/Anthropic).** Sample explanations were generated with NVIDIA NIM (`nvidia/nemotron-3.5-bolt-e4b`); without a key the offline template is used. The guardrail checks course codes only, not every factual statement.
 * **Chatbot parsing is rule-based without an API key.** Regular-expression extraction handles common phrasings but not arbitrary language, and it may miss details.
 * **Advisor decisions are out of scope.** Courses needing approval are flagged and kept out of the schedule; the system does not model the approval workflow, and it does not predict grades or workload for an individual student.
 

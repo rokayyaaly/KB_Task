@@ -4,6 +4,8 @@ A Retrieval-Augmented Generation system that recommends the courses a student sh
 
 > **All data is fictional.** "Nile Valley University (NVU)" and its catalog, rules and degree plan were written for this assignment. No official documents were used.
 
+**Team:** Rokayya Aly (23010050) · Mohamed Elbassat (23010047)
+
 ## Folder structure
 ```
 RAG_Course_Advisor.ipynb      main notebook (code + executed outputs)
@@ -26,8 +28,8 @@ jupyter notebook RAG_Course_Advisor.ipynb   # then: Run All
 ```
 Keep `kb/` and `data/` in the same folder as the notebook. Google Colab: upload the three folders/files, run `!pip install -r requirements.txt`, then Run All.
 
-* **Embeddings:** the notebook uses `sentence-transformers/all-MiniLM-L6-v2` if installed, otherwise a TF-IDF (unigram + bigram) fallback. The stored outputs were produced with the TF-IDF fallback; similarity scores differ slightly with sentence-transformers, rule decisions do not.
-* **LLM (optional):** set `ANTHROPIC_API_KEY` or `OPENAI_API_KEY` before starting Jupyter. The LLM then writes the course explanations (guardrail-checked) and powers profile extraction and policy Q&A in the chatbot. Without a key an evidence-grounded template is used, so the notebook runs fully offline.
+* **Embeddings:** the notebook uses `sentence-transformers/all-MiniLM-L6-v2` if installed, otherwise a TF-IDF (unigram + bigram) fallback with L2-normalised cosine similarity. Rule decisions do not depend on the embedder.
+* **LLM (optional, recommended):** set a free **`NVIDIA_API_KEY`** from [build.nvidia.com/settings](https://build.nvidia.com/settings) before starting Jupyter. The notebook calls NVIDIA NIM (`nvidia/nemotron-3.5-bolt-e4b` by default; override with `NVIDIA_MODEL`) over the OpenAI-compatible endpoint. You can also set `OPENAI_API_KEY` or `ANTHROPIC_API_KEY`. Without a key an evidence-grounded template is used, so the notebook runs fully offline.
 * **Chat interactively:** uncomment `chat_cli()` in section 9.
 
 ## Use your own student

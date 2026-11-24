@@ -29,26 +29,19 @@ STUDENT S006 – Maya Samir   |   Year 3, Spring semester   |   GPA 3.4   |   ea
 
 4) ACCEPTED COURSES  → total 15 credit hours
   ✔ AI310  Data Mining and Analytics  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.7
-      Matches your interests/skills: data mining (topics: association rules; clustering; classification). AI Track
-        elective that broadens your profile. Prerequisites satisfied (CS210: A-, STAT201: A). Medium workload, fits
-        your medium preference.
+      This meets your interest in data mining through real data projects on clustering and classification.
       Sources: course_catalog.md#AI310 (sim 0.122); rules R4, R6, R8, R9
   ✔ CS330  Mobile App Development  (3 cr, Medium, Sun/Tue 10:45-12:15)  score 0.6843
-      Matches your interests/skills: mobile apps (topics: Android; iOS; mobile user interface). Software Engineering
-        Track elective that broadens your profile. Prerequisites satisfied (CS202: A-). Medium workload, fits your
-        medium preference.
+      This supports your interest in mobile apps through Android and iOS application design.
       Sources: course_catalog.md#CS330 (sim 0.119); rules R4, R6, R8, R9
   ✔ CS310  Software Engineering  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.4619
-      Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS202: A-). Medium workload, fits
-        your medium preference.
+      This develops your skills in team-based software development lifecycle necessary for applied AI products.
       Sources: course_catalog.md#CS310 (sim 0.023); rules R4, R6, R8, R9
   ✔ AI320  Data Visualization  (3 cr, Light, Thu 09:00-11:00)  score 0.4455
-      Matches your interests/skills: Python (topics: visual perception; charts; dashboards). AI Track elective that
-        broadens your profile. Prerequisites satisfied (STAT201: A, CS101: A-). Light workload.
+      This leverages your Python skills to visualize data, aligning with data science and AI goals.
       Sources: course_catalog.md#AI320 (sim 0.081); rules R4, R6, R8, R9
   ✔ CS350  Human-Computer Interaction  (3 cr, Light, Thu 13:00-16:00)  score 0.104
-      Software Engineering Track elective that broadens your profile. Prerequisites satisfied (CS101: A-). Light
-        workload.
+      This provides insight into user experience through prototyping and usability testing for applied products.
       Sources: course_catalog.md#CS350 (sim 0.011); rules R4, R6, R8, R9
 
 5) FLAGGED – NEEDS ADVISOR (not auto-recommended)
@@ -74,4 +67,4 @@ STUDENT S006 – Maya Samir   |   Year 3, Spring semester   |   GPA 3.4   |   ea
 
   Interests not covered by any eligible course this semester: natural language processing, computer vision
 
-7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: LLM via NVIDIA NIM (nvidia/nemotron-3.5-bolt-e4b) (grounded + guardrail passed)

@@ -137,7 +137,7 @@
           }
         ]
       },
-      "reason": "Matches your interests/skills: deep learning, GPU computing (topics: parallel algorithms; multithreading; CUDA). Systems Track elective that broadens your profile. Prerequisites satisfied (CS203: B-, CS201: B+). Heavy workload, fits your heavy preference."
+      "reason": "This course directly supports your goal to become a deep learning engineer through GPU computing."
     },
     {
       "code": "CS301",
@@ -180,7 +180,7 @@
           }
         ]
       },
-      "reason": "Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS201: B+, CS102: B+). Heavy workload, fits your heavy preference."
+      "reason": "This provides advanced analysis skills crucial for rigorous computer science problem-solving."
     },
     {
       "code": "CS320",
@@ -223,7 +223,7 @@
           }
         ]
       },
-      "reason": "Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS203: B-). Medium workload."
+      "reason": "This covers essential networking principles within the broader context of computing systems."
     },
     {
       "code": "CS310",
@@ -266,7 +266,7 @@
           }
         ]
       },
-      "reason": "Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS202: B). Medium workload."
+      "reason": "This builds practical industry skills in team-based software development and agile methods."
     },
     {
       "code": "CS340",
@@ -311,7 +311,7 @@
           }
         ]
       },
-      "reason": "Matches your interests/skills: linear algebra (topics: transformations; rasterisation; shading). Free elective that broadens your profile. Prerequisites satisfied (MATH201: B, CS201: B+). Medium workload."
+      "reason": "This applies your knowledge of linear algebra to 2D and 3D rendering techniques."
     },
     {
       "code": "AI320",
@@ -356,7 +356,7 @@
           }
         ]
       },
-      "reason": "Matches your interests/skills: Python (topics: visual perception; charts; dashboards). AI Track elective that broadens your profile. Prerequisites satisfied (STAT201: B+, CS101: B). Light workload."
+      "reason": "This leverages your Python skills to communicate data visually, relevant to AI applications."
     }
   ],
   "excluded": [
@@ -612,5 +612,5 @@
       ]
     }
   },
-  "explanation_mode": "template (offline)"
+  "explanation_mode": "LLM via NVIDIA NIM (nvidia/nemotron-3.5-bolt-e4b) (grounded + guardrail passed)"
 }

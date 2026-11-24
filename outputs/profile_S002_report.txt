@@ -25,26 +25,19 @@ STUDENT S002 – Omar Hassan   |   Year 2, Spring semester   |   GPA 3.1   |   e
 
 4) ACCEPTED COURSES  → total 14 credit hours
   ✔ MATH201  Linear Algebra  (3 cr, Medium, Sun/Tue 09:00-10:30)  score 0.95
-      Matches your interests/skills: machine learning, data science (topics: vectors; matrices; linear systems). Core
-        course planned for Year 2 of the degree plan. Prerequisites satisfied (MATH101: B+). Medium workload, fits
-        your medium preference.
+      This linear algebra knowledge is essential for your goal of working as a data scientist and machine learning.
       Sources: course_catalog.md#MATH201 (sim 0.275); rules R4, R6, R8, R9
   ✔ STAT201  Probability and Statistics  (3 cr, Medium, Mon/Wed 09:00-10:30)  score 0.826
-      Matches your interests/skills: machine learning, data science (topics: probability; random variables;
-        distributions). Core course planned for Year 2 of the degree plan. Prerequisites satisfied (MATH101: B+).
-        Medium workload, fits your medium preference.
+      Probability theory prepares you directly for data science and machine learning applications.
       Sources: course_catalog.md#STAT201 (sim 0.219); rules R4, R6, R8, R9
   ✔ CS210  Database Systems  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.5769
-      Matches your interests/skills: data science (topics: relational model; SQL; database design). Core course
-        planned for Year 2 of the degree plan. Prerequisites satisfied (CS201: B+). Medium workload, fits your medium
-        preference.
+      Database systems skills support data science by allowing you to model and query necessary data.
       Sources: course_catalog.md#CS210 (sim 0.104); rules R4, R6, R8, R9
   ✔ CS203  Computer Organization  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.4248
-      Core course planned for Year 2 of the degree plan. Prerequisites satisfied (CS101: A). Medium workload, fits
-        your medium preference.
+      Understanding computer organization provides foundational knowledge for efficient programming in Python.
       Sources: course_catalog.md#CS203 (sim 0.034); rules R4, R6, R8, R9
   ✔ HUM201  Ethics and Society in Computing  (2 cr, Light, Thu 09:00-11:00)  score 0.2
-      Required general-education course. No prerequisites. Light workload.
+      This course addresses ethical issues in AI, relevant for professional responsibility as a data scientist.
       Sources: course_catalog.md#HUM201 (sim 0); rules R4, R6, R8, R9
 
 6) EXCLUDED COURSES (among requested / top-retrieved)
@@ -72,4 +65,4 @@ STUDENT S002 – Omar Hassan   |   Year 2, Spring semester   |   GPA 3.1   |   e
 
   Interests not covered by any eligible course this semester: Python
 
-7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: LLM via NVIDIA NIM (nvidia/nemotron-3.5-bolt-e4b) (grounded + guardrail passed)

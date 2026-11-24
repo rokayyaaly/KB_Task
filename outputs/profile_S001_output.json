@@ -16,6 +16,19 @@
           "retrieved_rank": 1,
           "retrieval_score": 0.541
         }
+      },
+      {
+        "rule": "R13",
+        "level": "FLAG",
+        "message": "GPA not provided: heavy-course limit (R13) cannot be checked fully; conservative limit of 1 Heavy course applied.",
+        "evidence": {
+          "rule": "R13",
+          "source": "registration_rules.md#R13",
+          "rule_title": "Heavy workload limit",
+          "policy_text": "Courses marked Heavy in the catalog have a weekly workload of more than 12 hours. A student may register for at most 2 Heavy courses per semester. A student with a cumulative GPA below 2.5 may register for at most 1 Heavy course per semester.",
+          "retrieved_rank": 1,
+          "retrieval_score": 0.436
+        }
       }
     ]
   },
@@ -117,7 +130,7 @@
           }
         ]
       },
-      "reason": "Matches your interests/skills: problem solving (topics: logic and proofs; sets; relations). Core course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium preference."
+      "reason": "Develops logical reasoning for algorithms and supports your goal to become an AI engineer through problem solving."
     },
     {
       "code": "CS101",
@@ -162,7 +175,7 @@
           }
         ]
       },
-      "reason": "Matches your interests/skills: programming (topics: variables and data types; control flow; functions). Core course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium preference."
+      "reason": "Uses Python, building on your basic skills for your interest in programming and AI."
     },
     {
       "code": "MATH101",
@@ -205,7 +218,7 @@
           }
         ]
       },
-      "reason": "Core course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium preference."
+      "reason": "Provides mathematical foundations relevant to AI, covering limits, derivatives, and optimization."
     },
     {
       "code": "PHYS101",
@@ -248,7 +261,7 @@
           }
         ]
       },
-      "reason": "Core course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium preference."
+      "reason": "Explores concepts behind sensors and digital hardware, relevant to computing applications."
     },
     {
       "code": "ENG101",
@@ -291,7 +304,7 @@
           }
         ]
       },
-      "reason": "Core course planned for Year 1 of the degree plan. No prerequisites. Light workload."
+      "reason": "Builds essential writing skills for engineers, supporting your academic and career goals."
     }
   ],
   "excluded": [
@@ -768,5 +781,5 @@
       ]
     }
   },
-  "explanation_mode": "template (offline)"
+  "explanation_mode": "LLM via NVIDIA NIM (nvidia/nemotron-3.5-bolt-e4b) (grounded + guardrail passed)"
 }

@@ -27,26 +27,28 @@ STUDENT S001 – Sara Mostafa   |   Year 1, Fall semester   |   GPA n/a   |   ea
         Evidence registration_rules.md#R3 (retrieved rank 1): A student whose cumulative GPA is below 2.0 is on
           academic probation and may register for at most 12 credit hours in a semester, regardless of the requested
           load.
+    [R13/FLAG] GPA not provided: heavy-course limit (R13) cannot be checked fully; conservative limit of 1 Heavy
+      course applied.
+        Evidence registration_rules.md#R13 (retrieved rank 1): Courses marked Heavy in the catalog have a weekly
+          workload of more than 12 hours. A student may register for at most 2 Heavy courses per semester. A student
+          with a [...]
 
 4) ACCEPTED COURSES  → total 15 credit hours
   ✔ CS102  Discrete Mathematics  (3 cr, Medium, Sun/Tue 12:30-14:00)  score 0.95
-      Matches your interests/skills: problem solving (topics: logic and proofs; sets; relations). Core course planned
-        for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium preference.
+      Develops logical reasoning for algorithms and supports your goal to become an AI engineer through problem
+        solving.
       Sources: course_catalog.md#CS102 (sim 0.143); rules R4, R6, R8, R9
   ✔ CS101  Introduction to Programming  (3 cr, Medium, Sun/Tue 09:00-10:30)  score 0.7434
-      Matches your interests/skills: programming (topics: variables and data types; control flow; functions). Core
-        course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium preference.
+      Uses Python, building on your basic skills for your interest in programming and AI.
       Sources: course_catalog.md#CS101 (sim 0.094); rules R4, R6, R8, R9
   ✔ MATH101  Calculus I  (3 cr, Medium, Mon/Wed 09:00-10:30)  score 0.35
-      Core course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium
-        preference.
+      Provides mathematical foundations relevant to AI, covering limits, derivatives, and optimization.
       Sources: course_catalog.md#MATH101 (sim 0); rules R4, R6, R8, R9
   ✔ PHYS101  Physics for Computing  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.35
-      Core course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium
-        preference.
+      Explores concepts behind sensors and digital hardware, relevant to computing applications.
       Sources: course_catalog.md#PHYS101 (sim 0); rules R4, R6, R8, R9
   ✔ ENG101  Technical Writing  (3 cr, Light, Thu 13:00-16:00)  score 0.3
-      Core course planned for Year 1 of the degree plan. No prerequisites. Light workload.
+      Builds essential writing skills for engineers, supporting your academic and career goals.
       Sources: course_catalog.md#ENG101 (sim 0); rules R4, R6, R8, R9
 
 6) EXCLUDED COURSES (among requested / top-retrieved)
@@ -88,4 +90,4 @@ STUDENT S001 – Sara Mostafa   |   Year 1, Fall semester   |   GPA n/a   |   ea
 
   Interests not covered by any eligible course this semester: artificial intelligence
 
-7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: LLM via NVIDIA NIM (nvidia/nemotron-3.5-bolt-e4b) (grounded + guardrail passed)

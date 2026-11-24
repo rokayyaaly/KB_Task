@@ -27,26 +27,28 @@ STUDENT S001 – Sara Mostafa   |   Year 1, Fall semester   |   GPA n/a   |   ea
         Evidence registration_rules.md#R3 (retrieved rank 1): A student whose cumulative GPA is below 2.0 is on
           academic probation and may register for at most 12 credit hours in a semester, regardless of the requested
           load.
+    [R13/FLAG] GPA not provided: heavy-course limit (R13) cannot be checked fully; conservative limit of 1 Heavy
+      course applied.
+        Evidence registration_rules.md#R13 (retrieved rank 1): Courses marked Heavy in the catalog have a weekly
+          workload of more than 12 hours. A student may register for at most 2 Heavy courses per semester. A student
+          with a [...]
 
 4) ACCEPTED COURSES  → total 15 credit hours
   ✔ CS102  Discrete Mathematics  (3 cr, Medium, Sun/Tue 12:30-14:00)  score 0.95
-      Matches your interests/skills: problem solving (topics: logic and proofs; sets; relations). Core course planned
-        for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium preference.
+      Develops logical reasoning for algorithms and supports your goal to become an AI engineer through problem
+        solving.
       Sources: course_catalog.md#CS102 (sim 0.143); rules R4, R6, R8, R9
   ✔ CS101  Introduction to Programming  (3 cr, Medium, Sun/Tue 09:00-10:30)  score 0.7434
-      Matches your interests/skills: programming (topics: variables and data types; control flow; functions). Core
-        course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium preference.
+      Uses Python, building on your basic skills for your interest in programming and AI.
       Sources: course_catalog.md#CS101 (sim 0.094); rules R4, R6, R8, R9
   ✔ MATH101  Calculus I  (3 cr, Medium, Mon/Wed 09:00-10:30)  score 0.35
-      Core course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium
-        preference.
+      Provides mathematical foundations relevant to AI, covering limits, derivatives, and optimization.
       Sources: course_catalog.md#MATH101 (sim 0); rules R4, R6, R8, R9
   ✔ PHYS101  Physics for Computing  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.35
-      Core course planned for Year 1 of the degree plan. No prerequisites. Medium workload, fits your medium
-        preference.
+      Explores concepts behind sensors and digital hardware, relevant to computing applications.
       Sources: course_catalog.md#PHYS101 (sim 0); rules R4, R6, R8, R9
   ✔ ENG101  Technical Writing  (3 cr, Light, Thu 13:00-16:00)  score 0.3
-      Core course planned for Year 1 of the degree plan. No prerequisites. Light workload.
+      Builds essential writing skills for engineers, supporting your academic and career goals.
       Sources: course_catalog.md#ENG101 (sim 0); rules R4, R6, R8, R9
 
 6) EXCLUDED COURSES (among requested / top-retrieved)
@@ -88,7 +90,7 @@ STUDENT S001 – Sara Mostafa   |   Year 1, Fall semester   |   GPA n/a   |   ea
 
   Interests not covered by any eligible course this semester: artificial intelligence
 
-7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: LLM via NVIDIA NIM (nvidia/nemotron-3.5-bolt-e4b) (grounded + guardrail passed)
 
 ======================================================================================================================
 STUDENT S002 – Omar Hassan   |   Year 2, Spring semester   |   GPA 3.1   |   earned credits 32
@@ -117,26 +119,19 @@ STUDENT S002 – Omar Hassan   |   Year 2, Spring semester   |   GPA 3.1   |   e
 
 4) ACCEPTED COURSES  → total 14 credit hours
   ✔ MATH201  Linear Algebra  (3 cr, Medium, Sun/Tue 09:00-10:30)  score 0.95
-      Matches your interests/skills: machine learning, data science (topics: vectors; matrices; linear systems). Core
-        course planned for Year 2 of the degree plan. Prerequisites satisfied (MATH101: B+). Medium workload, fits
-        your medium preference.
+      This linear algebra knowledge is essential for your goal of working as a data scientist and machine learning.
       Sources: course_catalog.md#MATH201 (sim 0.275); rules R4, R6, R8, R9
   ✔ STAT201  Probability and Statistics  (3 cr, Medium, Mon/Wed 09:00-10:30)  score 0.826
-      Matches your interests/skills: machine learning, data science (topics: probability; random variables;
-        distributions). Core course planned for Year 2 of the degree plan. Prerequisites satisfied (MATH101: B+).
-        Medium workload, fits your medium preference.
+      Probability theory prepares you directly for data science and machine learning applications.
       Sources: course_catalog.md#STAT201 (sim 0.219); rules R4, R6, R8, R9
   ✔ CS210  Database Systems  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.5769
-      Matches your interests/skills: data science (topics: relational model; SQL; database design). Core course
-        planned for Year 2 of the degree plan. Prerequisites satisfied (CS201: B+). Medium workload, fits your medium
-        preference.
+      Database systems skills support data science by allowing you to model and query necessary data.
       Sources: course_catalog.md#CS210 (sim 0.104); rules R4, R6, R8, R9
   ✔ CS203  Computer Organization  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.4248
-      Core course planned for Year 2 of the degree plan. Prerequisites satisfied (CS101: A). Medium workload, fits
-        your medium preference.
+      Understanding computer organization provides foundational knowledge for efficient programming in Python.
       Sources: course_catalog.md#CS203 (sim 0.034); rules R4, R6, R8, R9
   ✔ HUM201  Ethics and Society in Computing  (2 cr, Light, Thu 09:00-11:00)  score 0.2
-      Required general-education course. No prerequisites. Light workload.
+      This course addresses ethical issues in AI, relevant for professional responsibility as a data scientist.
       Sources: course_catalog.md#HUM201 (sim 0); rules R4, R6, R8, R9
 
 6) EXCLUDED COURSES (among requested / top-retrieved)
@@ -164,7 +159,7 @@ STUDENT S002 – Omar Hassan   |   Year 2, Spring semester   |   GPA 3.1   |   e
 
   Interests not covered by any eligible course this semester: Python
 
-7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: LLM via NVIDIA NIM (nvidia/nemotron-3.5-bolt-e4b) (grounded + guardrail passed)
 
 ======================================================================================================================
 STUDENT S003 – Lina Farouk   |   Year 3, Fall semester   |   GPA 3.2   |   earned credits 66
@@ -203,27 +198,22 @@ STUDENT S003 – Lina Farouk   |   Year 3, Fall semester   |   GPA 3.2   |   ear
 
 4) ACCEPTED COURSES  → total 18 credit hours
   ✔ CS370  Parallel and GPU Computing  (3 cr, Heavy, Sun/Tue 12:30-14:00)  score 0.7
-      Matches your interests/skills: deep learning, GPU computing (topics: parallel algorithms; multithreading; CUDA).
-        Systems Track elective that broadens your profile. Prerequisites satisfied (CS203: B-, CS201: B+). Heavy
-        workload, fits your heavy preference.
+      This course directly supports your goal to become a deep learning engineer through GPU computing.
       Sources: course_catalog.md#CS370 (sim 0.28); rules R4, R6, R8, R9, R10
   ✔ CS301  Algorithm Analysis  (3 cr, Heavy, Mon/Wed 09:00-10:30)  score 0.35
-      Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS201: B+, CS102: B+). Heavy
-        workload, fits your heavy preference.
+      This provides advanced analysis skills crucial for rigorous computer science problem-solving.
       Sources: course_catalog.md#CS301 (sim 0); rules R4, R6, R8, R9
   ✔ CS320  Computer Networks  (3 cr, Medium, Sun/Tue 09:00-10:30)  score 0.3999
-      Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS203: B-). Medium workload.
+      This covers essential networking principles within the broader context of computing systems.
       Sources: course_catalog.md#CS320 (sim 0.047); rules R4, R6, R8, R9
   ✔ CS310  Software Engineering  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.3507
-      Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS202: B). Medium workload.
+      This builds practical industry skills in team-based software development and agile methods.
       Sources: course_catalog.md#CS310 (sim 0.024); rules R4, R6, R8, R9
   ✔ CS340  Computer Graphics  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.2276
-      Matches your interests/skills: linear algebra (topics: transformations; rasterisation; shading). Free elective
-        that broadens your profile. Prerequisites satisfied (MATH201: B, CS201: B+). Medium workload.
+      This applies your knowledge of linear algebra to 2D and 3D rendering techniques.
       Sources: course_catalog.md#CS340 (sim 0.083); rules R4, R6, R8, R9
   ✔ AI320  Data Visualization  (3 cr, Light, Thu 09:00-11:00)  score 0.0832
-      Matches your interests/skills: Python (topics: visual perception; charts; dashboards). AI Track elective that
-        broadens your profile. Prerequisites satisfied (STAT201: B+, CS101: B). Light workload.
+      This leverages your Python skills to communicate data visually, relevant to AI applications.
       Sources: course_catalog.md#AI320 (sim 0.039); rules R4, R6, R8, R9
 
 5) FLAGGED – NEEDS ADVISOR (not auto-recommended)
@@ -238,7 +228,7 @@ STUDENT S003 – Lina Farouk   |   Year 3, Fall semester   |   GPA 3.2   |   ear
 
   Interests not covered by any eligible course this semester: computer vision
 
-7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: LLM via NVIDIA NIM (nvidia/nemotron-3.5-bolt-e4b) (grounded + guardrail passed)
 
 ======================================================================================================================
 STUDENT S004 – Karim Adel   |   Year 4, Fall semester   |   GPA 3.6   |   earned credits 98
@@ -274,24 +264,20 @@ STUDENT S004 – Karim Adel   |   Year 4, Fall semester   |   GPA 3.6   |   earn
 
 4) ACCEPTED COURSES  → total 15 credit hours
   ✔ CS401  Cloud Computing and Distributed Systems  (3 cr, Heavy, Sun/Tue 09:00-10:30)  score 0.7
-      Matches your interests/skills: cloud computing, distributed systems, DevOps, Docker (topics: virtualisation;
-        containers and Docker; Kubernetes). Systems Track elective that broadens your profile. Prerequisites satisfied
-        (CS302: A-, CS320: B+). Heavy workload, fits your heavy preference.
+      This course aligns with your goal to become a cloud infrastructure engineer through topics like cloud computing
+        and DevOps.
       Sources: course_catalog.md#CS401 (sim 0.37); rules R4, R6, R8, R9
   ✔ CS410  Senior Project I  (3 cr, Heavy, Thu 13:00-16:00)  score 0.599
-      Matches your interests/skills: capstone project (topics: project proposal; system design; team management). Core
-        course planned for Year 4 of the degree plan. Prerequisites satisfied (CS310: A-). Heavy workload, fits your
-        heavy preference.
+      This supports your interest in a capstone project, allowing you to apply skills in a substantial software build.
       Sources: course_catalog.md#CS410 (sim 0.123); rules R4, R6, R8, R9, R11
   ✔ SEC301  Information Security Fundamentals  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.0759
-      Systems Track elective that broadens your profile. Prerequisites satisfied (CS203: A-). Medium workload.
+      This provides foundational knowledge in cybersecurity relevant for building secure cloud infrastructure.
       Sources: course_catalog.md#SEC301 (sim 0.016); rules R4, R6, R8, R9
   ✔ CS340  Computer Graphics  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.0715
-      Free elective that broadens your profile. Prerequisites satisfied (MATH201: B+, CS201: A). Medium workload.
+      This is an accepted course but does not align with your stated interests or goals.
       Sources: course_catalog.md#CS340 (sim 0.013); rules R4, R6, R8, R9
   ✔ AI320  Data Visualization  (3 cr, Light, Thu 09:00-11:00)  score 0.0689
-      Matches your interests/skills: Python (topics: visual perception; charts; dashboards). AI Track elective that
-        broadens your profile. Prerequisites satisfied (STAT201: A-, CS101: A). Light workload.
+      This leverages your Python skill by teaching data visualization using relevant tools.
       Sources: course_catalog.md#AI320 (sim 0.042); rules R4, R6, R8, R9
 
 6) EXCLUDED COURSES (among requested / top-retrieved)
@@ -309,7 +295,7 @@ STUDENT S004 – Karim Adel   |   Year 4, Fall semester   |   GPA 3.6   |   earn
     heavy-workload rules.
   Note: Overload (R2) was available but is not needed: the schedule has 15 credit hours, within the standard limit.
 
-7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: LLM via NVIDIA NIM (nvidia/nemotron-3.5-bolt-e4b) (grounded + guardrail passed)
 
 ======================================================================================================================
 STUDENT S005 – Nour El-Din   |   Year 2, Fall semester   |   GPA 1.8   |   earned credits 31
@@ -346,19 +332,16 @@ STUDENT S005 – Nour El-Din   |   Year 2, Fall semester   |   GPA 1.8   |   ear
 
 4) ACCEPTED COURSES  → total 12 credit hours
   ✔ CS220  Web Development  (3 cr, Medium, Sun/Tue 12:30-14:00)  score 0.7
-      Matches your interests/skills: web development, user interface design, HTML, CSS (topics: HTML and CSS;
-        JavaScript; responsive design). Software Engineering Track elective that broadens your profile. Prerequisites
-        satisfied (CS101: B-). Medium workload.
+      Directly supports your goal of becoming a front-end web developer using HTML and CSS.
       Sources: course_catalog.md#CS220 (sim 0.579); rules R4, R6, R8, R9
   ✔ CS202  Object-Oriented Programming  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.3313
-      Core course planned for Year 2 of the degree plan. Prerequisites satisfied (CS101: B-). Medium workload.
+      Provides foundational object-oriented design skills using Java for broader software engineering knowledge.
       Sources: course_catalog.md#CS202 (sim 0.03); rules R4, R6, R8, R9
   ✔ MATH101  Calculus I  (3 cr, Medium, Mon/Wed 09:00-10:30)  score 0.3
-      Core course planned for Year 1 of the degree plan. Retake to improve your earlier grade (D). No prerequisites.
-        Medium workload.
+      Fulfills a core requirement, building mathematical skills applicable to problem-solving.
       Sources: course_catalog.md#MATH101 (sim 0); rules R4, R5, R6, R8, R9
   ✔ CS201  Data Structures and Algorithms  (3 cr, Heavy, Sun/Tue 10:45-12:15)  score 0.262
-      Core course planned for Year 2 of the degree plan. Prerequisites satisfied (CS101: B-). Heavy workload.
+      Offers essential knowledge in data structures and algorithms crucial for advanced programming.
       Sources: course_catalog.md#CS201 (sim 0.012); rules R4, R6, R8, R9
 
 5) FLAGGED – NEEDS ADVISOR (not auto-recommended)
@@ -379,7 +362,7 @@ STUDENT S005 – Nour El-Din   |   Year 2, Fall semester   |   GPA 1.8   |   ear
       [R9] Timetable conflict: PHYS101 (Mon/Wed 10:45-12:15) overlaps CS202 (Mon/Wed 10:45-12:15).  (evidence
         registration_rules.md#R9, retrieved rank 1)
 
-7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: LLM via NVIDIA NIM (nvidia/nemotron-3.5-bolt-e4b) (grounded + guardrail passed)
 
 ======================================================================================================================
 STUDENT S006 – Maya Samir   |   Year 3, Spring semester   |   GPA 3.4   |   earned credits 66
@@ -412,26 +395,19 @@ STUDENT S006 – Maya Samir   |   Year 3, Spring semester   |   GPA 3.4   |   ea
 
 4) ACCEPTED COURSES  → total 15 credit hours
   ✔ AI310  Data Mining and Analytics  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.7
-      Matches your interests/skills: data mining (topics: association rules; clustering; classification). AI Track
-        elective that broadens your profile. Prerequisites satisfied (CS210: A-, STAT201: A). Medium workload, fits
-        your medium preference.
+      This meets your interest in data mining through real data projects on clustering and classification.
       Sources: course_catalog.md#AI310 (sim 0.122); rules R4, R6, R8, R9
   ✔ CS330  Mobile App Development  (3 cr, Medium, Sun/Tue 10:45-12:15)  score 0.6843
-      Matches your interests/skills: mobile apps (topics: Android; iOS; mobile user interface). Software Engineering
-        Track elective that broadens your profile. Prerequisites satisfied (CS202: A-). Medium workload, fits your
-        medium preference.
+      This supports your interest in mobile apps through Android and iOS application design.
       Sources: course_catalog.md#CS330 (sim 0.119); rules R4, R6, R8, R9
   ✔ CS310  Software Engineering  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.4619
-      Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS202: A-). Medium workload, fits
-        your medium preference.
+      This develops your skills in team-based software development lifecycle necessary for applied AI products.
       Sources: course_catalog.md#CS310 (sim 0.023); rules R4, R6, R8, R9
   ✔ AI320  Data Visualization  (3 cr, Light, Thu 09:00-11:00)  score 0.4455
-      Matches your interests/skills: Python (topics: visual perception; charts; dashboards). AI Track elective that
-        broadens your profile. Prerequisites satisfied (STAT201: A, CS101: A-). Light workload.
+      This leverages your Python skills to visualize data, aligning with data science and AI goals.
       Sources: course_catalog.md#AI320 (sim 0.081); rules R4, R6, R8, R9
   ✔ CS350  Human-Computer Interaction  (3 cr, Light, Thu 13:00-16:00)  score 0.104
-      Software Engineering Track elective that broadens your profile. Prerequisites satisfied (CS101: A-). Light
-        workload.
+      This provides insight into user experience through prototyping and usability testing for applied products.
       Sources: course_catalog.md#CS350 (sim 0.011); rules R4, R6, R8, R9
 
 5) FLAGGED – NEEDS ADVISOR (not auto-recommended)
@@ -457,4 +433,4 @@ STUDENT S006 – Maya Samir   |   Year 3, Spring semester   |   GPA 3.4   |   ea
 
   Interests not covered by any eligible course this semester: natural language processing, computer vision
 
-7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: LLM via NVIDIA NIM (nvidia/nemotron-3.5-bolt-e4b) (grounded + guardrail passed)

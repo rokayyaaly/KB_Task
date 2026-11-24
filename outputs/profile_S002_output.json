@@ -104,7 +104,7 @@
           }
         ]
       },
-      "reason": "Matches your interests/skills: machine learning, data science (topics: vectors; matrices; linear systems). Core course planned for Year 2 of the degree plan. Prerequisites satisfied (MATH101: B+). Medium workload, fits your medium preference."
+      "reason": "This linear algebra knowledge is essential for your goal of working as a data scientist and machine learning."
     },
     {
       "code": "STAT201",
@@ -150,7 +150,7 @@
           }
         ]
       },
-      "reason": "Matches your interests/skills: machine learning, data science (topics: probability; random variables; distributions). Core course planned for Year 2 of the degree plan. Prerequisites satisfied (MATH101: B+). Medium workload, fits your medium preference."
+      "reason": "Probability theory prepares you directly for data science and machine learning applications."
     },
     {
       "code": "CS210",
@@ -195,7 +195,7 @@
           }
         ]
       },
-      "reason": "Matches your interests/skills: data science (topics: relational model; SQL; database design). Core course planned for Year 2 of the degree plan. Prerequisites satisfied (CS201: B+). Medium workload, fits your medium preference."
+      "reason": "Database systems skills support data science by allowing you to model and query necessary data."
     },
     {
       "code": "CS203",
@@ -238,7 +238,7 @@
           }
         ]
       },
-      "reason": "Core course planned for Year 2 of the degree plan. Prerequisites satisfied (CS101: A). Medium workload, fits your medium preference."
+      "reason": "Understanding computer organization provides foundational knowledge for efficient programming in Python."
     },
     {
       "code": "HUM201",
@@ -281,7 +281,7 @@
           }
         ]
       },
-      "reason": "Required general-education course. No prerequisites. Light workload."
+      "reason": "This course addresses ethical issues in AI, relevant for professional responsibility as a data scientist."
     }
   ],
   "excluded": [
@@ -637,5 +637,5 @@
       ]
     }
   },
-  "explanation_mode": "template (offline)"
+  "explanation_mode": "LLM via NVIDIA NIM (nvidia/nemotron-3.5-bolt-e4b) (grounded + guardrail passed)"
 }

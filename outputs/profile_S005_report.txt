@@ -33,19 +33,16 @@ STUDENT S005 – Nour El-Din   |   Year 2, Fall semester   |   GPA 1.8   |   ear
 
 4) ACCEPTED COURSES  → total 12 credit hours
   ✔ CS220  Web Development  (3 cr, Medium, Sun/Tue 12:30-14:00)  score 0.7
-      Matches your interests/skills: web development, user interface design, HTML, CSS (topics: HTML and CSS;
-        JavaScript; responsive design). Software Engineering Track elective that broadens your profile. Prerequisites
-        satisfied (CS101: B-). Medium workload.
+      Directly supports your goal of becoming a front-end web developer using HTML and CSS.
       Sources: course_catalog.md#CS220 (sim 0.579); rules R4, R6, R8, R9
   ✔ CS202  Object-Oriented Programming  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.3313
-      Core course planned for Year 2 of the degree plan. Prerequisites satisfied (CS101: B-). Medium workload.
+      Provides foundational object-oriented design skills using Java for broader software engineering knowledge.
       Sources: course_catalog.md#CS202 (sim 0.03); rules R4, R6, R8, R9
   ✔ MATH101  Calculus I  (3 cr, Medium, Mon/Wed 09:00-10:30)  score 0.3
-      Core course planned for Year 1 of the degree plan. Retake to improve your earlier grade (D). No prerequisites.
-        Medium workload.
+      Fulfills a core requirement, building mathematical skills applicable to problem-solving.
       Sources: course_catalog.md#MATH101 (sim 0); rules R4, R5, R6, R8, R9
   ✔ CS201  Data Structures and Algorithms  (3 cr, Heavy, Sun/Tue 10:45-12:15)  score 0.262
-      Core course planned for Year 2 of the degree plan. Prerequisites satisfied (CS101: B-). Heavy workload.
+      Offers essential knowledge in data structures and algorithms crucial for advanced programming.
       Sources: course_catalog.md#CS201 (sim 0.012); rules R4, R6, R8, R9
 
 5) FLAGGED – NEEDS ADVISOR (not auto-recommended)
@@ -66,4 +63,4 @@ STUDENT S005 – Nour El-Din   |   Year 2, Fall semester   |   GPA 1.8   |   ear
       [R9] Timetable conflict: PHYS101 (Mon/Wed 10:45-12:15) overlaps CS202 (Mon/Wed 10:45-12:15).  (evidence
         registration_rules.md#R9, retrieved rank 1)
 
-7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: LLM via NVIDIA NIM (nvidia/nemotron-3.5-bolt-e4b) (grounded + guardrail passed)

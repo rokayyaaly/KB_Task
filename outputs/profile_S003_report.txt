@@ -35,27 +35,22 @@ STUDENT S003 – Lina Farouk   |   Year 3, Fall semester   |   GPA 3.2   |   ear
 
 4) ACCEPTED COURSES  → total 18 credit hours
   ✔ CS370  Parallel and GPU Computing  (3 cr, Heavy, Sun/Tue 12:30-14:00)  score 0.7
-      Matches your interests/skills: deep learning, GPU computing (topics: parallel algorithms; multithreading; CUDA).
-        Systems Track elective that broadens your profile. Prerequisites satisfied (CS203: B-, CS201: B+). Heavy
-        workload, fits your heavy preference.
+      This course directly supports your goal to become a deep learning engineer through GPU computing.
       Sources: course_catalog.md#CS370 (sim 0.28); rules R4, R6, R8, R9, R10
   ✔ CS301  Algorithm Analysis  (3 cr, Heavy, Mon/Wed 09:00-10:30)  score 0.35
-      Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS201: B+, CS102: B+). Heavy
-        workload, fits your heavy preference.
+      This provides advanced analysis skills crucial for rigorous computer science problem-solving.
       Sources: course_catalog.md#CS301 (sim 0); rules R4, R6, R8, R9
   ✔ CS320  Computer Networks  (3 cr, Medium, Sun/Tue 09:00-10:30)  score 0.3999
-      Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS203: B-). Medium workload.
+      This covers essential networking principles within the broader context of computing systems.
       Sources: course_catalog.md#CS320 (sim 0.047); rules R4, R6, R8, R9
   ✔ CS310  Software Engineering  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.3507
-      Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS202: B). Medium workload.
+      This builds practical industry skills in team-based software development and agile methods.
       Sources: course_catalog.md#CS310 (sim 0.024); rules R4, R6, R8, R9
   ✔ CS340  Computer Graphics  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.2276
-      Matches your interests/skills: linear algebra (topics: transformations; rasterisation; shading). Free elective
-        that broadens your profile. Prerequisites satisfied (MATH201: B, CS201: B+). Medium workload.
+      This applies your knowledge of linear algebra to 2D and 3D rendering techniques.
       Sources: course_catalog.md#CS340 (sim 0.083); rules R4, R6, R8, R9
   ✔ AI320  Data Visualization  (3 cr, Light, Thu 09:00-11:00)  score 0.0832
-      Matches your interests/skills: Python (topics: visual perception; charts; dashboards). AI Track elective that
-        broadens your profile. Prerequisites satisfied (STAT201: B+, CS101: B). Light workload.
+      This leverages your Python skills to communicate data visually, relevant to AI applications.
       Sources: course_catalog.md#AI320 (sim 0.039); rules R4, R6, R8, R9
 
 5) FLAGGED – NEEDS ADVISOR (not auto-recommended)
@@ -70,4 +65,4 @@ STUDENT S003 – Lina Farouk   |   Year 3, Fall semester   |   GPA 3.2   |   ear
 
   Interests not covered by any eligible course this semester: computer vision
 
-7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: template (offline)
+7) RULE AUDIT (independent re-check of final schedule): PASSED   |   explanations: LLM via NVIDIA NIM (nvidia/nemotron-3.5-bolt-e4b) (grounded + guardrail passed)

@@ -103,7 +103,7 @@
           }
         ]
       },
-      "reason": "Matches your interests/skills: data mining (topics: association rules; clustering; classification). AI Track elective that broadens your profile. Prerequisites satisfied (CS210: A-, STAT201: A). Medium workload, fits your medium preference."
+      "reason": "This meets your interest in data mining through real data projects on clustering and classification."
     },
     {
       "code": "CS330",
@@ -148,7 +148,7 @@
           }
         ]
       },
-      "reason": "Matches your interests/skills: mobile apps (topics: Android; iOS; mobile user interface). Software Engineering Track elective that broadens your profile. Prerequisites satisfied (CS202: A-). Medium workload, fits your medium preference."
+      "reason": "This supports your interest in mobile apps through Android and iOS application design."
     },
     {
       "code": "CS310",
@@ -191,7 +191,7 @@
           }
         ]
       },
-      "reason": "Core course planned for Year 3 of the degree plan. Prerequisites satisfied (CS202: A-). Medium workload, fits your medium preference."
+      "reason": "This develops your skills in team-based software development lifecycle necessary for applied AI products."
     },
     {
       "code": "AI320",
@@ -236,7 +236,7 @@
           }
         ]
       },
-      "reason": "Matches your interests/skills: Python (topics: visual perception; charts; dashboards). AI Track elective that broadens your profile. Prerequisites satisfied (STAT201: A, CS101: A-). Light workload."
+      "reason": "This leverages your Python skills to visualize data, aligning with data science and AI goals."
     },
     {
       "code": "CS350",
@@ -279,7 +279,7 @@
           }
         ]
       },
-      "reason": "Software Engineering Track elective that broadens your profile. Prerequisites satisfied (CS101: A-). Light workload."
+      "reason": "This provides insight into user experience through prototyping and usability testing for applied products."
     }
   ],
   "excluded": [
@@ -624,5 +624,5 @@
       ]
     }
   },
-  "explanation_mode": "template (offline)"
+  "explanation_mode": "LLM via NVIDIA NIM (nvidia/nemotron-3.5-bolt-e4b) (grounded + guardrail passed)"
 }

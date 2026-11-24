@@ -133,7 +133,7 @@
           }
         ]
       },
-      "reason": "Matches your interests/skills: web development, user interface design, HTML, CSS (topics: HTML and CSS; JavaScript; responsive design). Software Engineering Track elective that broadens your profile. Prerequisites satisfied (CS101: B-). Medium workload."
+      "reason": "Directly supports your goal of becoming a front-end web developer using HTML and CSS."
     },
     {
       "code": "CS202",
@@ -176,7 +176,7 @@
           }
         ]
       },
-      "reason": "Core course planned for Year 2 of the degree plan. Prerequisites satisfied (CS101: B-). Medium workload."
+      "reason": "Provides foundational object-oriented design skills using Java for broader software engineering knowledge."
     },
     {
       "code": "MATH101",
@@ -225,7 +225,7 @@
           }
         ]
       },
-      "reason": "Core course planned for Year 1 of the degree plan. Retake to improve your earlier grade (D). No prerequisites. Medium workload."
+      "reason": "Fulfills a core requirement, building mathematical skills applicable to problem-solving."
     },
     {
       "code": "CS201",
@@ -268,7 +268,7 @@
           }
         ]
       },
-      "reason": "Core course planned for Year 2 of the degree plan. Prerequisites satisfied (CS101: B-). Heavy workload."
+      "reason": "Offers essential knowledge in data structures and algorithms crucial for advanced programming."
     }
   ],
   "excluded": [
@@ -609,5 +609,5 @@
       ]
     }
   },
-  "explanation_mode": "template (offline)"
+  "explanation_mode": "LLM via NVIDIA NIM (nvidia/nemotron-3.5-bolt-e4b) (grounded + guardrail passed)"
 }
