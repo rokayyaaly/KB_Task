@@ -33,16 +33,20 @@ STUDENT S005 – Nour El-Din   |   Year 2, Fall semester   |   GPA 1.8   |   ear
 
 4) ACCEPTED COURSES  → total 12 credit hours
   ✔ CS220  Web Development  (3 cr, Medium, Sun/Tue 12:30-14:00)  score 0.7
-      Directly supports your goal of becoming a front-end web developer using HTML and CSS.
+      Directly supports your goal of becoming a front-end web developer using HTML and CSS. [refs:
+        course_catalog.md#CS220 (sim 0.579); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS220 (sim 0.579); rules R4, R6, R8, R9
   ✔ CS202  Object-Oriented Programming  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.3313
-      Provides foundational object-oriented design skills using Java for broader software engineering knowledge.
+      Provides foundational object-oriented design skills using Java for software development. [refs:
+        course_catalog.md#CS202 (sim 0.03); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS202 (sim 0.03); rules R4, R6, R8, R9
   ✔ MATH101  Calculus I  (3 cr, Medium, Mon/Wed 09:00-10:30)  score 0.3
-      Fulfills a core requirement, building mathematical skills applicable to problem-solving.
+      Fulfills a required foundational math course for university study. [refs: course_catalog.md#MATH101 (sim 0);
+        rules R4, R5, R6, R8, R9]
       Sources: course_catalog.md#MATH101 (sim 0); rules R4, R5, R6, R8, R9
   ✔ CS201  Data Structures and Algorithms  (3 cr, Heavy, Sun/Tue 10:45-12:15)  score 0.262
-      Offers essential knowledge in data structures and algorithms crucial for advanced programming.
+      Develops essential problem-solving skills through fundamental data structures and algorithms. [refs:
+        course_catalog.md#CS201 (sim 0.012); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS201 (sim 0.012); rules R4, R6, R8, R9
 
 5) FLAGGED – NEEDS ADVISOR (not auto-recommended)

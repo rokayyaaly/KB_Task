@@ -29,19 +29,24 @@ STUDENT S006 – Maya Samir   |   Year 3, Spring semester   |   GPA 3.4   |   ea
 
 4) ACCEPTED COURSES  → total 15 credit hours
   ✔ AI310  Data Mining and Analytics  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.7
-      This meets your interest in data mining through real data projects on clustering and classification.
+      This meets your interest in data mining through real data projects on clustering and classification. [refs:
+        course_catalog.md#AI310 (sim 0.122); rules R4, R6, R8, R9]
       Sources: course_catalog.md#AI310 (sim 0.122); rules R4, R6, R8, R9
   ✔ CS330  Mobile App Development  (3 cr, Medium, Sun/Tue 10:45-12:15)  score 0.6843
-      This supports your interest in mobile apps through Android and iOS application design.
+      This supports your goal of applied AI by focusing on mobile apps development for Android and iOS. [refs:
+        course_catalog.md#CS330 (sim 0.119); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS330 (sim 0.119); rules R4, R6, R8, R9
   ✔ CS310  Software Engineering  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.4619
-      This develops your skills in team-based software development lifecycle necessary for applied AI products.
+      This covers team-based software development lifecycle skills needed for applied product work. [refs:
+        course_catalog.md#CS310 (sim 0.023); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS310 (sim 0.023); rules R4, R6, R8, R9
   ✔ AI320  Data Visualization  (3 cr, Light, Thu 09:00-11:00)  score 0.4455
-      This leverages your Python skills to visualize data, aligning with data science and AI goals.
+      Use Python to communicate data visually, aligning with your skills and data science interests. [refs:
+        course_catalog.md#AI320 (sim 0.081); rules R4, R6, R8, R9]
       Sources: course_catalog.md#AI320 (sim 0.081); rules R4, R6, R8, R9
   ✔ CS350  Human-Computer Interaction  (3 cr, Light, Thu 13:00-16:00)  score 0.104
-      This provides insight into user experience through prototyping and usability testing for applied products.
+      This teaches user experience, relevant for designing user-facing applied AI products. [refs:
+        course_catalog.md#CS350 (sim 0.011); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS350 (sim 0.011); rules R4, R6, R8, R9
 
 5) FLAGGED – NEEDS ADVISOR (not auto-recommended)

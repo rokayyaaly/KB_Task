@@ -137,7 +137,7 @@
           }
         ]
       },
-      "reason": "This course directly supports your goal to become a deep learning engineer through GPU computing."
+      "reason": "This heavy workload course directly aligns with your interests in deep learning and GPU computing. [refs: course_catalog.md#CS370 (sim 0.28); rules R4, R6, R8, R9, R10]"
     },
     {
       "code": "CS301",
@@ -180,7 +180,7 @@
           }
         ]
       },
-      "reason": "This provides advanced analysis skills crucial for rigorous computer science problem-solving."
+      "reason": "This core course builds fundamental skills in advanced algorithm design, supporting your engineering goals. [refs: course_catalog.md#CS301 (sim 0); rules R4, R6, R8, R9]"
     },
     {
       "code": "CS320",
@@ -223,7 +223,7 @@
           }
         ]
       },
-      "reason": "This covers essential networking principles within the broader context of computing systems."
+      "reason": "This core course covers networking principles, providing a broad technical foundation for any computing role. [refs: course_catalog.md#CS320 (sim 0.047); rules R4, R6, R8, R9]"
     },
     {
       "code": "CS310",
@@ -266,7 +266,7 @@
           }
         ]
       },
-      "reason": "This builds practical industry skills in team-based software development and agile methods."
+      "reason": "This core course develops practical team-based development skills essential for a professional deep learning engineer. [refs: course_catalog.md#CS310 (sim 0.024); rules R4, R6, R8, R9]"
     },
     {
       "code": "CS340",
@@ -311,7 +311,7 @@
           }
         ]
       },
-      "reason": "This applies your knowledge of linear algebra to 2D and 3D rendering techniques."
+      "reason": "This elective uses your linear algebra knowledge in 3D rendering, expanding your visual computing understanding. [refs: course_catalog.md#CS340 (sim 0.083); rules R4, R6, R8, R9]"
     },
     {
       "code": "AI320",
@@ -356,7 +356,7 @@
           }
         ]
       },
-      "reason": "This leverages your Python skills to communicate data visually, relevant to AI applications."
+      "reason": "This elective utilizes your Python skills for data visualization, relevant to data science in deep learning. [refs: course_catalog.md#AI320 (sim 0.039); rules R4, R6, R8, R9]"
     }
   ],
   "excluded": [

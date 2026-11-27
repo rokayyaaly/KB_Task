@@ -104,7 +104,7 @@
           }
         ]
       },
-      "reason": "This linear algebra knowledge is essential for your goal of working as a data scientist and machine learning."
+      "reason": "This linear algebra knowledge is essential for your goal of working as a data scientist and machine learning. [refs: course_catalog.md#MATH201 (sim 0.275); rules R4, R6, R8, R9]"
     },
     {
       "code": "STAT201",
@@ -150,7 +150,7 @@
           }
         ]
       },
-      "reason": "Probability theory prepares you directly for data science and machine learning applications."
+      "reason": "Probability and statistics prepare you directly for data science and machine learning goals. [refs: course_catalog.md#STAT201 (sim 0.219); rules R4, R6, R8, R9]"
     },
     {
       "code": "CS210",
@@ -195,7 +195,7 @@
           }
         ]
       },
-      "reason": "Database systems skills support data science by allowing you to model and query necessary data."
+      "reason": "Database systems skills support data management, aligning with your data science career interest. [refs: course_catalog.md#CS210 (sim 0.104); rules R4, R6, R8, R9]"
     },
     {
       "code": "CS203",
@@ -238,7 +238,7 @@
           }
         ]
       },
-      "reason": "Understanding computer organization provides foundational knowledge for efficient programming in Python."
+      "reason": "This course contributes to the recommended Year 2 core sequence for computing knowledge. [refs: course_catalog.md#CS203 (sim 0.034); rules R4, R6, R8, R9]"
     },
     {
       "code": "HUM201",
@@ -281,7 +281,7 @@
           }
         ]
       },
-      "reason": "This course addresses ethical issues in AI, relevant for professional responsibility as a data scientist."
+      "reason": "This course addresses ethical issues in computing, relevant to modern AI and data science practice. [refs: course_catalog.md#HUM201 (sim 0); rules R4, R6, R8, R9]"
     }
   ],
   "excluded": [

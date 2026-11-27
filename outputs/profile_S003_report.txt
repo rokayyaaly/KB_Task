@@ -35,22 +35,28 @@ STUDENT S003 – Lina Farouk   |   Year 3, Fall semester   |   GPA 3.2   |   ear
 
 4) ACCEPTED COURSES  → total 18 credit hours
   ✔ CS370  Parallel and GPU Computing  (3 cr, Heavy, Sun/Tue 12:30-14:00)  score 0.7
-      This course directly supports your goal to become a deep learning engineer through GPU computing.
+      This heavy workload course directly aligns with your interests in deep learning and GPU computing. [refs:
+        course_catalog.md#CS370 (sim 0.28); rules R4, R6, R8, R9, R10]
       Sources: course_catalog.md#CS370 (sim 0.28); rules R4, R6, R8, R9, R10
   ✔ CS301  Algorithm Analysis  (3 cr, Heavy, Mon/Wed 09:00-10:30)  score 0.35
-      This provides advanced analysis skills crucial for rigorous computer science problem-solving.
+      This core course builds fundamental skills in advanced algorithm design, supporting your engineering goals.
+        [refs: course_catalog.md#CS301 (sim 0); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS301 (sim 0); rules R4, R6, R8, R9
   ✔ CS320  Computer Networks  (3 cr, Medium, Sun/Tue 09:00-10:30)  score 0.3999
-      This covers essential networking principles within the broader context of computing systems.
+      This core course covers networking principles, providing a broad technical foundation for any computing role.
+        [refs: course_catalog.md#CS320 (sim 0.047); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS320 (sim 0.047); rules R4, R6, R8, R9
   ✔ CS310  Software Engineering  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.3507
-      This builds practical industry skills in team-based software development and agile methods.
+      This core course develops practical team-based development skills essential for a professional deep learning
+        engineer. [refs: course_catalog.md#CS310 (sim 0.024); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS310 (sim 0.024); rules R4, R6, R8, R9
   ✔ CS340  Computer Graphics  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.2276
-      This applies your knowledge of linear algebra to 2D and 3D rendering techniques.
+      This elective uses your linear algebra knowledge in 3D rendering, expanding your visual computing understanding.
+        [refs: course_catalog.md#CS340 (sim 0.083); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS340 (sim 0.083); rules R4, R6, R8, R9
   ✔ AI320  Data Visualization  (3 cr, Light, Thu 09:00-11:00)  score 0.0832
-      This leverages your Python skills to communicate data visually, relevant to AI applications.
+      This elective utilizes your Python skills for data visualization, relevant to data science in deep learning.
+        [refs: course_catalog.md#AI320 (sim 0.039); rules R4, R6, R8, R9]
       Sources: course_catalog.md#AI320 (sim 0.039); rules R4, R6, R8, R9
 
 5) FLAGGED – NEEDS ADVISOR (not auto-recommended)

@@ -103,7 +103,7 @@
           }
         ]
       },
-      "reason": "This meets your interest in data mining through real data projects on clustering and classification."
+      "reason": "This meets your interest in data mining through real data projects on clustering and classification. [refs: course_catalog.md#AI310 (sim 0.122); rules R4, R6, R8, R9]"
     },
     {
       "code": "CS330",
@@ -148,7 +148,7 @@
           }
         ]
       },
-      "reason": "This supports your interest in mobile apps through Android and iOS application design."
+      "reason": "This supports your goal of applied AI by focusing on mobile apps development for Android and iOS. [refs: course_catalog.md#CS330 (sim 0.119); rules R4, R6, R8, R9]"
     },
     {
       "code": "CS310",
@@ -191,7 +191,7 @@
           }
         ]
       },
-      "reason": "This develops your skills in team-based software development lifecycle necessary for applied AI products."
+      "reason": "This covers team-based software development lifecycle skills needed for applied product work. [refs: course_catalog.md#CS310 (sim 0.023); rules R4, R6, R8, R9]"
     },
     {
       "code": "AI320",
@@ -236,7 +236,7 @@
           }
         ]
       },
-      "reason": "This leverages your Python skills to visualize data, aligning with data science and AI goals."
+      "reason": "Use Python to communicate data visually, aligning with your skills and data science interests. [refs: course_catalog.md#AI320 (sim 0.081); rules R4, R6, R8, R9]"
     },
     {
       "code": "CS350",
@@ -279,7 +279,7 @@
           }
         ]
       },
-      "reason": "This provides insight into user experience through prototyping and usability testing for applied products."
+      "reason": "This teaches user experience, relevant for designing user-facing applied AI products. [refs: course_catalog.md#CS350 (sim 0.011); rules R4, R6, R8, R9]"
     }
   ],
   "excluded": [

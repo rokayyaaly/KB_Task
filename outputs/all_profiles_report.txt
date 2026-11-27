@@ -35,20 +35,24 @@ STUDENT S001 – Sara Mostafa   |   Year 1, Fall semester   |   GPA n/a   |   ea
 
 4) ACCEPTED COURSES  → total 15 credit hours
   ✔ CS102  Discrete Mathematics  (3 cr, Medium, Sun/Tue 12:30-14:00)  score 0.95
-      Develops logical reasoning for algorithms and supports your goal to become an AI engineer through problem
-        solving.
+      Develops logical reasoning and proof skills essential for algorithms and AI problem solving. [refs:
+        course_catalog.md#CS102 (sim 0.143); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS102 (sim 0.143); rules R4, R6, R8, R9
   ✔ CS101  Introduction to Programming  (3 cr, Medium, Sun/Tue 09:00-10:30)  score 0.7434
-      Uses Python, building on your basic skills for your interest in programming and AI.
+      Introduces Python programming, supporting your interest in programming for AI engineering goals. [refs:
+        course_catalog.md#CS101 (sim 0.094); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS101 (sim 0.094); rules R4, R6, R8, R9
   ✔ MATH101  Calculus I  (3 cr, Medium, Mon/Wed 09:00-10:30)  score 0.35
-      Provides mathematical foundations relevant to AI, covering limits, derivatives, and optimization.
+      Provides mathematical foundations relevant to AI tracks which require strong mathematics. [refs:
+        course_catalog.md#MATH101 (sim 0); rules R4, R6, R8, R9]
       Sources: course_catalog.md#MATH101 (sim 0); rules R4, R6, R8, R9
   ✔ PHYS101  Physics for Computing  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.35
-      Explores concepts behind sensors and digital hardware, relevant to computing applications.
+      Focuses on hardware concepts behind sensors relevant to computer systems understanding. [refs:
+        course_catalog.md#PHYS101 (sim 0); rules R4, R6, R8, R9]
       Sources: course_catalog.md#PHYS101 (sim 0); rules R4, R6, R8, R9
   ✔ ENG101  Technical Writing  (3 cr, Light, Thu 13:00-16:00)  score 0.3
-      Builds essential writing skills for engineers, supporting your academic and career goals.
+      Develops technical writing skills necessary for communicating engineering work effectively. [refs:
+        course_catalog.md#ENG101 (sim 0); rules R4, R6, R8, R9]
       Sources: course_catalog.md#ENG101 (sim 0); rules R4, R6, R8, R9
 
 6) EXCLUDED COURSES (among requested / top-retrieved)
@@ -120,18 +124,23 @@ STUDENT S002 – Omar Hassan   |   Year 2, Spring semester   |   GPA 3.1   |   e
 4) ACCEPTED COURSES  → total 14 credit hours
   ✔ MATH201  Linear Algebra  (3 cr, Medium, Sun/Tue 09:00-10:30)  score 0.95
       This linear algebra knowledge is essential for your goal of working as a data scientist and machine learning.
+        [refs: course_catalog.md#MATH201 (sim 0.275); rules R4, R6, R8, R9]
       Sources: course_catalog.md#MATH201 (sim 0.275); rules R4, R6, R8, R9
   ✔ STAT201  Probability and Statistics  (3 cr, Medium, Mon/Wed 09:00-10:30)  score 0.826
-      Probability theory prepares you directly for data science and machine learning applications.
+      Probability and statistics prepare you directly for data science and machine learning goals. [refs:
+        course_catalog.md#STAT201 (sim 0.219); rules R4, R6, R8, R9]
       Sources: course_catalog.md#STAT201 (sim 0.219); rules R4, R6, R8, R9
   ✔ CS210  Database Systems  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.5769
-      Database systems skills support data science by allowing you to model and query necessary data.
+      Database systems skills support data management, aligning with your data science career interest. [refs:
+        course_catalog.md#CS210 (sim 0.104); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS210 (sim 0.104); rules R4, R6, R8, R9
   ✔ CS203  Computer Organization  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.4248
-      Understanding computer organization provides foundational knowledge for efficient programming in Python.
+      This course contributes to the recommended Year 2 core sequence for computing knowledge. [refs:
+        course_catalog.md#CS203 (sim 0.034); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS203 (sim 0.034); rules R4, R6, R8, R9
   ✔ HUM201  Ethics and Society in Computing  (2 cr, Light, Thu 09:00-11:00)  score 0.2
-      This course addresses ethical issues in AI, relevant for professional responsibility as a data scientist.
+      This course addresses ethical issues in computing, relevant to modern AI and data science practice. [refs:
+        course_catalog.md#HUM201 (sim 0); rules R4, R6, R8, R9]
       Sources: course_catalog.md#HUM201 (sim 0); rules R4, R6, R8, R9
 
 6) EXCLUDED COURSES (among requested / top-retrieved)
@@ -198,22 +207,28 @@ STUDENT S003 – Lina Farouk   |   Year 3, Fall semester   |   GPA 3.2   |   ear
 
 4) ACCEPTED COURSES  → total 18 credit hours
   ✔ CS370  Parallel and GPU Computing  (3 cr, Heavy, Sun/Tue 12:30-14:00)  score 0.7
-      This course directly supports your goal to become a deep learning engineer through GPU computing.
+      This heavy workload course directly aligns with your interests in deep learning and GPU computing. [refs:
+        course_catalog.md#CS370 (sim 0.28); rules R4, R6, R8, R9, R10]
       Sources: course_catalog.md#CS370 (sim 0.28); rules R4, R6, R8, R9, R10
   ✔ CS301  Algorithm Analysis  (3 cr, Heavy, Mon/Wed 09:00-10:30)  score 0.35
-      This provides advanced analysis skills crucial for rigorous computer science problem-solving.
+      This core course builds fundamental skills in advanced algorithm design, supporting your engineering goals.
+        [refs: course_catalog.md#CS301 (sim 0); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS301 (sim 0); rules R4, R6, R8, R9
   ✔ CS320  Computer Networks  (3 cr, Medium, Sun/Tue 09:00-10:30)  score 0.3999
-      This covers essential networking principles within the broader context of computing systems.
+      This core course covers networking principles, providing a broad technical foundation for any computing role.
+        [refs: course_catalog.md#CS320 (sim 0.047); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS320 (sim 0.047); rules R4, R6, R8, R9
   ✔ CS310  Software Engineering  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.3507
-      This builds practical industry skills in team-based software development and agile methods.
+      This core course develops practical team-based development skills essential for a professional deep learning
+        engineer. [refs: course_catalog.md#CS310 (sim 0.024); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS310 (sim 0.024); rules R4, R6, R8, R9
   ✔ CS340  Computer Graphics  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.2276
-      This applies your knowledge of linear algebra to 2D and 3D rendering techniques.
+      This elective uses your linear algebra knowledge in 3D rendering, expanding your visual computing understanding.
+        [refs: course_catalog.md#CS340 (sim 0.083); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS340 (sim 0.083); rules R4, R6, R8, R9
   ✔ AI320  Data Visualization  (3 cr, Light, Thu 09:00-11:00)  score 0.0832
-      This leverages your Python skills to communicate data visually, relevant to AI applications.
+      This elective utilizes your Python skills for data visualization, relevant to data science in deep learning.
+        [refs: course_catalog.md#AI320 (sim 0.039); rules R4, R6, R8, R9]
       Sources: course_catalog.md#AI320 (sim 0.039); rules R4, R6, R8, R9
 
 5) FLAGGED – NEEDS ADVISOR (not auto-recommended)
@@ -264,20 +279,24 @@ STUDENT S004 – Karim Adel   |   Year 4, Fall semester   |   GPA 3.6   |   earn
 
 4) ACCEPTED COURSES  → total 15 credit hours
   ✔ CS401  Cloud Computing and Distributed Systems  (3 cr, Heavy, Sun/Tue 09:00-10:30)  score 0.7
-      This course aligns with your goal to become a cloud infrastructure engineer through topics like cloud computing
-        and DevOps.
+      This aligns with your goals to become a cloud infrastructure engineer through cloud computing and distributed
+        systems. [refs: course_catalog.md#CS401 (sim 0.37); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS401 (sim 0.37); rules R4, R6, R8, R9
   ✔ CS410  Senior Project I  (3 cr, Heavy, Thu 13:00-16:00)  score 0.599
-      This supports your interest in a capstone project, allowing you to apply skills in a substantial software build.
+      This supports your interest in a capstone project, allowing you to apply skills in a substantial software
+        project. [refs: course_catalog.md#CS410 (sim 0.123); rules R4, R6, R8, R9, R11]
       Sources: course_catalog.md#CS410 (sim 0.123); rules R4, R6, R8, R9, R11
   ✔ SEC301  Information Security Fundamentals  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.0759
-      This provides foundational knowledge in cybersecurity relevant for building secure cloud infrastructure.
+      This provides foundations in cybersecurity, fitting the Systems, Cloud and Security track. [refs:
+        course_catalog.md#SEC301 (sim 0.016); rules R4, R6, R8, R9]
       Sources: course_catalog.md#SEC301 (sim 0.016); rules R4, R6, R8, R9
   ✔ CS340  Computer Graphics  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.0715
-      This is an accepted course but does not align with your stated interests or goals.
+      This is a free elective, though it does not directly match your stated interests or goals. [refs:
+        course_catalog.md#CS340 (sim 0.013); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS340 (sim 0.013); rules R4, R6, R8, R9
   ✔ AI320  Data Visualization  (3 cr, Light, Thu 09:00-11:00)  score 0.0689
-      This leverages your Python skill by teaching data visualization using relevant tools.
+      This leverages your Python skill to explore data visualization within an AI context. [refs:
+        course_catalog.md#AI320 (sim 0.042); rules R4, R6, R8, R9]
       Sources: course_catalog.md#AI320 (sim 0.042); rules R4, R6, R8, R9
 
 6) EXCLUDED COURSES (among requested / top-retrieved)
@@ -332,16 +351,20 @@ STUDENT S005 – Nour El-Din   |   Year 2, Fall semester   |   GPA 1.8   |   ear
 
 4) ACCEPTED COURSES  → total 12 credit hours
   ✔ CS220  Web Development  (3 cr, Medium, Sun/Tue 12:30-14:00)  score 0.7
-      Directly supports your goal of becoming a front-end web developer using HTML and CSS.
+      Directly supports your goal of becoming a front-end web developer using HTML and CSS. [refs:
+        course_catalog.md#CS220 (sim 0.579); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS220 (sim 0.579); rules R4, R6, R8, R9
   ✔ CS202  Object-Oriented Programming  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.3313
-      Provides foundational object-oriented design skills using Java for broader software engineering knowledge.
+      Provides foundational object-oriented design skills using Java for software development. [refs:
+        course_catalog.md#CS202 (sim 0.03); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS202 (sim 0.03); rules R4, R6, R8, R9
   ✔ MATH101  Calculus I  (3 cr, Medium, Mon/Wed 09:00-10:30)  score 0.3
-      Fulfills a core requirement, building mathematical skills applicable to problem-solving.
+      Fulfills a required foundational math course for university study. [refs: course_catalog.md#MATH101 (sim 0);
+        rules R4, R5, R6, R8, R9]
       Sources: course_catalog.md#MATH101 (sim 0); rules R4, R5, R6, R8, R9
   ✔ CS201  Data Structures and Algorithms  (3 cr, Heavy, Sun/Tue 10:45-12:15)  score 0.262
-      Offers essential knowledge in data structures and algorithms crucial for advanced programming.
+      Develops essential problem-solving skills through fundamental data structures and algorithms. [refs:
+        course_catalog.md#CS201 (sim 0.012); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS201 (sim 0.012); rules R4, R6, R8, R9
 
 5) FLAGGED – NEEDS ADVISOR (not auto-recommended)
@@ -395,19 +418,24 @@ STUDENT S006 – Maya Samir   |   Year 3, Spring semester   |   GPA 3.4   |   ea
 
 4) ACCEPTED COURSES  → total 15 credit hours
   ✔ AI310  Data Mining and Analytics  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.7
-      This meets your interest in data mining through real data projects on clustering and classification.
+      This meets your interest in data mining through real data projects on clustering and classification. [refs:
+        course_catalog.md#AI310 (sim 0.122); rules R4, R6, R8, R9]
       Sources: course_catalog.md#AI310 (sim 0.122); rules R4, R6, R8, R9
   ✔ CS330  Mobile App Development  (3 cr, Medium, Sun/Tue 10:45-12:15)  score 0.6843
-      This supports your interest in mobile apps through Android and iOS application design.
+      This supports your goal of applied AI by focusing on mobile apps development for Android and iOS. [refs:
+        course_catalog.md#CS330 (sim 0.119); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS330 (sim 0.119); rules R4, R6, R8, R9
   ✔ CS310  Software Engineering  (3 cr, Medium, Mon/Wed 12:30-14:00)  score 0.4619
-      This develops your skills in team-based software development lifecycle necessary for applied AI products.
+      This covers team-based software development lifecycle skills needed for applied product work. [refs:
+        course_catalog.md#CS310 (sim 0.023); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS310 (sim 0.023); rules R4, R6, R8, R9
   ✔ AI320  Data Visualization  (3 cr, Light, Thu 09:00-11:00)  score 0.4455
-      This leverages your Python skills to visualize data, aligning with data science and AI goals.
+      Use Python to communicate data visually, aligning with your skills and data science interests. [refs:
+        course_catalog.md#AI320 (sim 0.081); rules R4, R6, R8, R9]
       Sources: course_catalog.md#AI320 (sim 0.081); rules R4, R6, R8, R9
   ✔ CS350  Human-Computer Interaction  (3 cr, Light, Thu 13:00-16:00)  score 0.104
-      This provides insight into user experience through prototyping and usability testing for applied products.
+      This teaches user experience, relevant for designing user-facing applied AI products. [refs:
+        course_catalog.md#CS350 (sim 0.011); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS350 (sim 0.011); rules R4, R6, R8, R9
 
 5) FLAGGED – NEEDS ADVISOR (not auto-recommended)

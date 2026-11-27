@@ -35,20 +35,24 @@ STUDENT S001 – Sara Mostafa   |   Year 1, Fall semester   |   GPA n/a   |   ea
 
 4) ACCEPTED COURSES  → total 15 credit hours
   ✔ CS102  Discrete Mathematics  (3 cr, Medium, Sun/Tue 12:30-14:00)  score 0.95
-      Develops logical reasoning for algorithms and supports your goal to become an AI engineer through problem
-        solving.
+      Develops logical reasoning and proof skills essential for algorithms and AI problem solving. [refs:
+        course_catalog.md#CS102 (sim 0.143); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS102 (sim 0.143); rules R4, R6, R8, R9
   ✔ CS101  Introduction to Programming  (3 cr, Medium, Sun/Tue 09:00-10:30)  score 0.7434
-      Uses Python, building on your basic skills for your interest in programming and AI.
+      Introduces Python programming, supporting your interest in programming for AI engineering goals. [refs:
+        course_catalog.md#CS101 (sim 0.094); rules R4, R6, R8, R9]
       Sources: course_catalog.md#CS101 (sim 0.094); rules R4, R6, R8, R9
   ✔ MATH101  Calculus I  (3 cr, Medium, Mon/Wed 09:00-10:30)  score 0.35
-      Provides mathematical foundations relevant to AI, covering limits, derivatives, and optimization.
+      Provides mathematical foundations relevant to AI tracks which require strong mathematics. [refs:
+        course_catalog.md#MATH101 (sim 0); rules R4, R6, R8, R9]
       Sources: course_catalog.md#MATH101 (sim 0); rules R4, R6, R8, R9
   ✔ PHYS101  Physics for Computing  (3 cr, Medium, Mon/Wed 10:45-12:15)  score 0.35
-      Explores concepts behind sensors and digital hardware, relevant to computing applications.
+      Focuses on hardware concepts behind sensors relevant to computer systems understanding. [refs:
+        course_catalog.md#PHYS101 (sim 0); rules R4, R6, R8, R9]
       Sources: course_catalog.md#PHYS101 (sim 0); rules R4, R6, R8, R9
   ✔ ENG101  Technical Writing  (3 cr, Light, Thu 13:00-16:00)  score 0.3
-      Builds essential writing skills for engineers, supporting your academic and career goals.
+      Develops technical writing skills necessary for communicating engineering work effectively. [refs:
+        course_catalog.md#ENG101 (sim 0); rules R4, R6, R8, R9]
       Sources: course_catalog.md#ENG101 (sim 0); rules R4, R6, R8, R9
 
 6) EXCLUDED COURSES (among requested / top-retrieved)

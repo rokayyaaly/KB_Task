@@ -133,7 +133,7 @@
           }
         ]
       },
-      "reason": "Directly supports your goal of becoming a front-end web developer using HTML and CSS."
+      "reason": "Directly supports your goal of becoming a front-end web developer using HTML and CSS. [refs: course_catalog.md#CS220 (sim 0.579); rules R4, R6, R8, R9]"
     },
     {
       "code": "CS202",
@@ -176,7 +176,7 @@
           }
         ]
       },
-      "reason": "Provides foundational object-oriented design skills using Java for broader software engineering knowledge."
+      "reason": "Provides foundational object-oriented design skills using Java for software development. [refs: course_catalog.md#CS202 (sim 0.03); rules R4, R6, R8, R9]"
     },
     {
       "code": "MATH101",
@@ -225,7 +225,7 @@
           }
         ]
       },
-      "reason": "Fulfills a core requirement, building mathematical skills applicable to problem-solving."
+      "reason": "Fulfills a required foundational math course for university study. [refs: course_catalog.md#MATH101 (sim 0); rules R4, R5, R6, R8, R9]"
     },
     {
       "code": "CS201",
@@ -268,7 +268,7 @@
           }
         ]
       },
-      "reason": "Offers essential knowledge in data structures and algorithms crucial for advanced programming."
+      "reason": "Develops essential problem-solving skills through fundamental data structures and algorithms. [refs: course_catalog.md#CS201 (sim 0.012); rules R4, R6, R8, R9]"
     }
   ],
   "excluded": [
